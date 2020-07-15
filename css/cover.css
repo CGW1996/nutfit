@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+.cover{
+    position: relative;
+}
+.coverTitle{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    text-align: center;
+}
+.nutCoverTitle{
+    position: absolute;
+    top: 50vh;
+    left: 40%;
+    color: white;
+    text-align: center;
+}
+.nutImg{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+}
+.nttImg{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.fitImg{
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+
+}
+
+.bgb{
+    background-color: black;
+}
+.line{
+    width: 300px;
+    height: 0px;
+    border: 2px solid white;
+    margin: 10px auto;
+}
+.nutCover{
+    width: 100%;
+}
+.nutTran{
+    width: 50%;
+    transition: 1s;
+}
+.hunvh{
+    height: 100vh;
+}
+.fiftyvh{
+    height: 50vh;
+    transition: 1s;
+}
