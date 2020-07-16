@@ -56,9 +56,12 @@ a:hover{
 .memberRow{
     margin-bottom: 100px;
 }
+.magazine{
+    height: 85%;
+}
 
 
-.uppersection img {
+.article img {
     width: 100%;
 }
 
