@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+/* navbar */
+.navbar {
+    color: white;
+}
+
+.top-sp {
+    color: #ff5f40;
+    font-size: x-large;
+}
+
+.navbar-brand span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+/* 廣告 */
+.jumbotron {
+    margin-top: 180px;
+    height: 80vh;
+    margin-bottom: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('/imgs/12.jpg');
+}
+
+.display-3 {
+    color: #ff5f40;
+    font-family: 'LiHei Pro';
+    padding-top: 200px;
+}
+
+.lead {
+    color: #f3c623;
+    font-family: 'LiHei Pro';
+    font-size: 20px;
+}
+
+button {
+    outline: none;
+}
+
+.btn1 {
+    background-color: #ff5f40;
+    border-radius: 50% / 120px;
+    color: #f3c623;
+    width: 220px;
+    outline: none;
+}
+
+.btn1:hover {
+    width: 250px;
+    transition-duration: 1.5s;
+}
+
+.btn2:hover {
+    width: 250px;
+    transition-duration: 1.5s;
+}
+
+.tra {
+    transform: rotate(360deg)
+}
+
+.btn2 {
+    background-color: #dddddd;
+    border-radius: 50% / 120px;
+    margin-left: 30px;
+    color: white;
+    width: 220px;
+    outline: none;
+}
+
+.col img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* 找夥伴 */
+.banner {
+    margin-top: 0;
+    width: 100%;
+    height: 50vh;
+    background: 
+    linear-gradient(115deg, #ff5f40 50%, transparent 50%)center center /100% 100%,
+    url("/imgs/14.jpg")right center / auto 140%;
+}
+
+.container {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+}
+
+.banner-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-text h1 {
+    font-size: 80px;
+    border-bottom: 1px solid #333;
+    font-weight: 900;
+}
+
+.banner-text h1 small {
+    display: block;
+    font-size: 53px;
+    font-weight: 700;
+}
+
+.banner-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* 教練團 */
+.wrap {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.item {
+    width: 370px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+.item img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item h2 {
+    border-bottom: 1px solid #ff5f40;
+    padding-bottom: .3em;
+    margin-bottom: .3em;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.item p {
+    line-height: 1.6;
+    font-weight: 900;
+}
+
+.item .txt {
+    padding: 20px;
+    position: relative;
+}
+
+.item .txt:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    border-top: 50px solid transparent;
+    transform: translateY(-100%);
+    transition: .5s;
+}
+
+.item:hover {
+    transform: translateY(-50px);
+    transition: .5s;
+
+}
+
+.item:hover .txt {
+    background-image: linear-gradient(0deg,#ff5f40,#ffc7c7
+   );
+}
+
+.item:hover h2 {
+    color: white;
+    border-bottom-color: white;
+}
+
+.item:hover p {
+    color: white;
+}
+ /* footer */
+.foot{width: 100%;; display: flex;justify-content: wrap;
+margin: auto;}
+.foota{color:tomato;margin: auto;}
+.row{margin: auto;}
+.footul{list-style-type: none;margin-left: 20px;}
+.foota:hover{color: white; text-decoration: none;}
