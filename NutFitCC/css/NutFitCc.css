@@ -30,7 +30,7 @@
     margin-bottom: 100px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url('/imgs/12.jpg');
+    background-image: url('../imgs/12.jpg');
 }
 
 .display-3 {
@@ -93,7 +93,7 @@ button {
     height: 50vh;
     background: 
     linear-gradient(115deg, #ff5f40 50%, transparent 50%)center center /100% 100%,
-    url("/imgs/14.jpg")right center / auto 140%;
+    url("../imgs/14.jpg")right center / auto 140%;
 }
 
 .container {
