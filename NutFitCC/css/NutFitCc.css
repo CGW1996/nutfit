@@ -88,14 +88,19 @@ button {
 
 /* 找夥伴 */
 .banner {
-    margin-top: 0;
-    width: 100%;
+    display: flex;
+    margin: auto;
+    width: 70%;
     height: 50vh;
     background: 
     linear-gradient(115deg, #ff5f40 50%, transparent 50%)center center /100% 100%,
-    url("../imgs/14.jpg")right center / auto 140%;
+    url("../imgs/14.jpg")right top / auto 150%;
+    -webkit-transition: 1.5s;
 }
-
+.banner:hover{
+    width: 100%;
+    transition: 1.5s;
+}
 .container {
     height: 100%;
     width: 1200px;
