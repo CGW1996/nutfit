@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="d-flex">
+        <a href="index.html"><img class="logoImg" src="image/secure.png" alt=""></a>
+        <nav></nav>
+    </header>
+    <aside class="sidenav">
+        <img class="selfImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+        <p class="navName">Jenny</p>
+        <a href="#">社區公告</a>
+        <a href="#">繳管理費</a>
+        <a href="#">專屬訊息</a>
+        <a href="#">社區活動</a>
+        <a href="#">管委會專區</a>
+        <button class="dropdown-btn">公設預約
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">游泳池</a>
+            <a href="#">閱覽室</a>
+            <a href="#">芳療室</a>
+        </div>
+        <a href="#">瓦斯抄表</a>
+        <a href="#">社區投票</a>
+        <a href="#">郵務管理</a>
+        <a href="#">社區行事曆</a>
+        <a href="#">討論區</a>
+    </aside>
+
+    <div class="main">
+        <h2>Sidebar Dropdown</h2>
+        <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+        <p>This sidebar is of full height (100%) and always shown.</p>
+        <p>Some random text..</p>
+    </div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
