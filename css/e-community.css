@@ -5,7 +5,6 @@
 }
 
 
-
 /* Fixed sidenav, full height */
 
 .sidenav {
@@ -95,11 +94,22 @@
     }
 }
 
-.selfImg {
+.sideImg {
     width: 50%;
     border-radius: 50%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px 0 16px;
+}
+
+.topImg {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.headerImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 .navName {
@@ -155,8 +165,8 @@ nav .header {
 
 nav .dropdown-menu {
     position: absolute;
-    right: 0;
-    left: auto;
+    right: 0!important;
+    left: auto!important;
 }
 
 .menu {
@@ -170,7 +180,7 @@ h6 {
     position: relative;
 }
 
-small {
+.message small {
     position: absolute;
     top: 0;
     right: 0;
@@ -197,4 +207,15 @@ small {
 nav .footer {
     text-align: center;
     border-top: 1px solid #f4f4f4;
+}
+
+.notifications a {
+    display: block;
+    white-space: nowrap;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 5px;
+}
+
+.userHeader {
+    text-align: center;
 }
