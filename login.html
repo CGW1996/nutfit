@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入畫面</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        body {
+            background-size: auto;
+            background: url(./image/login1.jpg)no-repeat center center/cover;
+            ;
+            /* 不重複 置中 置中 / 滿版*/
+        }
+
+        img {}
+    </style>
+</head>
+
+<body>
+    <div class="login">
+
+        <form class="form" action="">
+            <img src="./image/loginLOGO.png" alt="">
+
+            <h3>住戶登入</h3>
+            <div class="input">
+                <label for="user_ID">帳號:</label>
+                <!-- for =""設定與下方連結 -->
+                <input type="text" name="" id="userID">
+                <label id="alert" for="">請輸入帳號</label>
+
+            </div>
+            <div class="input">
+                <label for="userPwd">密碼:</label><!-- for =""設定與下方連結 -->
+                <input type="password" name="" id="userPwd">
+                <label id="alert" for="">請輸入密碼</label>
+                <!-- type=""password -->
+            </div>
+            <div class="btnGroup">
+                <button class="btn"><a href="">登入</a> </button>
+                <button class="btn"><a href="register.html">註冊</a></button>
+                <div class="userForget">
+                    <a href="forget.html">忘記密碼</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
