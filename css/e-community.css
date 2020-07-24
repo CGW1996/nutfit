@@ -11,7 +11,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0,139,139, 1);
+    background-color: #222D32;
     overflow: hidden;
 }
 
@@ -43,6 +43,7 @@
     transition: 0.5s;
     text-decoration: none;
 }
+
 
 /* Add an active class to the active dropdown button */
 
@@ -103,13 +104,18 @@
 
 header nav {
     height: 50px;
-    background-color: #3c8dbc;
+    background-color: #d6e6f2;
     width: 100%;
     padding-right: 100px;
 }
 
+header nav i,
+header nav span {
+    color: black
+}
+
 .logo {
-    background-color: rgba(60, 141, 188, 0.5);
+    background-color: #222D32;
     text-align: center;
     padding-top: 12px;
     color: white;
@@ -245,9 +251,10 @@ header nav .footer {
 
 main {
     height: 100vh;
-    background-color: azure;
+    background-color: #d6e6f2;
     text-align: center;
 }
-.fin a{
-    margin-left: 10px;
+
+.fin a {
+    padding-left: 70px;
 }
