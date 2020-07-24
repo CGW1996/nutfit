@@ -8,15 +8,11 @@
 /* Fixed sidenav, full height */
 
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #222d32;
-    overflow-x: hidden;
-    padding-top: 50px;
+    background-color: rgba(0,139,139, 1);
+    overflow: hidden;
 }
 
 
@@ -27,7 +23,7 @@
     padding: 25px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #b8c7ce;
+    color: white;
     display: block;
     border: none;
     background: none;
@@ -47,18 +43,6 @@
     transition: 0.5s;
     text-decoration: none;
 }
-
-
-/* Main content */
-
-.main {
-    margin-left: 200px;
-    /* Same as the width of the sidenav */
-    font-size: 20px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-
 
 /* Add an active class to the active dropdown button */
 
@@ -101,7 +85,7 @@
 }
 
 .topImg {
-    width: 35px;
+    width: 33px;
     border-radius: 50%;
 }
 
@@ -117,15 +101,15 @@
     color: white;
 }
 
-nav {
+header nav {
     height: 50px;
     background-color: #3c8dbc;
     width: 100%;
+    padding-right: 100px;
 }
 
 .logo {
     background-color: rgba(60, 141, 188, 0.5);
-    width: 224px;
     text-align: center;
     padding-top: 12px;
     color: white;
@@ -157,27 +141,40 @@ a.logo:hover {
     margin-right: 10px;
 }
 
-nav .header {
+header nav .header {
     border-bottom: 1px solid #f4f4f4;
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
-nav .dropdown-menu {
+header nav .dropdown-menu {
     position: absolute;
-    right: 0!important;
+    right: -80px!important;
     left: auto!important;
 }
 
-.menu {
+.mail .menu,
+.todoList .menu,
+.notifications .menu {
     list-style: none;
     width: 310px;
     max-height: 200px;
     overflow-x: hidden;
 }
 
-h6 {
+.profile .menu {
+    list-style: none;
+    width: 310px;
+    overflow-x: hidden;
+}
+
+h6,
+.mail p {
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.5!important;
 }
 
 .message small {
@@ -204,7 +201,7 @@ h6 {
     background-color: #3c8dbc;
 }
 
-nav .footer {
+header nav .footer {
     text-align: center;
     border-top: 1px solid #f4f4f4;
 }
@@ -218,4 +215,39 @@ nav .footer {
 
 .userHeader {
     text-align: center;
+    background-color: lightskyblue;
+    padding: 10px 0 10px 0;
+}
+
+.userDrop li h6 {
+    color: #ffffff;
+}
+
+.userBody {
+    text-align: center;
+    background-color: #60b0df;
+    padding: 10px 0 10px 0;
+}
+
+.userHeader {
+    background-color: lightskyblue;
+    padding: 10px 0 10px 0;
+}
+
+.userFooter {
+    background-color: #4aa9e0;
+    padding: 10px 0 10px 0;
+}
+
+.profile .dropdown-menu {
+    padding: 0!important;
+}
+
+main {
+    height: 100vh;
+    background-color: azure;
+    text-align: center;
+}
+.fin a{
+    margin-left: 10px;
 }
