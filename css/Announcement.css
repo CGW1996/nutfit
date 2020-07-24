@@ -244,33 +244,51 @@ header nav .footer {
 }
 
 main {
-    height: 100vh;
+    height: auto;
     background-color: #d6e6f2;
-    text-align: center;
+    /* text-align: center; */
+   
 }
 .fin a{
     margin-left: 10px;
 }
 
 /* 輪播 */
+.carousel{
+    padding: 0%;
+}
 .carousel-inner .carousel-item img { 
     height:50vh;
+    width: 30vh;
 
 }
-.carousel-inner .carousel-item .carousel-caption{
-    color:red;
-}
+
+
 
 /* 公告欄 */
-
-.Anct img{
-    width: 400px;    
-    height: 300px;
+.dummy {
+    margin-top: 100%;
 }
-.texttop{
-    padding-bottom:40px;
+.block{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-color:white;
+   
 }
-/* .textbottom{
+.block img{
+    height: 30vh;
+    width: 100%;
     
+}
+.name{
+    vertical-align:text-bottom;
+    height: 100px;
+}
+.smbox img{
+    height: 15vh;
+    width: 100%;
+}
 
-} */
