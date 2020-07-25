@@ -4,14 +4,13 @@
     font-family: 微軟正黑體;
 }
 
-
 /* Fixed sidenav, full height */
 
 .sidenav {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #222D32;
+    background-color: rgba(47,79,79, 1);
     overflow: hidden;
 }
 
@@ -43,7 +42,6 @@
     transition: 0.5s;
     text-decoration: none;
 }
-
 
 /* Add an active class to the active dropdown button */
 
@@ -104,18 +102,13 @@
 
 header nav {
     height: 50px;
-    background-color: #d6e6f2;
+    background-color: #3c8dbc;
     width: 100%;
     padding-right: 100px;
 }
 
-header nav i,
-header nav span {
-    color: black
-}
-
 .logo {
-    background-color: #222D32;
+    background-color: rgba(172, 197, 211, 0.767);
     text-align: center;
     padding-top: 12px;
     color: white;
@@ -251,13 +244,26 @@ header nav .footer {
 
 main {
     height: 100vh;
-    background-color: #d6e6f2;
+    background-color: azure;
     text-align: center;
 }
-
-.fin a {
-    padding-left: 70px;
+.fin a{
+    margin-left: 10px;
 }
 
+/* -------------- */
+main button {
+    height: 300px;
+    width: 300px;
+    font-size: 60px;
+    margin: 30px;
+}
 
-/* 分隔線--CSS檔加在這下面 */
+main button a {
+    color: black;
+}
+
+main button a:hover {
+    text-decoration: none;
+    color: black;
+}

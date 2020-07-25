@@ -252,7 +252,6 @@ header nav .footer {
 main {
     height: 100vh;
     background-color: #d6e6f2;
-    text-align: center;
 }
 
 .fin a {
@@ -260,4 +259,14 @@ main {
 }
 
 
-/* 分隔線--CSS檔加在這下面 */
+
+/* --------------- */
+main nav button {
+    margin-right: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 15%;
+    background-color: rgba(234, 117, 117, 0.5);
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
