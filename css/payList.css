@@ -1,0 +1,29 @@
+table,
+th,
+td {
+    border: 1px solid red;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+#search {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#search:focus {
+    outline: none;
+    border: 1px solid #374a58;
+}

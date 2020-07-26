@@ -324,32 +324,39 @@
                     <input type="text" name="number" id="number">
                     <label for="purchaseDate">購買日期:</label>
                     <input type="text" name="purchaseDate" id="purchaseDate">
+                    <label for="type">類別:</label>
+                    <select name="type" id="type">
+                        <option value="fix">修繕</option>
+                        <option value="activity">活動</option>
+                        <option value="human">人事</option>
+                        <option value="incidental">雜費</option>
+                    </select>
 
+                </section>
+                <section>
                     <label for="vendor">廠商名稱:</label>
                     <input type="text" name="vendor" id="vendor">
                     <label for="vendorPhone">廠商電話:</label>
                     <input type="text" name="vendorPhone" id="vendorPhone">
-                </section>
-                <section>
                     <label for="mName">品名:</label>
                     <input type="text" name="mName" id="mName">
+                    <label for="purpose">用途:</label>
+                    <input type="text" name="purpose" id="purpose">
+
+                </section>
+                <section>
                     <label for="count">數量:</label>
                     <input type="text" name="count" id="count">
                     <label for="price">價格:</label>
                     <input type="text" name="price" id="price">
-                    <label for="sum">總和:</label>
-                    <input type="text" name="sum" id="sum" disabled>
-                </section>
-                <section>
-                    <label for="purpose">用途:</label>
-                    <input type="text" name="purpose" id="purpose">
-
                     <label for="tax">課稅別:</label>
                     <select name="tax" id="tax">
                         <option value="NeedTax">應稅</option>
                         <option value="TaxFree">免稅</option>
                         <option value="ZeroTax">零稅率</option>
                     </select>
+                    <label for="sum">總和:</label>
+                    <input type="text" name="sum" id="sum" disabled>
                     <label for="pay">付款方式:</label>
                     <select name="pay" id="pay">
                         <option value="cash">付現</option>
