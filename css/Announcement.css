@@ -276,7 +276,14 @@ main {
     bottom: 5px;
     left: 5px;
     background-color:white;
-   
+        
+}
+.block h3,p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;        
 }
 .block img{
     height: 30vh;
