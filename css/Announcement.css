@@ -4,15 +4,13 @@
     padding: 0%;
 }
 .carousel-inner .carousel-item img { 
-    height:50vh;
-    width: 30vh;
+    height:30vh;
+    width: 20vh;
 
 }
-.carousel-item{
-    color: black;
-}
+
 .carousel-item a{
-    color:black;
+    color:white;
 }
 
 
