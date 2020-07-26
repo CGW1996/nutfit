@@ -254,26 +254,26 @@ main {
 /* --fieldset--- */
 fieldset {
     /* width:1000px;    */
-    background-color: rgb(243, 241, 129);
+    /* background-color: rgb(243, 241, 129); */
 }
 legend {
-     background-color: rgb(115, 147, 235);
-     font-weight:bold;
-     text-align:center;
+     /* background-color: rgb(115, 147, 235); */
+     /* font-weight:bold;
+     text-align:center; */
      /* margin-left:40px; */
  }
 textarea {
     resize: none;
 }
-.AnnouncementInformation{
-    width: 1000px;
-    border-bottom: 3px dotted darkblue;
+.Information{
+    width: 450px;
+    text-align:left;
     margin: 20px;
     padding-bottom: 10px;
+    /* float: left;    */
     
 }
-.AnnouncementId{
+.caption{
     width: 100px;
     float: left;
-    text-align: right;
 }
