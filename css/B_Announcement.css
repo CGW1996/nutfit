@@ -246,7 +246,7 @@ header nav .footer {
 main {
     height: 100vh;
     background-color: #d6e6f2;
-    text-align: center;
+    /* text-align: center; */
 }
 .fin a{
     margin-left: 10px;
@@ -285,21 +285,22 @@ tbody tr:hover {
 legend {
      
      /* font-weight:bold; */
-     text-align:center;
+     /* text-align:center; */
      /* margin-left:40px; */
  }
 textarea {
     resize: none;
 }
+
 .AnnouncementInformation{
     width: 450px;
     text-align:left;
     margin: 20px;
     padding-bottom: 10px;
-    
+    float: left;    
 }
 .AnnouncementId{
     width: 100px;
     float: left;
-    text-align: right;
+    /* text-align: right; */
 }
