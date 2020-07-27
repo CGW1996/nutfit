@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>ECOMMINITY - 社區活動</title>
+
     <style>
 
     </style>
@@ -333,8 +334,9 @@
             <div class="searchbar">
                 <form class="form-inline my-2 my-lg-0 ">
                     <input class="form-control_1 mr-sm-2" type="search" placeholder=" 搜尋活動" aria-label="Search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="請選擇日期" aria-label="Search">
-                    <button type="button" class="btn btn-info">搜尋</button>
+                    <input class="form-control mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
+                        aria-label="Search">
+                    <button type="button" class="btn btn-info"> <i class="fa fa-search"></i> 搜尋</button>
                 </form>
             </div>
 
@@ -452,6 +454,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
+
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
