@@ -250,7 +250,7 @@ header nav .footer {
 }
 
 main {
-    /* height: 100vh; */
+    height: 100vh;
     background-color: #e1eaf1;
 }
 
