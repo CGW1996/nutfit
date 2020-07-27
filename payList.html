@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/e-community.css">
-    <link rel="stylesheet" href="css/B_Forum.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/payList.css">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+        <a class="logo col-2" href="#"><span>E-<b>Community</b></span></a>
         <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -313,66 +310,122 @@
         </aside>
 
         <main class="col-10">
-            <form class="container mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>發文</legend>
-                    <div class="Information">
-                        <label class="caption" for="">標題:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">日期:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">發佈人:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">內容:</label>
-                        <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
-                    </div>
-                    <div class="Information">
-                        選擇您要上傳的檔案：<Input Type="File" Name="YouFile">
-                        <div class="">
-                            <Input Type="Submit" Value="確 認 傳 送">
-                            <Input Type="Reset" Value="清 除 重 選">
-                        </div>
-
-                    </div>
-
-                </fieldset>
+            <form action="">
+                <label for="numData">顯示
+                    <select name="numData" id="numData">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                    資料</label>
+                <label for="fromD">開始日期:</label>
+                <input id="fromD" type="text" name="fromD" id="fromD">
+                <label for="endD">結束日期:</label>
+                <input id="endD" type="text" name="endD" id="endD">
+                <label for="type">類別:</label>
+                <select name="type" id="type">
+                    <option value="all">全部</option>
+                    <option value="fix">修繕</option>
+                    <option value="activity">活動</option>
+                    <option value="human">人事</option>
+                    <option value="incidental">雜費</option>
+                </select>
+                <input type="search" name="search" id="search" class="light-table-filter" data-table="order-table" placeholder="  輸入關鍵字">
+                <input type="submit" value="查詢">
             </form>
+
+
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>流水編號</th>
+                        <th>日期</th>
+                        <th>類別</th>
+                        <th>廠商名稱</th>
+                        <th>廠商電話-</th>
+                        <th>品名</th>
+                        <th>用途-</th>
+                        <th>數量</th>
+                        <th>價格</th>
+                        <th>稅別-</th>
+                        <th>付款方式-</th>
+                        <th>小計</th>
+                        <th>購買人</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>2020/05/08</td>
+                        <td>活動</td>
+                        <td>阿美滷肉飯</td>
+                        <td>66316666</td>
+                        <td>滷肉飯</td>
+                        <td>活動供餐</td>
+                        <td>50</td>
+                        <td>25</td>
+                        <td>免稅</td>
+                        <td>現金</td>
+                        <td>1250</td>
+                        <td>小美</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>2020/06/08</td>
+                        <td>活動</td>
+                        <td>阿朱滷肉飯</td>
+                        <td>66316666</td>
+                        <td>滷肉飯</td>
+                        <td>活動供餐</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>免稅</td>
+                        <td>現金</td>
+                        <td>1500</td>
+                        <td>小朱</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>2020/08/08</td>
+                        <td>活動</td>
+                        <td>阿花滷肉飯</td>
+                        <td>66316666</td>
+                        <td>滷肉飯</td>
+                        <td>活動供餐</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>免稅</td>
+                        <td>現金</td>
+                        <td>1500</td>
+                        <td>小花</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>2020/07/08</td>
+                        <td>活動</td>
+                        <td>阿明滷肉飯</td>
+                        <td>66316666</td>
+                        <td>滷肉飯</td>
+                        <td>活動供餐</td>
+                        <td>50</td>
+                        <td>30</td>
+                        <td>免稅</td>
+                        <td>現金</td>
+                        <td>1500</td>
+                        <td>小明</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
     </div>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/payList.js"></script>
     <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
+        var num = $(".order-table").find("tr").length - 1;
     </script>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>

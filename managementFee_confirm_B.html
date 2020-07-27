@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/e-community.css">
-    <link rel="stylesheet" href="css/Announcement.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/managementFee_confirm_B.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
@@ -297,211 +295,58 @@
             <section class="sidebar">
                 <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
                 <p class="navName">Jenny</p>
-                <a href="#">社區公告</a>
-                <button class="dropdown-btn">財務
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event_B.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container fin">
-                    <a href="#">管理費</a>
-                    <a href="payEntrance.html">支出</a>
-                    <a href="#">瓦斯抄表</a>
-                    <a href="#">個人紀錄</a>
+                    <a href="managementFee_B.html">管理費</a>
+                    <a href="payEntrance_B.html">支出</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
                 </div>
-                <a href="#">專屬訊息</a>
-                <a href="#">社區活動</a>
-                <a href="#">管委會專區</a>
-                <button class="dropdown-btn">公設預約
+                <a href="personalMessage_B.html">專屬訊息</a>
+                <a href="comment_B.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="#">游泳池</a>
-                    <a href="#">閱覽室</a>
-                    <a href="#">芳療室</a>
+                    <a href="pool_B.html">游泳池</a>
+                    <a href="reading_B.html">閱覽室</a>
+                    <a href="aromatherapy_B.html">芳療室</a>
                 </div>
-                <a href="#">社區投票</a>
-                <a href="#">郵務管理</a>
-                <a href="#">社區行事曆</a>
-                <a href="#">討論區</a>
+                <!--  -->
+                <a href="vote_B.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
             </section>
         </aside>
 
         <main class="col-10">
-            <!-- 輪播 -->
-            <div>
-                <div id="carouselExampleIndicators" class="container carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="image/article4.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="#">
-                                    <h3>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h3>
-                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/article5.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="#">
-                                    <h3>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h3>
-                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="image/article3.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="#">
-                                    <h3>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h3>
-                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- 圖片區 -->
-
-            <div class="mt-3">
-                <div class="container">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                                role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-                        </li>                      
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">
-                            <!-- HOME -->
-                            <div class="row"> 
-                                <div class="col-md-6 col-xs-12">
-                                    <div class="row article">
-                                        <div class="dummy"></div>
-                                        <a href="#" class="block bigbox">
-                                            <div class="">
-                                                <img src="image/article3.jpg" alt="">
-                                                <h3>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h3>
-                                                <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                            </div>
-                                            <div class="d-flex justify-content-between align-content-end">
-                                                <div class="d-flex justify-content-between man">
-                                                    <p>人氣</p>
-                                                    <p>王大槌</p>
-                                                </div>
-                                                <p>2019-01-01</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xs-12">
-                                    <div class="row">
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="row article">
-                                                <div class="dummy"></div>
-                                                <a href="#" class="block smbox">
-                                                    <img src="image/article3.jpg" alt="">
-                                                    <h5>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h5>
-                                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                                    <div class="d-flex justify-content-between align-content-end">
-                                                        <div class="d-flex justify-content-between man">
-                                                            <p>人氣</p>
-                                                            <p>王大槌</p>
-                                                        </div>
-                                                        <p>2019-01-01</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="row article">
-                                                <div class="dummy"></div>
-                                                <a href="#" class="block smbox">
-                                                    <img src="image/article3.jpg" alt="">
-                                                    <h5>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h5>
-                                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                                    <div class="d-flex justify-content-between align-content-end">
-                                                        <div class="d-flex justify-content-between man">
-                                                            <p>人氣</p>
-                                                            <p>王大槌</p>
-                                                        </div>
-                                                        <p>2019-01-01</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="row article">
-                                                <div class="dummy"></div>
-                                                <a href="#" class="block smbox">
-                                                    <img src="image/article3.jpg" alt="">
-                                                    <h5>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h5>
-                                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                                    <div class="d-flex justify-content-between align-content-end">
-                                                        <div class="d-flex justify-content-between man">
-                                                            <p>人氣</p>
-                                                            <p>王大槌</p>
-                                                        </div>
-                                                        <p>2019-01-01</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="row article">
-                                                <div class="dummy"></div>
-                                                <a href="#" class="block smbox">
-                                                    <img src="image/article3.jpg" alt="">
-                                                    <h5>2018/6/17 水塔清洗公告 (6/26 9:00-17:00)</h5>
-                                                    <p>預計6/26 9:00-17:00，停水8小時進行施工，請民眾預先儲水備用。為儘早提供用水需求</p>
-                                                    <div class="d-flex justify-content-between align-content-end">
-                                                        <div class="d-flex justify-content-between man">
-                                                            <p>人氣</p>
-                                                            <p>王大槌</p>
-                                                        </div>
-                                                        <p>2019-01-01</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">123</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">321</div>
-                    </div>
-
+            <form action="">
+                <fieldset>
+                    <legend>確認資料</legend>
+                    <h3>戶號:<span id="confirmNum">H1003</span></h3>
+                    <h3>戶長:<span id="confirmName">Marco</span></h3>
+                    <h3>停車位:<span id="confirmPark">2</span></h3>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
         </main>
     </div>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -520,15 +365,6 @@
         }
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

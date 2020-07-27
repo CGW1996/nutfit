@@ -278,31 +278,33 @@
             <section class="sidebar">
                 <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
                 <p class="navName">Jenny</p>
-                <a href="#">社區公告</a>
-                <button class="dropdown-btn">財務
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event_B.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container fin">
+                    <a href="managementFee_B.html">管理費</a>
+                    <a href="payEntrance_B.html">支出</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
+                </div>
+                <a href="personalMessage_B.html">專屬訊息</a>
+                <a href="comment_B.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="#">管理費</a>
-                    <a href="payEntrance.html">支出</a>
-                    <a href="#">瓦斯抄表</a>
-                    <a href="#">個人紀錄</a>
+                    <a href="pool_B.html">游泳池</a>
+                    <a href="reading_B.html">閱覽室</a>
+                    <a href="aromatherapy_B.html">芳療室</a>
                 </div>
-                <a href="#">專屬訊息</a>
-                <a href="#">社區活動</a>
-                <a href="#">管委會專區</a>
-                <button class="dropdown-btn">公設預約
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">游泳池</a>
-                    <a href="#">閱覽室</a>
-                    <a href="#">芳療室</a>
-                </div>
-                <a href="#">社區投票</a>
-                <a href="#">郵務管理</a>
-                <a href="#">社區行事曆</a>
-                <a href="#">討論區</a>
+                <!--  -->
+                <a href="vote_B.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
             </section>
         </aside>
         <main class="col-10">
@@ -324,32 +326,39 @@
                     <input type="text" name="number" id="number">
                     <label for="purchaseDate">購買日期:</label>
                     <input type="text" name="purchaseDate" id="purchaseDate">
+                    <label for="type">類別:</label>
+                    <select name="type" id="type">
+                        <option value="fix">修繕</option>
+                        <option value="activity">活動</option>
+                        <option value="human">人事</option>
+                        <option value="incidental">雜費</option>
+                    </select>
 
+                </section>
+                <section>
                     <label for="vendor">廠商名稱:</label>
                     <input type="text" name="vendor" id="vendor">
                     <label for="vendorPhone">廠商電話:</label>
                     <input type="text" name="vendorPhone" id="vendorPhone">
-                </section>
-                <section>
                     <label for="mName">品名:</label>
                     <input type="text" name="mName" id="mName">
+                    <label for="purpose">用途:</label>
+                    <input type="text" name="purpose" id="purpose">
+
+                </section>
+                <section>
                     <label for="count">數量:</label>
                     <input type="text" name="count" id="count">
                     <label for="price">價格:</label>
                     <input type="text" name="price" id="price">
-                    <label for="sum">總和:</label>
-                    <input type="text" name="sum" id="sum" disabled>
-                </section>
-                <section>
-                    <label for="purpose">用途:</label>
-                    <input type="text" name="purpose" id="purpose">
-
                     <label for="tax">課稅別:</label>
                     <select name="tax" id="tax">
                         <option value="NeedTax">應稅</option>
                         <option value="TaxFree">免稅</option>
                         <option value="ZeroTax">零稅率</option>
                     </select>
+                    <label for="sum">總和:</label>
+                    <input type="text" name="sum" id="sum" disabled>
                     <label for="pay">付款方式:</label>
                     <select name="pay" id="pay">
                         <option value="cash">付現</option>
