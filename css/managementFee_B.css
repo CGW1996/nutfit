@@ -1,0 +1,37 @@
+main{
+    text-align: center;
+}
+table,
+th,
+td {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: ghostwhite;
+}
+table {
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+thead{
+    background-color: #858181;
+    color: rgb(233, 233, 233);
+}
+
+th,
+td {
+    padding: 20px;
+}
+select{
+    height: 30px;
+    margin: 3px 0 0 5px;
+}
+#chart{
+    width: 500px;
+    height: 400px;
+    margin-top: 45px;
+}

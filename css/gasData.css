@@ -1,0 +1,38 @@
+main {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+input {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.black {
+    background-color: black;
+    border: 5px solid grey;
+    padding: 50px 40px;
+}
+
+.red {
+    background-color: red;
+    border: 5px solid grey;
+    padding: 50px 40px;
+}
+
+.outer {
+    border: 5px solid rgb(145, 145, 145);
+    background-color: seashell;
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.redArea {
+    margin-left: 20px;
+}

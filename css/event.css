@@ -1,15 +1,14 @@
 main {
     width: 900px;
     /* background-color: #d6e6f2; */
-  
 }
 
 
 .searchbar{
     /* margin-left: 70px;
      */
-     width: 800px;
-     margin: auto;
+    width: 800px;
+    margin: auto;
 }
 
 .form-control_1{
@@ -115,7 +114,6 @@ main {
     background-repeat: no-repeat;
     width: 120%;
     height: 235px;
-   
 }
 
 .card__info-hover {
@@ -127,7 +125,7 @@ main {
 }
 
 .card__img_hover {
-    transition: 0.2s all ease-out;
+    transition: .5s all ease-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
