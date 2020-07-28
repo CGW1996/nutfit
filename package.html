@@ -332,18 +332,31 @@
 
         <main class="col-10 container">
             <div class="packagebtns row">
-                <button type="button" class="btn btn-outline-info col-sm-6">未領取</button>
-                <button type="button" class="btn btn-outline-info col-sm-6">已領取</button>
+                <button type="button" id="unreceive" class="btn btn-outline-info col-sm-6">未領取</button>
+                <button type="button" id="received" class="btn btn-outline-info col-sm-6">已領取</button>
             </div>
 
             <div class="packageboxsss mt-4">
-                <div class="row packagebox">
+                <div class="row packagebox mb-3">
                     <img class="pkgpic" src="image/package/package.png" alt="">
-                    <div class="packagemsg ml-4">大榮貨運
+                    <div class="packagemsg ml-4">
+                        <h3>大榮貨運</h3>
                         <div>寄件者： 吳怡農</div>
                         <div>收件者： 一同</div>
                         <div>內容物： 包裹</div>
-                        <div>送達時間：2020-07-10</div>
+                        <div>送達時間：2020-07-19</div>
+                    </div>
+                </div>
+
+
+                <div class="row packagebox mb-3">
+                    <img class="pkgpic" src="image/package/mail.png" alt="">
+                    <div class="packagemsg ml-4">
+                        <h3>中華郵政</h3>
+                        <div>寄件者： 台灣彩券</div>
+                        <div>收件者： 一同</div>
+                        <div>內容物： 中獎通知</div>
+                        <div>送達時間：2020-07-28</div>
                     </div>
                 </div>
             </div>
@@ -363,7 +376,11 @@
         crossorigin="anonymous"></script>
     <script>
 
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        $(".btn-outline-info").click(function () {
+            $(this).css("background", "#17a2b8").css("color", "white").css("font-weight", "bold")
+                .siblings().css("background", "white").css("color", "#17a2b8").css("font-weight", "normal")
+        })
+
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
 
