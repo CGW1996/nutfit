@@ -1,0 +1,118 @@
+* {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login {
+            width: 600px;
+            
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 10px solid white;
+            box-shadow: 0 0 60px #000;
+            /*0 0不偏移 60px模糊  */
+            backdrop-filter: blur(5px);
+            /* backdrop-filter 濾鏡 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 400px;
+            color: #fff;
+        }
+
+        .form h3 {
+            border-bottom: 1px solid #fff;
+            font-size: x-large;
+        }
+
+        .form .group {
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            line-height: 2;
+            font-size: 20px;
+        }
+
+        .form input {
+            width: 100%;
+            border: 1px solid#aaa;
+            line-height: 2;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .checkcode{
+            width: 100%;
+            border: 1px solid#aaa;
+            line-height: 2;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+         .checkAcode {
+            display: flex;
+            align-items: center;
+        }
+        .checkAcode button{
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+    
+        .from .btnGroup {
+            font-size: 0;
+        }
+
+        .form .btn {
+            font-size: 20px;
+            border: none;
+            background-color: #aaa;
+            width: 190px;
+            padding: 10px 0;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .btnGroup .btn+.btn {
+            margin-left: 10px;
+        }
+        .btnGroup a{
+            color: #000;
+        }
+        .userForget{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #alert{
+            font-size: 15px;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -20px;
+            /* display: none; */
+            
+        }
+        div span{
+            font-size: 10px;
+        }
+      .input input:hover{
+          
+      }
+
