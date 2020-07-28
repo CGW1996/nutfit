@@ -22,8 +22,8 @@
   }
 
   .packagebox{
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid rgb(190, 190, 190);
     padding: 10px;
   }
 

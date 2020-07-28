@@ -1,0 +1,56 @@
+.main {
+
+    margin-left:100px;
+    font-family: "Microsoft JhengHei";
+}
+.main fieldset {
+    margin-bottom: 10px;
+    width: 1300px;
+    box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 5px;
+    padding: 10px;
+    background: rgb(157, 205, 226);
+    border-radius: 5px;
+    
+}
+.main legend {
+    text-align: left;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 450px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: rgba(90, 90, 90, 0.8) 5px 5px 5px;
+}
+.lab{
+    font-size: 25px;
+}
+.txt{
+    font-size: 20px;
+}
+.main fieldset div{
+    padding-top: 15px;
+    margin: 10px;
+    margin-left: 80px;
+}
+.des{
+    width: 800px;
+    height: 400px;
+    vertical-align:top;
+    resize: none;
+    font-size: 20px;
+}
+.new{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.new:hover{
+    width: 110px;
+    height: 35px;
+    font-size: 18px;
+}
