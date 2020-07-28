@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/e-community.css">
-    <link rel="stylesheet" href="css/B_Forum.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/vote_B.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
         <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -283,7 +279,7 @@
                 <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
                 <p class="navName">Jenny</p>
                 <a href="Announcement_B.html">最新消息</a>
-                <a href="event_B.html">社區活動</a>
+                <a href="activity_B.html">社區活動</a>
                 <button class="dropdown-btn">生活服務
                     <i class="fa fa-caret-down"></i>
                 </button>
@@ -313,42 +309,38 @@
         </aside>
 
         <main class="col-10">
-            <form class="container mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
+            <form action="" class="main">
                 <fieldset>
-                    <legend>發文</legend>
-                    <div class="Information">
-                        <label class="caption" for="">標題:</label>
-                        <input type="text" autocomplete="off" autofocus>
+                    <legend>編輯投票</legend>
+                    <div>
+                        <label for="" class="lab">標題：</label>
+                        <input class="txt" type="text" autofocus tabindex="0">
                     </div>
-                    <div class="Information">
-                        <label class="caption" for="">日期:</label>
-                        <input type="text" autocomplete="off" autofocus>
+                    <div>
+                        <label for="" class="lab">截止日期：</label>
+                        <input type="date">
                     </div>
-                    <div class="Information">
-                        <label class="caption" for="">發佈人:</label>
-                        <input type="text" autocomplete="off" autofocus>
+                    <div>
+                        <label for="" class="lab">發起人：</label>
+                        <input class="txt" type="text">
                     </div>
-                    <div class="Information">
-                        <label class="caption" for="">內容:</label>
-                        <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
+                    <div>
+                        <label for="" class="lab">內容：</label>
+                        <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
                     </div>
-                    <div class="Information">
-                        選擇您要上傳的檔案：<Input Type="File" Name="YouFile">
-                        <div class="">
-                            <Input Type="Submit" Value="確 認 傳 送">
-                            <Input Type="Reset" Value="清 除 重 選">
-                        </div>
-
+                    <div>
+                        <label for="" class="lab">選項：</label>
+                        <input class="txt" type="text">
+                        <button class="new">+ 新增選項</button>
                     </div>
-
                 </fieldset>
             </form>
         </main>
     </div>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -367,12 +359,6 @@
         }
     </script>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -104,7 +104,7 @@
 
 header nav {
     height: 50px;
-    background-color: #d6e6f2;
+    background-color: #e1eaf1;
     width: 100%;
     padding-right: 100px;
 }
@@ -250,8 +250,8 @@ header nav .footer {
 }
 
 main {
-    /* height: 100vh; */
-    background-color: #d6e6f2;
+    height: 100vh;
+    background-color: #e1eaf1;
 }
 
 .fin a {

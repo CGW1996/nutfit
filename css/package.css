@@ -1,0 +1,32 @@
+.packagebtns{
+    margin: auto;
+    max-width: 800px ;
+}
+
+.btn-outline-info {
+    color: #17a2b8;
+    background-color: white;
+    border-color: #17a2b8;
+  }
+
+  .btn-outline-info:focus, .btn-outline-info.focus {
+    color: #fff;
+    font-weight: bold;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  .packageboxsss{
+    margin: auto;
+    max-width: 800px ;
+  }
+
+  .packagebox{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+
+  .packagemsg{
+    
+  }

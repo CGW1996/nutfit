@@ -100,6 +100,11 @@ main {
     background-image: url('../image/event/bbq.jpg');
 }
 
+.card4 .card__img,
+.card4 .card__img_hover {
+    background-image: url('../image/event/beef.jpg');
+}
+
 
 
 
