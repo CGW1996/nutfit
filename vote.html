@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="css/vote.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="d-flex">
+        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
+        <nav class="col-10">
+            <ul class="nav justify-content-end mt-1">
+                <li class="nav-item mail">
+                    <div class="dropdown">
+                        <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label bg-success">4</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Marco
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Be a little kinder than you have to.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Thomas
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Everything in moderation, including moderation.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Leo
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Would you like to go on a date with me?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Mom
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Don't waste money</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Einstein
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Always do what you're afraid to do.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item notifications">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label bg-danger">5</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-primary"></i>
+                                            </div>
+                                            <h6>
+                                                5 member join today
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-warning mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                Very long description here that may not fit into the page and may cause
+                                                design problems
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-warning"></i>
+                                            </div>
+                                            <h6>
+                                                5 new members joined
+                                            </h6>
+
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-shopping-cart mr-2 text-success"></i>
+                                            </div>
+                                            <h6>
+                                                25 sales made
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-user mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                You changed your username
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">View All</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item todoList">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label bg-warning">6</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">todo 5 things</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                AdminLTE Design Team
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item profile">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                            <span>Jenny</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu userDrop">
+                                    <li class="userHeader">
+                                        <img class="headerImg" src="image/adult-attractive-beautiful-beauty-415829.jpg"
+                                            class="img-circle" alt="User Image">
+                                        <h6>
+                                            Park Jenny- <small>H302</small>
+                                        </h6>
+                                    </li>
+                                    <li class="userBody">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>followers</h6>
+                                            <h6>sales</h6>
+                                            <h6>friends</h6>
+                                        </div>
+                                    </li>
+                                    <li class="userFooter">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>profile</h6>
+                                            <h6>sign out</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex">
+        <aside class="sidenav col-2">
+            <section class="sidebar">
+                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                <p class="navName">Jenny</p>
+                <a href="B_Announcement.html">最新消息</a>
+                <a href="B_activity.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container fin">
+                    <a href="B_managementFee.html">管理費</a>
+                    <a href="B_payEntrance.html">支出</a>
+                    <a href="B_gasData.html">瓦斯抄表</a>
+                    <a href="B_personalFin.html">個人紀錄</a>
+                </div>
+                <a href="B_personalMessage.html">專屬訊息</a>
+                <a href="B_comment.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">公設預約
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="B_pool.html">游泳池</a>
+                    <a href="B_reading.html">閱覽室</a>
+                    <a href="B_aromatherapy.html">芳療室</a>
+                </div>
+                <!--  -->
+                <a href="B_vote.html">社區投票</a>
+                <a href="B_Forum.html">討論區</a>
+                <a href="B_postal.html">郵務管理</a>
+                <a href="B_calendar.html">社區行事曆</a>
+            </section>
+        </aside>
+
+        <main class="col-10">
+            <div class="main">
+                <form action="">
+                    <fieldset>
+                        <legend>是否參加烤肉大會</legend>
+                        <div class="description">
+                            本社區預定在2020/10/4的晚上18:00，在社區庭院舉辦年度烤肉大會，所需設備都由本社區提供，參加的住戶只需自備食材即可，以下是相關規定及注意事項：<br>
+                            1.<br>
+                            2.<br>
+                            3.<br>
+                            4.<br>
+                            5.<br>
+                            6.<br>
+                            7.<br>
+                            8.<br>
+                            9.<br>
+                            10.<br>
+                            11.<br>
+                            12.<br>
+                            如有疑問，請聯絡以下聯絡方式：<br>
+                            信箱：wangxiomin@gmail.com<br>
+                            電話：0912345678<br>
+                            活動負責人：王曉明
+                        </div>
+                        <div>
+                            <input id="yes" class="check" type="radio" name="YesorNo" value="參加"><label
+                                for="yes">參加</label><br>
+                            <input id="no" class="check" type="radio" name="YesorNo" value="不參加"><label
+                                for="no">不參加</label>
+                        </div>
+                        <div class="but">
+                            <input class="btn btn-primary btn-lg" type="submit" value="確認">
+                            <input class="btn btn-primary btn-lg" type="reset" value="取消">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>
