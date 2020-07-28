@@ -1,0 +1,70 @@
+.col-10{
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 100px;
+            width: 80%;
+            /* height: 500px; */
+            border: 5px solid gray;
+            margin: auto;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+        }
+
+        .container h4 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #member {
+            width: 100%;
+            background-color: #ff5f40;
+            align-self: center;
+        }
+
+        #member div {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .acount {
+            display: flex;
+            line-height: 20px;
+        }
+
+        .acount div {
+            width: 100%;
+            justify-content: center;
+            border-bottom: 1px solid #ff5f40;
+        }
+
+        .remarks {
+            height: 200px;
+        }
+
+        .remarks div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rule1 {
+            text-align: center;
+            background-color: sandybrown;
+            line-height: 1.5;
+        }
+
+        .rule2 {
+            text-align: center;
+            background-color: silver;
+            line-height: 1.5;
+        }
+
+        .customer {
+            /* border: 2px solid purple; */
+            display: flex;
+            flex-direction: column;
+        }
