@@ -331,90 +331,103 @@
             <!--Forum -->
             <!-- https://codepen.io/qq7886/pen/MypEvw -->
             <div class="newhot">
-                <input type="button" value="熱門" name="">
-                <input type="button" value="最新"" name="">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">最新</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">熱門</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">管委會至頂文章</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <div class=" masonry">
+                            <div class="item">
+                                <div class="d-flex" id="name">
+                                    <input type="image" src="image/user.png" alt="">
+                                    <p>帥哥</p>
+                                </div>
+                                <p>新球”正式落地”前
+                                    再度上頂樓先拍一波
+                                    (其實也就走一層樓而已)
+                                    為什麼說再度
+                                    因去年買前一顆新球時
+                                    也有上來拍嘿
+                                    那時則是第一次
+                                    在球上做寫字的這動作
+                                    (穿插於照片中)
+                                    ⠀⠀
+                                    話說
+                                    頂樓已默默成伸展台
+                                    以及自個兒悄悄看日出、日落、吹風
+                                    還有與星星聊天傾訴之處</p>
+                                <img src="image/article2.jpg">
+                                <hr>
+                                <div class="touch">
+                                    <img src="image/good.png">
+                                    <img src="image/message.png">
+                                    <img src="image/share.png">
+                                    <img src="image/report.png">
+                                </div>
+                                <hr>
+                                <div>
+                                    <input type="image" src="image/user.png" alt="">
+                                    <textarea name="" id="message" cols="30" placeholder="留言" rows="1"></textarea>
+                                    <input type="button" value="發送" id="btn" />
+                                </div>
+
+                            </div>
+                           
+                            <div class="item">
+
+                                <img src="image/nutri2.jpg">
+                            </div>
+                            <div class="item">
+
+                                <img src="image/nutri3.jpg">
+
+                            </div>
+                            <div class="item">
+
+                                <img src="image/nutri4.jpg">
+                            </div>
+                            
+                            <div class="item">
+
+                                <img src="image/article5.jpg">
+                            </div>
+                            <div class="item">
+
+                                <img src="image/nutri2.jpg">
+                            </div>
+                            <div class="item">
+
+                                <img src="image/highlight.png">
+                            </div>
+                            <div class="item">
+
+                                <img src="image/nutri5.jpg">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    </div>
+                </div>
             </div>
 
-            <div class=" masonry">
-                <div class="item">
-                    <div class="d-flex" id="name">
-                        <input type="image" src="image/user.png" alt="">
-                        <p>帥哥</p>
-                    </div>
-                    <p>新球”正式落地”前
-                        再度上頂樓先拍一波
-                        (其實也就走一層樓而已)
-                        為什麼說再度
-                        因去年買前一顆新球時
-                        也有上來拍嘿
-                        那時則是第一次
-                        在球上做寫字的這動作
-                        (穿插於照片中)
-                        ⠀⠀
-                        話說
-                        頂樓已默默成伸展台
-                        以及自個兒悄悄看日出、日落、吹風
-                        還有與星星聊天傾訴之處</p>
-                    <img src="image/article2.jpg">
-                    <hr>
 
-                    <hr>
-                    <div>
-                        <input type="image" src="image/user.png" alt="">
-                        <input type="text" name="" value="留言" id="message">
-                        <input type="button" value="發送" id="btn" />
-                    </div>
-
-                </div>
-                <div class="item">
-                    <img src="image/article3.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/article4.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/article5.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri1.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri2.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri3.jpg">
-
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri4.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri5.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/article5.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/nutri2.jpg">
-                </div>
-                <div class="item">
-
-                    <img src="image/highlight.png">
-                </div>
-
-
-
-
-            </div>
         </main>
     </div>
 

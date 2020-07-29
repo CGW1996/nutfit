@@ -11,21 +11,32 @@ main{
 #name p{
     margin-left: 10px;
 }
-.newhot input{
-    width: 100px;
+.active{
+    color:black;
+}
+.nav-pills{
+    display: flex;
+    justify-content: center;
+}
+.nav-link{
+    text-align: center;
+    line-height:35px;
+    width: auto;
     height: 50px;
     border:0;
+    margin: 20px;
     background-color:white;
     color:black;
-    border-radius:50px;
     cursor:pointer;
 }
-.newhot input:hover{
+.nav-link:hover{
     color:white;
-    background-color:aqua;
-    
-  }
-
+    background-color:aqua;    
+}
+.touch{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /*  -------------masonry--------*/
