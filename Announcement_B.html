@@ -327,43 +327,41 @@
                 <a href="calendar_B.html">社區行事曆</a>
             </section>
         </aside>
-        <!-- 給系統管理員CHECK -->
-        <main class="col-10 d-flex">
-            <form class="container mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
-                <fieldset>
+        <!-- 填寫欄位 -->
+        <main class="col-10 ">
+
+            <form class=" mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
+                <section>
                     <legend>公告資訊</legend>
-                    <div class="AnnouncementInformation">
-                        <label class="AnnouncementId" for="">公告編號:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="AnnouncementInformation">
-                        <label class="AnnouncementId" for="">公告標題:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="AnnouncementInformation">
-                        <label class="AnnouncementId" for="">公告日期:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="AnnouncementInformation">
-                        <label class="AnnouncementId" for="">發佈人:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="AnnouncementInformation">
-                        <label class="AnnouncementId" for="">內容:</label>
-                        <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
-                    </div>
-                    <div class="AnnouncementInformation">
-                        選擇您要上傳的檔案：<Input Type="File" Name="YouFile">
-                        <div class="">
-                            <Input Type="Submit" Value="確 認 傳 送">
-                            <Input Type="Reset" Value="清 除 重 選">
-                        </div>
+                    <label class="AnnouncementId" for="">公告編號:</label>
+                    <input type="text" autocomplete="off" autofocus>
+                    <label class="AnnouncementId" for="">公告標題:</label>
+                    <input type="text" autocomplete="off" autofocus>
+                    <label class="AnnouncementId" for="">公告日期:</label>
+                    <input type="text" autocomplete="off" autofocus>
+                    <label class="AnnouncementId" for="">發佈人:</label>
+                    <input type="text" autocomplete="off" autofocus>
+                </section>
 
-                    </div>
+                <section class="d-flex ">
+                    <label class="AnnouncementId" for="">內容:</label>
+                    <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
 
-                </fieldset>
+                </section>
+
+                <section class=" mt-3">
+                    選擇您要附加的檔案：<Input Type="File" Name="YouFile">
+                </section>
+
+                <section class="SR mt-3">
+                    <Input Type="Submit" Value="確 認 傳 送">
+                    <Input Type="Reset" Value="清 除 重 選">
+                </section>
+
+
             </form>
-            <!-- 填寫欄位 -->
+
+            <!-- 給系統管理員CHECK -->
             <div class="container">
                 <table id="AnnouncementTable" class="" cellspacing="0" width="100%">
                     <thead>
@@ -416,7 +414,11 @@
             </div>
 
         </main>
+
     </div>
+
+
+
 
 
 
