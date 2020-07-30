@@ -19,7 +19,7 @@
 /* Style the sidenav links and the dropdown button */
 
 .sidenav a,
-.dropdown-btn {
+.dropdown-btn{
     padding: 25px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
@@ -254,9 +254,14 @@ main {
     background-color: #e1eaf1;
 }
 
-.fin a {
-    padding-left: 70px;
+.fin a,.fin button {
+    padding-left: 50px;
 }
-
+button:focus{
+    outline: none;
+}
+.finDetail a{
+    padding-left: 100px;
+}
 
 /* 分隔線--CSS檔加在這下面 */

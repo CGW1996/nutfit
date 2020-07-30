@@ -4,8 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/e-community.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="css/payList.css">
+    <script src="js/echarts.min.js"></script>
 </head>
 
 <body>
@@ -283,7 +286,7 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container fin">
-                    <a href="managementFee_confirm_B.html">管理費</a>
+                    <a href="managementFee_B.html">管理費</a>
                     <a href="payEntrance_B.html">支出</a>
                     <a href="gasData_B.html">瓦斯抄表</a>
                     <a href="personalFin_B.html">個人紀錄</a>
@@ -308,53 +311,99 @@
         </aside>
 
         <main class="col-10">
-            <form action="" style="text-align: center;">
-                <h3>繳費單號: <span>H0023546</span></h3>
-                <h3>繳費金額: <span>2500</span></h3>
-                <h3>信用卡號:
-                    <input type="text" name="creditCard1" id="creditCard1" size="4" maxlength="4">-
-                    <input type="text" name="creditCard2" id="creditCard2" size="4" maxlength="4">-
-                    <input type="text" name="creditCard3" id="creditCard3" size="4" maxlength="4">-
-                    <input type="text" name="creditCard4" id="creditCard4" size="4" maxlength="4">
-                </h3>
-                <h3>三碼檢查碼: <input type="text" name="threeDigital" id="threeDigital" size="4" maxlength="3"></h3>
-                <h3>信用卡到期日:
-                    <select name="expireMonth" id="expireMonth">
-                        <option value="Jan">1</option>
+            <form action="">
+                <label for="numData">顯示
+                    <select name="numData" id="numData">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
                     </select>
-                    <select name="expireYear" id="expireYear">
-                        <option value="2020">2020</option>
-                    </select>
-                </h3>
-                <h3>安全驗證碼: <input type="text" name="securityCode" id="securityCode" size="4" maxlength="4"></h3>
-                <button>取消此次交易</button>
-                <button type="submit">確認付款</button>
+                    資料</label>
+                <label for="fromD">開始日期:</label>
+                <input id="fromD" type="text" name="fromD" id="fromD">
+                <label for="endD">結束日期:</label>
+                <input id="endD" type="text" name="endD" id="endD">
+                </select>
+                <input type="search" name="search" id="search" class="light-table-filter" data-table="order-table" placeholder="  輸入關鍵字">
+                <input type="submit" value="查詢">
             </form>
-            <h2>paypal</h2>
+
+
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>流水編號</th>
+                        <th>入賬日期</th>
+                        <th>類別</th>
+                        <th>名稱</th>
+                        <th>金額</th>
+                        <th>付款人</th>
+                        <th>收款人</th>
+                        <th>交代事項</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>105</td>
+                        <td>2020/07/01</td>
+                        <td>管理費</td>
+                        <td>管理費</td>
+                        <td>3685429</td>
+                        <td>住戶</td>
+                        <td>管委會</td>
+                        <td>2020年4-6月的管理費</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>2020/05/08</td>
+                        <td>管理費</td>
+                        <td>利息</td>
+                        <td>429</td>
+                        <td>瑞士銀行</td>
+                        <td>管委會</td>
+                        <td>2019年存款利息</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>2020/01/05</td>
+                        <td>場地租借</td>
+                        <td>基地台</td>
+                        <td>685429</td>
+                        <td>中華電信</td>
+                        <td>管委會</td>
+                        <td>2019年1-12月架設基地台的租借費</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>2019/09/08</td>
+                        <td>活動</td>
+                        <td>中秋烤肉</td>
+                        <td>5429</td>
+                        <td>活動餘額</td>
+                        <td>管委會</td>
+                        <td>2020年中秋烤肉活動剩餘款</td>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>2019/03/28</td>
+                        <td>廣告</td>
+                        <td>電梯內廣告</td>
+                        <td>30000</td>
+                        <td>海龜老人會</td>
+                        <td>管委會</td>
+                        <td>A-H棟電梯內刊登廣告</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="chart" style="margin: 0 auto; width: 900px;height: 500px;"></div>
         </main>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-    </script>
-
+    <script src="js/payList.js"></script>
+    <script src="js/incomePie.js"></script>
 </body>
 
 </html>
