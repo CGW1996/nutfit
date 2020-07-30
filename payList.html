@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/e-community.css">
     <link rel="stylesheet" href="css/payList.css">
+    <script src="js/echarts.min.js"></script>
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="#"><span>E-<b>Community</b></span></a>
+        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
         <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -372,50 +373,51 @@
                     <tr>
                         <td>002</td>
                         <td>2020/06/08</td>
-                        <td>活動</td>
-                        <td>阿朱滷肉飯</td>
-                        <td>66316666</td>
-                        <td>滷肉飯</td>
-                        <td>活動供餐</td>
-                        <td>50</td>
-                        <td>30</td>
-                        <td>免稅</td>
-                        <td>現金</td>
-                        <td>1500</td>
+                        <td>修繕</td>
+                        <td>阿朱電梯</td>
+                        <td>37856945</td>
+                        <td>電梯檢修</td>
+                        <td>定期檢查</td>
+                        <td>1</td>
+                        <td>4000</td>
+                        <td>應稅</td>
+                        <td>月結</td>
+                        <td>4000</td>
                         <td>小朱</td>
                     </tr>
                     <tr>
                         <td>003</td>
                         <td>2020/08/08</td>
-                        <td>活動</td>
-                        <td>阿花滷肉飯</td>
-                        <td>66316666</td>
-                        <td>滷肉飯</td>
-                        <td>活動供餐</td>
-                        <td>50</td>
-                        <td>30</td>
-                        <td>免稅</td>
-                        <td>現金</td>
-                        <td>1500</td>
+                        <td>人事</td>
+                        <td>阿花人力派遣</td>
+                        <td>78945213</td>
+                        <td>打掃阿姨</td>
+                        <td>環境清潔</td>
+                        <td>3</td>
+                        <td>3000</td>
+                        <td>應稅</td>
+                        <td>月結</td>
+                        <td>9000</td>
                         <td>小花</td>
                     </tr>
                     <tr>
                         <td>004</td>
                         <td>2020/07/08</td>
-                        <td>活動</td>
-                        <td>阿明滷肉飯</td>
-                        <td>66316666</td>
-                        <td>滷肉飯</td>
-                        <td>活動供餐</td>
+                        <td>雜費</td>
+                        <td>阿明五金行</td>
+                        <td>56248596</td>
+                        <td>塑膠椅</td>
+                        <td>中秋烤肉使用</td>
                         <td>50</td>
-                        <td>30</td>
+                        <td>60</td>
                         <td>免稅</td>
                         <td>現金</td>
-                        <td>1500</td>
+                        <td>3000</td>
                         <td>小明</td>
                     </tr>
                 </tbody>
             </table>
+            <div id="chart" style="margin: 0 auto; width: 900px;height: 500px;"></div>
         </main>
     </div>
 
@@ -423,8 +425,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/payList.js"></script>
+    <script src="js/payPie.js"></script>
     <script>
-        var num = $(".order-table").find("tr").length - 1;
+        // var num = $(".order-table").find("tr").length - 1;
     </script>
 </body>
 

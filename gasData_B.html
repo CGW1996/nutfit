@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/e-community.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -283,7 +284,7 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container fin">
-                    <a href="managementFee_confirm_B.html">管理費</a>
+                    <a href="management_Fee_B.html">管理費</a>
                     <a href="payEntrance_B.html">支出</a>
                     <a href="gasData_B.html">瓦斯抄表</a>
                     <a href="personalFin_B.html">個人紀錄</a>
@@ -300,7 +301,7 @@
                     <a href="aromatherapy_B.html">芳療室</a>
                 </div>
                 <!--  -->
-                <a href="vote_B.html">社區投票</a>
+                <a href="voteList.html">社區投票</a>
                 <a href="Forum_B.html">討論區</a>
                 <a href="postal_B.html">郵務管理</a>
                 <a href="calendar_B.html">社區行事曆</a>
@@ -308,29 +309,52 @@
         </aside>
 
         <main class="col-10">
-            <form action="" style="text-align: center;">
-                <h3>繳費單號: <span>H0023546</span></h3>
-                <h3>繳費金額: <span>2500</span></h3>
-                <h3>信用卡號:
-                    <input type="text" name="creditCard1" id="creditCard1" size="4" maxlength="4">-
-                    <input type="text" name="creditCard2" id="creditCard2" size="4" maxlength="4">-
-                    <input type="text" name="creditCard3" id="creditCard3" size="4" maxlength="4">-
-                    <input type="text" name="creditCard4" id="creditCard4" size="4" maxlength="4">
-                </h3>
-                <h3>三碼檢查碼: <input type="text" name="threeDigital" id="threeDigital" size="4" maxlength="3"></h3>
-                <h3>信用卡到期日:
-                    <select name="expireMonth" id="expireMonth">
-                        <option value="Jan">1</option>
-                    </select>
-                    <select name="expireYear" id="expireYear">
-                        <option value="2020">2020</option>
-                    </select>
-                </h3>
-                <h3>安全驗證碼: <input type="text" name="securityCode" id="securityCode" size="4" maxlength="4"></h3>
-                <button>取消此次交易</button>
-                <button type="submit">確認付款</button>
-            </form>
-            <h2>paypal</h2>
+            <h2>瓦斯紀錄總表</h2>
+            <div class="d-flex justify-content-center">
+                <h3>棟號: </h3>
+                <select name="building" id="building">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                </select>
+            </div>
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>戶號</th>
+                    <th>度數</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>H001</td>
+                    <td>4500</td>
+                    <td><button class='btn btn-danger'>催促填寫</button></td>
+                </tr>
+                <tr>
+                    <td>H005</td>
+                    <td>3000</td>
+                    <td><button class='btn btn-danger'>催促填寫</button></td>
+                </tr>
+                <tr>
+                    <td>B003</td>
+                    <td>3750</td>
+                    <td><button class='btn btn-danger'>催促填寫</button></td>
+                </tr>
+                <tr>
+                    <td>C123</td>
+                    <td>4000</td>
+                    <td><button class='btn btn-danger'>催促填寫</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">匯出EXCEL</button>
         </main>
     </div>
 
