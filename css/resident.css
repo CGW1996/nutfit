@@ -68,3 +68,6 @@
             display: flex;
             flex-direction: column;
         }
+        .search-bar{
+            width: 200px;
+        }
