@@ -329,37 +329,39 @@
         </aside>
         <!-- 填寫欄位 -->
         <main class="col-10 ">
+            <div class="container">
+                <form class=" mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
+                    <section>
+                        <legend>公告資訊</legend>
+                        <label class="AnnouncementId" for="">公告編號:</label>
+                        <input type="text" autocomplete="off" autofocus>
+                        <label class="AnnouncementId" for="">公告標題:</label>
+                        <input type="text" autocomplete="off" autofocus>
+                        <label class="AnnouncementId" for="">公告日期:</label>
+                        <input type="text" autocomplete="off" autofocus>
+                        <label class="AnnouncementId" for="">發佈人:</label>
+                        <input type="text" autocomplete="off" autofocus>
+                    </section>
 
-            <form class=" mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
-                <section>
-                    <legend>公告資訊</legend>
-                    <label class="AnnouncementId" for="">公告編號:</label>
-                    <input type="text" autocomplete="off" autofocus>
-                    <label class="AnnouncementId" for="">公告標題:</label>
-                    <input type="text" autocomplete="off" autofocus>
-                    <label class="AnnouncementId" for="">公告日期:</label>
-                    <input type="text" autocomplete="off" autofocus>
-                    <label class="AnnouncementId" for="">發佈人:</label>
-                    <input type="text" autocomplete="off" autofocus>
-                </section>
+                    <section class="d-flex ">
+                        <label class="AnnouncementId" for="">內容:</label>
+                        <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
 
-                <section class="d-flex ">
-                    <label class="AnnouncementId" for="">內容:</label>
-                    <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
+                    </section>
 
-                </section>
+                    <section class=" mt-3">
+                        選擇您要附加的檔案：<Input Type="File" Name="YouFile">
+                    </section>
 
-                <section class=" mt-3">
-                    選擇您要附加的檔案：<Input Type="File" Name="YouFile">
-                </section>
-
-                <section class="SR mt-3">
-                    <Input Type="Submit" Value="確 認 傳 送">
-                    <Input Type="Reset" Value="清 除 重 選">
-                </section>
+                    <section class="SR mt-3">
+                        <Input Type="Submit" Value="確 認 傳 送">
+                        <Input Type="Reset" Value="清 除 重 選">
+                    </section>
 
 
-            </form>
+                </form>
+            </div>
+
 
             <!-- 給系統管理員CHECK -->
             <div class="container">
