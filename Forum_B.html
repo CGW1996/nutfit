@@ -313,36 +313,149 @@
         </aside>
 
         <main class="col-10">
-            <form class="container mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>發文</legend>
-                    <div class="Information">
-                        <label class="caption" for="">標題:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">日期:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">發佈人:</label>
-                        <input type="text" autocomplete="off" autofocus>
-                    </div>
-                    <div class="Information">
-                        <label class="caption" for="">內容:</label>
-                        <textarea id="comment1" cols="40" rows="5" name="comment"></textarea>
-                    </div>
-                    <div class="Information">
-                        選擇您要上傳的檔案：<Input Type="File" Name="YouFile">
-                        <div class="">
-                            <Input Type="Submit" Value="確 認 傳 送">
-                            <Input Type="Reset" Value="清 除 重 選">
-                        </div>
-
-                    </div>
-
-                </fieldset>
-            </form>
+            <div class="container">
+                <div class="btn">
+                    <button id="add">A.新增</button>
+                    <button id="search">S.查詢</button>
+                    <button id="modify">M.修改</button>
+                    <button id="delete">D.刪除</button>
+                    <button id="head">H.首筆</button>
+                    <button id="tail">T.尾筆</button>
+                    <button id="previous">P.前筆</button>
+                    <button id="next">N.後筆</button>
+                    <button id="submit">提交</button>
+                    <button id="abandon">放棄</button>
+                </div>
+                <h3>留言管理</h3>   
+                <table class="table mt-3">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">勾選</th>
+                        <th>編號</th>
+                        <th scope="col">留言人/時間</th>
+                        
+                        <th scope="col">內容</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>Otto</td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row"> 
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>Thornton</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row"> 
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>the Bird</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h3>被檢舉的留言</h3>  
+                  <table class="table mt-3">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">勾選</th>
+                        <th>編號</th>
+                        <th scope="col">留言人/時間</th>
+                        
+                        <th scope="col">內容</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>Otto</td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row"> 
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>Thornton</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row"> 
+                            <input type="checkbox">
+                        </th>
+                        <td>1</td>
+                        <td class="d-flex">                        
+                            <img src="image/user.png" alt="">
+                            <div class="ml-3">
+                                <p>郝帥哥</p>
+                                <p>2017-01-01</p>
+                            </div>
+                            
+                        </td>
+                        <td>the Bird</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+              
+             
         </main>
     </div>
 
@@ -350,6 +463,7 @@
 
 
     <script>
+        
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;

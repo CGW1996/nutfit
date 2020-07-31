@@ -329,7 +329,9 @@
         </aside>
         <!-- 填寫欄位 -->
         <main class="col-10 ">
+
             <div class="container">
+
                 <form class="box mt-3 mb-3" action="#" method="get" enctype="multipart/form-data">
                     <fieldset class="">
                         <h3>公告資訊</h3>
@@ -369,60 +371,70 @@
 
 
                 </form>
-            </div>
+
+                <!-- ----------- -->
+                <div class="btn">
+                    <button id="add">A.新增</button>
+                    <button id="search">S.查詢</button>
+                    <button id="modify">M.修改</button>
+                    <button id="delete">D.刪除</button>
+                    <button id="head">H.首筆</button>
+                    <button id="tail">T.尾筆</button>
+                    <button id="previous">P.前筆</button>
+                    <button id="next">N.後筆</button>
+                    <button id="submit">提交</button>
+                    <button id="abandon">放棄</button>
+                </div>
 
 
-            <!-- 給系統管理員CHECK -->
-            <div class="container">
-                <table id="AnnouncementTable" class="" cellspacing="0" width="100%">
-                    <thead>
+                <!-- ----- -->
+
+                <table class="table mt-3">
+                    <thead class="thead-dark">
                         <tr>
-                            <th>編號</th>
-                            <th>公告標題</th>
-                            <th>發布日期</th>
-                            <th>公告人</th>
-                            <th>人氣</th>
+                            <th scope="col">勾選</th>
+                            <th scope="col">編號</th>
+                            <th scope="col">公告標題</th>
+                            <th scope="col">發布日期</th>
+                            <th scope="col">內容</th>
+                            <th scope="col">瀏覽量</th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <th scope="row">
+                                <input type="checkbox">
+                            </th>
                             <td>1</td>
-                            <td>新年快樂</td>
-                            <td>2019/01/01</td>
-                            <td>王大槌</td>
-                            <td>152</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
                             <td>公園整修</td>
-                            <td>2019/02/15</td>
-                            <td>王大槌</td>
-                            <td>33</td>
+                            <td>2014-07-07</td>
+                            <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
+                            <td>123</td>
                         </tr>
                         <tr>
-                            <td>3</td>
-                            <td>圖書館活動開跑</td>
-                            <td>2019/02/18</td>
-                            <td>王大槌</td>
-                            <td>586</td>
+                            <th scope="row">
+                                <input type="checkbox">
+                            </th>
+                            <td>1</td>
+                            <td>公園整修</td>
+                            <td>2014-07-07</td>
+                            <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
+                            <td>123</td>
                         </tr>
                         <tr>
-                            <td>4</td>
-                            <td>函轉新北市政府教育局辦理「新北振興一路發」活動之「學生限定」專區抽獎相關資訊，請查照。</td>
-                            <td>2019/04/15</td>
-                            <td>王大槌</td>
-                            <td>354</td>
+                            <th scope="row">
+                                <input type="checkbox">
+                            </th>
+                            <td>1</td>
+                            <td>公園整修</td>
+                            <td>2014-07-07</td>
+                            <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
+                            <td>123</td>
                         </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>游泳池因應武漢肺炎，今年暫停開放。</td>
-                            <td>2019/05/15</td>
-                            <td>王大槌</td>
-                            <td>297</td>
-                        </tr>
-                    </tbody>
                 </table>
             </div>
+
 
         </main>
 

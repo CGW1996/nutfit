@@ -1,28 +1,40 @@
+main{
+    height: 100%;
+}
 
+
+.btn button{
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+}
 
 /* ------------表單----------- */
 td,
 th {
-    border: 1px solid gray;
+   
     width: 7vh;
     height: 7vh;
 }
 thead {
-    background-color:	#005AB5;
+    background-color:black;
     color:#ffffff;
     text-transform:capitalize;
     text-align:center;
 }
 tbody {
-    background-color:	#46A3FF;
+    background-color:	white;
     text-align:center;
 }
-tbody tr:nth-child(2n) {
+/* tbody tr:nth-child(2n) {
     background-color:	#97CBFF;
 }
 tbody tr:nth-child(2n+1) {
     background-color:#66b3ff;
-}
+} */
 tbody tr:hover {
     background-color:paleturquoise;
     color:purple;

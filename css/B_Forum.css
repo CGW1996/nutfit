@@ -1,16 +1,27 @@
+/* linear-gradient这个函数（特性）接受的第一个参数是渐变的角度，他可以接受一个表示角度的值（可用的单位deg、rad、grad或turn）
+或者是表示方向的关键词（top、right、bottom、left、left top、top right、bottom right或者left bottom）。第二个参数是接受一系列颜色节点（终止点的颜色）。*/
+
+.btn button{
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+}
+
 
 
 /* --fieldset--- */
-fieldset {
-    /* width:1000px;    */
-    /* background-color: rgb(243, 241, 129); */
+
+tr{
+    background-color: white;
+   
 }
-legend {
-     /* background-color: rgb(115, 147, 235); */
-     /* font-weight:bold;
-     text-align:center; */
-     /* margin-left:40px; */
- }
+tbody tr:hover {
+    background-color:paleturquoise;
+    color:purple;
+}
 textarea {
     resize: none;
 }
@@ -26,3 +37,7 @@ textarea {
     width: 100px;
     float: left;
 }
+
+
+
+  
