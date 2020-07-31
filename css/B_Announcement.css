@@ -11,35 +11,22 @@ thead {
     background-color:	#005AB5;
     color:#ffffff;
     text-transform:capitalize;
-    text-align:center;
 }
 tbody {
-    background-color:	#F0F0F0;
+    background-color:	#46A3FF;
     text-align:center;
 }
 tbody tr:nth-child(2n) {
-    background-color:	#E0E0E0;
+    background-color:	#97CBFF;
 }
 tbody tr:nth-child(2n+1) {
-    background-color:rgb(200, 190, 190);
+    background-color:#66b3ff;
 }
 tbody tr:hover {
     background-color:paleturquoise;
     color:purple;
 }
 
-/* ----------------------------------- */
-
-.box{
-    background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 2px 2px 4px 0 #ccc;
-}
-.box h3{
-    background-color: wheat;
-    border-radius: 15px 15px 0px 0px;
-   
-}
 
 legend {
      
@@ -58,16 +45,7 @@ textarea {
 .SR input{
     margin: 10px;
 }
-
 .AnnouncementId{
-    width: 100px;
-    float: left;
+    text-align: right;
   
-}
-.AnnouncementInformation{
-    width: 450px;
-    text-align:left;
-    margin: 20px;
-    padding-bottom: 10px;
-    float: left; 
 }
