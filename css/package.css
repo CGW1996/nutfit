@@ -1,6 +1,7 @@
 .packagebtns{
     margin: auto;
-    max-width: 800px ;
+    text-align: center;
+    max-width: 600px ;
 }
 
 .btn-outline-info {
