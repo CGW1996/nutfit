@@ -1,5 +1,6 @@
 main{
     height: 100%;
+    
 }
 #message{
     border-radius: 15px;
@@ -94,10 +95,31 @@ p {
     box-shadow: 2px 2px 4px 0 #ccc;
 }
 
+
 .item img {
     max-width: 100%;
 }
 .item p {
+    word-break: break-word;;
+}
+
+.item1 {
+    display: inline-block;
+    background: #ACD6FF;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    /* -webkit-transition: 1s ease all; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item1 img {
+    max-width: 100%;
+}
+.item1 p {
     word-break: break-word;;
 }
 

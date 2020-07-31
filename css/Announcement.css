@@ -8,7 +8,7 @@ main{
     padding: 0%;
 }
 .carousel-inner .carousel-item img { 
-    height:30vh;
+    height:50vh;
     width: 20vh;
 
 }
@@ -16,6 +16,7 @@ main{
 .carousel-item a{
     color:white;
 }
+
 
 
 /* 公告欄 */
@@ -29,9 +30,9 @@ main{
     right: 5px;
     bottom: 5px;
     left: 5px;
-   
-    /* background-color:white; */
-        
+    box-shadow: 2px 2px 4px 0 #ccc;
+    background-color:white;
+    border-radius: 5px;
 }
 .article a{
     color:black;
@@ -40,11 +41,25 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp:5;
+    -webkit-line-clamp:2;
     -webkit-box-orient: vertical;
 }
 
 .smbox p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+.bigbox h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+}
+.smbox h5{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -55,12 +70,12 @@ main{
 
 
 .bigbox img{
-    height: 30vh;
+    height: 45vh;
     width: 100%;
-    border: 1px solid black;   
+    border-radius: 5px 5px 0px 0px;
 }
 .man{
-    width: 100px;
+    width: 150px;
 }
 .name{
     vertical-align:text-bottom;
@@ -69,6 +84,6 @@ main{
 .smbox img{
     height: 15vh;
     width: 100%;
-    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
 }
 

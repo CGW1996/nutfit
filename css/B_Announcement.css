@@ -11,6 +11,7 @@ thead {
     background-color:	#005AB5;
     color:#ffffff;
     text-transform:capitalize;
+    text-align:center;
 }
 tbody {
     background-color:	#46A3FF;
@@ -46,6 +47,26 @@ textarea {
     margin: 10px;
 }
 .AnnouncementId{
-    text-align: right;
-  
+    /* text-align: right; */
+    width: 100px;
+    float: left;
+}
+.AnnouncementInformation{
+    width: 450px;
+    text-align:left;
+    margin: 20px;
+    padding-bottom: 10px;
+    float: left; 
+}
+/* ----------------------------------- */
+
+.box{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+.box h3{
+    background-color: wheat;
+    border-radius: 15px 15px 0px 0px;
+   
 }
