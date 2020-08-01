@@ -388,10 +388,25 @@
         </div>
 
 
-        <main class="">
-            <!--Forum -->
+        <main class="container mt-3">
+            <div class="boxpo">
+                <div class="pomessage pt-1">
+                    <div class="po">
+                        <textarea style="resize: none;" name="message" type="text"  id="input-message"
+                            placeholder="留個言吧"></textarea>
+                    </div>                   
+                </div>
+                <hr>
+                <div class="btn">
+                    <input class="btnsummit" type="button" value="發文">
+                    <input type="button" id="poimg" value="上傳照片">                             
+                </div>              
+            </div>
+
+
+
             <!-- https://codepen.io/qq7886/pen/MypEvw -->
-            <div class=" masonry">
+            <div class="masonry">
                 <div class="item">
                     <div class="d-flex" id="name">
                         <input type="image" src="image/user.png" alt="">
@@ -421,14 +436,13 @@
                     </div>
                     <hr>
                     <div>
-                        <input type="image" src="image/user.png" alt="">
-                        <input type="text" name="" id="message" placeholder="留言">
-                        <!-- <textarea name="" id="message" cols="30" placeholder="留言" rows="1"></textarea> -->
-                        <input type="button" value="發送" id="btn" />
+                        <input type="image" src="image/user.png" alt="">                        
+                        <textarea name="" style="resize: none;" id="message" cols="30" placeholder="留言" rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
                     </div>
 
                 </div>
-               
+
                 <div class="item">
 
                     <img src="image/nutri2.jpg">
@@ -445,7 +459,7 @@
                     </div>
                     <img src="image/nutri4.jpg">
                 </div>
-                
+
                 <div class="item">
                     <img src="image/article5.jpg">
                 </div>
