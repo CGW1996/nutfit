@@ -1,4 +1,4 @@
-var myChart = echarts.init(document.getElementById('chart'));
+var incomeChart = echarts.init(document.getElementById('incomeChart'));
 let bgColor = 'transparent';
 let title = '社區總收入';
 let color = ['#0E7CE2', '#FF8352', '#E271DE', '#F8456B', '#00FFFF', '#4AEAB0'];
@@ -31,7 +31,9 @@ let total = echartData.reduce((a, b) => {
 option = {
     backgroundColor: bgColor,
     color: color,
-
+    legend: {
+        data: ['管理費', '廣告', '活動', '場地租借']
+    },
     title: [{
         text: '{name|' + title + '}\n{val|' + formatNumber(total) + '}',
         top: 'center',
@@ -61,8 +63,8 @@ option = {
             fontWeight: 400
         }
     }],
-    tooltip:{
-        trigger:'item'
+    tooltip: {
+        trigger: 'item'
     },
     series: [{
         type: 'pie',
@@ -119,4 +121,4 @@ option = {
         },
     }]
 };
-myChart.setOption(option);
+incomeChart.setOption(option);

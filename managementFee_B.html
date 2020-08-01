@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/e-community.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/managementFee_B.css">
+    <script src="js/echarts.min.js"></script>
 </head>
 
 <body>
@@ -308,30 +310,110 @@
         </aside>
 
         <main class="col-10">
-
+            <div class="d-flex">
+                <div class="col-6">
+                    <h2>未繳名單</h2>
+                    <section class="d-flex justify-content-center">
+                        <h3>棟號: </h3>
+                        <select name="building" id="building">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                    </select>
+                    </section>
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>戶號</th>
+                                <th>戶長</th>
+                                <th>停車位</th>
+                                <th>未繳金額</th>
+                                <th>通知</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>H001</td>
+                                <td>Marco</td>
+                                <td>2</td>
+                                <td>4500</td>
+                                <td><button class='btn btn-danger'>催促繳費</button></td>
+                            </tr>
+                            <tr>
+                                <td>H005</td>
+                                <td>Thomas</td>
+                                <td>0</td>
+                                <td>3000</td>
+                                <td><button class='btn btn-danger'>催促繳費</button></td>
+                            </tr>
+                            <tr>
+                                <td>B003</td>
+                                <td>Tuna</td>
+                                <td>1</td>
+                                <td>3750</td>
+                                <td><button class='btn btn-danger'>催促繳費</button></td>
+                            </tr>
+                            <tr>
+                                <td>C123</td>
+                                <td>Gina</td>
+                                <td>1</td>
+                                <td>4000</td>
+                                <td><button class='btn btn-danger'>催促繳費</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>已繳名單</h2>
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>戶號</th>
+                                <th>戶長</th>
+                                <th>停車位</th>
+                                <th>未繳金額</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>H001</td>
+                                <td>Marco</td>
+                                <td>2</td>
+                                <td>4500</td>
+                            </tr>
+                            <tr>
+                                <td>H005</td>
+                                <td>Thomas</td>
+                                <td>0</td>
+                                <td>3000</td>
+                            </tr>
+                            <tr>
+                                <td>B003</td>
+                                <td>Tuna</td>
+                                <td>1</td>
+                                <td>3750</td>
+                            </tr>
+                            <tr>
+                                <td>C123</td>
+                                <td>Gina</td>
+                                <td>1</td>
+                                <td>4000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="chart" class="col-6"></div>
+            </div>
         </main>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-    </script>
+    <script src="js/managementFee_B.js"></script>
 
 </body>
 

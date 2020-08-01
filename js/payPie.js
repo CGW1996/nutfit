@@ -1,4 +1,4 @@
-var myChart = echarts.init(document.getElementById('chart'));
+var payChart = echarts.init(document.getElementById('payChart'));
 let bgColor = 'transparent';
 let title = '社區總支出';
 let color = ['#0E7CE2', '#FF8352', '#E271DE', '#F8456B', '#00FFFF', '#4AEAB0'];
@@ -61,8 +61,11 @@ option = {
             fontWeight: 400
         }
     }],
-    tooltip:{
-        trigger:'item'
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        data: ['修繕', '雜費', '活動', '人事']
     },
     series: [{
         type: 'pie',
@@ -119,4 +122,4 @@ option = {
         },
     }]
 };
-myChart.setOption(option);
+payChart.setOption(option);

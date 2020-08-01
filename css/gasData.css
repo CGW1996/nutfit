@@ -28,7 +28,7 @@ input {
 .outer {
     border: 5px solid rgb(145, 145, 145);
     background-color: seashell;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     padding: 80px;
 }
