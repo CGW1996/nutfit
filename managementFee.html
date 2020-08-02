@@ -3,20 +3,21 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fontawesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="css/frontPage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
-        <nav class="col-10">
+        <a class="logo col-2" href="Announcement.html"><img class="logoimg" src="image/logo.png" alt=""> </a>
+        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o"></i>
+                            <i class="fa fa-envelope-o text-light"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -93,7 +94,7 @@
                 <li class="nav-item notifications">
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o"></i>
+                            <i class="fa fa-bell-o  text-light"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -161,7 +162,7 @@
                 <li class="nav-item todoList">
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o"></i>
+                            <i class="fa fa-flag-o text-light"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -239,7 +240,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span>Jenny</span>
+                            <span class=" text-light">Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -272,42 +273,91 @@
             </ul>
         </nav>
     </header>
-    <div class="d-flex">
-        <aside class="sidenav col-2">
-            <section class="sidebar">
-                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                <p class="navName">Jenny</p>
-                <a href="Announcement_B.html">最新消息</a>
-                <a href="event_B.html">社區活動</a>
-                <button class="dropdown-btn">生活服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container fin">
-                    <a href="managementFee_confirm_B.html">管理費</a>
-                    <a href="payEntrance_B.html">支出</a>
-                    <a href="gasData_B.html">瓦斯抄表</a>
-                    <a href="personalFin_B.html">個人紀錄</a>
-                </div>
-                <a href="personalMessage_B.html">專屬訊息</a>
-                <a href="comment_B.html">意見反映</a>
-                <!-- 下拉式選單 -->
-                <button class="dropdown-btn">預約服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="pool_B.html">游泳池</a>
-                    <a href="reading_B.html">閱覽室</a>
-                    <a href="aromatherapy_B.html">芳療室</a>
-                </div>
-                <!--  -->
-                <a href="vote_B.html">社區投票</a>
-                <a href="Forum_B.html">討論區</a>
-                <a href="postal_B.html">郵務管理</a>
-                <a href="calendar_B.html">社區行事曆</a>
-            </section>
-        </aside>
+    <div class="container">
+        <div class="row menubar justify-content-center">
 
-        <main class="col-10">
+            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
+                    <span class="menutxt">社區公告</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">最新消息</a>
+                    <a class="dropdown-item" href="#">重要資訊</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bookmark "></i></span><br>
+                    <span class="menutxt">社區活動</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">活動報名</a>
+                    <a class="dropdown-item" href="#">團購優惠</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
+                    <span class="menutxt">生活服務</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">公共建設</a>
+                    <a class="dropdown-item" href="#">預約服務</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-archive "></i></span><br>
+                    <span class="menutxt">郵務管理</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">未領包裹</a>
+                    <a class="dropdown-item" href="#">歷史紀錄</a>
+                </div>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-comments "></i></span><br>
+                    <span class="menutxt">討論區</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
+                    <span class="menutxt">投票</span>
+                </button>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
+                    <span class="menutxt">行事曆</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
+                    <span class="menutxt">財務系統</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="managementFee_confirm.html">繳管理費</a>
+                    <a class="dropdown-item" href="gasData.html">瓦斯抄表</a>
+                    <a class="dropdown-item" href="financialFront.html">社區財務</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
+                    <span class="menutxt">訊息中心</span>
+                </button>
+            </div>
+        </div>
+        <main class="container">
             <form action="" style="text-align: center;">
                 <h3>繳費單號: <span>H0023546</span></h3>
                 <h3>繳費金額: <span>2500</span></h3>

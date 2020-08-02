@@ -1,0 +1,10 @@
+.outer {
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+    left: 46%;
+    top: 10%;
+    z-index: 2;
+}
