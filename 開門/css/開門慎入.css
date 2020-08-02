@@ -13,13 +13,12 @@
 
         body {
             background-image: url(../image/akham.jpg);
-            /* background: #112 url("https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg") center no-repeat; */
             background-size: cover;
             margin: 0;
         }
 
         .logo {
-            animation-duration: 2s;
+            animation-duration: 5s;
             text-align: center;
             width: 65%;
             height: 250px;

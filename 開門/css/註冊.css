@@ -1,43 +1,27 @@
-* {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        html,
-        body {
-            height: 100%;
-
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
         .login {
-            width: 600px;
-            
-            background-color: rgba(0, 0, 0, 0.5);
-            border: 10px solid white;
-            box-shadow: 0 0 60px #000;
+            width: 500px;
+            border-radius: 5%;
+            background-color: rgba(255, 252, 252, 0.5);
+            box-shadow: 0 0 10px #000;
             /*0 0不偏移 60px模糊  */
             backdrop-filter: blur(5px);
             /* backdrop-filter 濾鏡 */
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: auto;
+            margin-top: 50px;
         }
 
         .form {
             width: 400px;
-            color: #fff;
+            color: black;
         }
 
         .form h3 {
-            border-bottom: 1px solid #fff;
-            font-size: x-large;
+            border-bottom: 1px solid #fff;;
+            margin-top: 10px;
         }
 
         .form .group {
@@ -45,24 +29,25 @@
         }
 
         .form label {
-            line-height: 2;
+            /* line-height: 2; */
             font-size: 20px;
         }
 
         .form input {
             width: 100%;
             border: 1px solid#aaa;
-            line-height: 2;
+            /* line-height: 1.5; */
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: auto;
             font-size: 20px;
+            margin: 0;
         }
         .checkcode{
             width: 100%;
             border: 1px solid#aaa;
-            line-height: 2;
+            /* line-height: 2; */
             border-radius: 5px;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
             font-size: 20px;
         }
          .checkAcode {
@@ -74,45 +59,43 @@
             margin-bottom: 20px;
         }
     
-        .from .btnGroup {
+        .btnGroup {
             font-size: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .form .btn {
             font-size: 20px;
             border: none;
-            background-color: #aaa;
+            background-color: rgb(204, 204, 204);
             width: 190px;
             padding: 10px 0;
             border-radius: 10px;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .btnGroup .btn+.btn {
-            margin-left: 10px;
-        }
-        .btnGroup a{
-            color: #000;
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            /* margin-bottom: 20px; */
         }
         .userForget{
             display: flex;
             justify-content: space-around;
-            margin-top: 10px;
+            /* margin-top: 10px; */
+        }
+        #checkBtn{
+            width: auto;
+         font-size: 10px;   
         }
         #alert{
-            font-size: 15px;
-            color: white;
+            font-size: 10px;
+            color:black;
             display: flex;
             justify-content: flex-end;
-            margin-top: -20px;
             /* display: none; */
             
         }
         div span{
             font-size: 10px;
         }
-      .input input:hover{
-          
-      }
+ 
 
