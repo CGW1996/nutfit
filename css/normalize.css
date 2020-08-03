@@ -1,4 +1,4 @@
-main{
+main {
     text-align: center;
 }
 
@@ -11,14 +11,17 @@ td {
 form {
     text-align: center;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background-color: ghostwhite;
 }
+
 table {
     margin: 0 auto;
     background-color: lightgrey;
 }
-thead{
+
+thead {
     background-color: #858181;
     color: rgb(233, 233, 233);
 }
@@ -27,7 +30,18 @@ th,
 td {
     padding: 20px;
 }
-select{
+
+select {
     height: 30px;
     margin: 3px 0 0 5px;
+}
+
+#search {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#search:focus {
+    outline: none;
+    border: 1px solid #374a58;
 }

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e1eaf1!important;
+}
+.major{
+    margin-top: 50px;
+    font-size: 24px;
+    font-family: "微軟正黑體";
+    background-color: white;
+    border-top: 7px solid orange;
+    border-radius: 15px;
+}
+form{
+    margin: 20px;
+}
+.bl{
+    padding: 15px;
+}
+.txt{
+    width: 800px;
+}
+.des{
+    width: 800px;
+    height: 400px;
+    vertical-align:top;
+    resize: none;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+.but{
+    text-align: center;
+    margin: 5px;
+}
