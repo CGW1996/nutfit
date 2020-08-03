@@ -4,9 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fontawesome/all.css">
-    <link rel="stylesheet" href="./css/front_register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/frontPage.css">
+    <link rel="stylesheet" href="./css/front-cleandar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>eCO Daily</title>
@@ -390,58 +390,40 @@
         </div>
 
 
-        <main class=" container d-flex">
-            <div class="login">
-                <form class="form" action="">
-                    <h3>住戶註冊</h3>
-                    <div class="input ckeckCode">
-                        <label id="user_ID">請輸入認證碼: <span>(如未取得驗證碼，請洽管委會)</span> </label>
-                        <div class="checkAcode">
-                            <input type="text" name="" id="userID">
-                            <button id="checkBtn">檢查驗證碼</button>
-                            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                        </div>
-                        <!-- for =""設定與下方連結 -->
+        <main class=" container">
+            <div class="calendar">
+                <div class="title">
+                    <a href="" id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </a>
+                    <h1 class="green" id="calendar-title">Month</h1>
+                    <h2 class="green small" id="calendar-year">Year</h2>
 
-                        <!-- <label id="alert" for="">認證碼正確/錯誤</label> -->
-
+                    <a href="" id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="body">
+                    <div class="lightgrey body-list">
+                        <ul class="week-list">
+                            <li>一</li>
+                            <li>二</li>
+                            <li>三</li>
+                            <li>四</li>
+                            <li>五</li>
+                            <li>六</li>
+                            <li>日</li>
+                        </ul>
                     </div>
-                    <div class="input">
-                        <label for="userPwd">姓名:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userName">
-                        <!-- <label id="alert" for="">請輸入正確文字</label> -->
+                    <div class="darkgrey body-list">
+                        <ul id="days">
+                        </ul>
                     </div>
-                    <div class="input">
-                        <label for="userPwd">戶號:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userAcountNum">
-                        <!-- <label id="alert" for="">請輸入正確戶號</label> -->
-                    </div>
-                    <div class="input">
-                        <label for="userPwd">電話:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userTel">
-                        <!-- <label id="alert" for="">請輸入電話號碼</label> -->
-                    </div>
-                    <div class="input">
-                        <label for="userPwd">行動電話:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userPhone">
-                        <!-- <label id="alert" for="">請輸入行動電話號碼</label> -->
-                    </div>
-                    <div class="input">
-                        <label for="">E-Mail:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userMail">
-                        <!-- <label id="alert" for="">請輸入信箱號碼</label> -->
-                    </div>
-                    <div class="btnGroup">
-                        <button class="btn">註冊</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </main>
     </div>
 
 
-
+    <script src="./js/front-cleandar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

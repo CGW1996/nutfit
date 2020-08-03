@@ -1,0 +1,86 @@
+
+.container1 {
+    /* position: absolute; */
+    top: 100px;
+            width: 80%;
+            border: 5px solid gray;
+            margin: 100px auto;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+        }
+
+        #member {
+            width: 100%;
+            background-color: #ff5f40;
+            align-self: center;
+        }
+
+        #member div {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .acount {
+            display: flex;
+            line-height: 20px;
+        }
+
+        .acount div {
+            width: 100%;
+            justify-content: center;
+            border-bottom: 1px solid #ff5f40;
+        }
+
+        .remarks {
+            height: 200px;
+        }
+
+        .remarks div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rule1 {
+            text-align: center;
+            background-color: sandybrown;
+            line-height: 1.5;
+        }
+
+        .rule2 {
+            text-align: center;
+            background-color: silver;
+            line-height: 1.5;
+        }
+
+        .customer {
+            /* border: 2px solid purple; */
+            display: flex;
+            flex-direction: column;
+        }
+        .search{
+            float: right;
+
+        }
+        .search-bar{
+            width: 150px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .search-btn{
+            border-radius: 5px;
+        }
+        .edit-btn {
+            border-radius: 5px;
+            width: 100px;
+            margin-left: 20px;
+        }
+        .custom-main{
+            display: flex;
+            justify-content: space-between;
+        }
+        .custom-main h4{
+            margin: 5px;
+        }

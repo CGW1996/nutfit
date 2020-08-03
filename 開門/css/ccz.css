@@ -1,0 +1,371 @@
+html,body{
+  height:100%;
+  margin:0 5px;
+}
+
+
+body{
+  background: url(https://github.com/gabrielajohnson/CalendarApp/blob/master/images/wallpaper.jpeg?raw=true);
+  background-size: 100% 100%;
+}
+
+body:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  top: 0px;
+  background: radial-gradient(red 20%,transparent 21%), radial-gradient(green 10% , blue 20%);
+  left: 0;
+  background-size: 20px 20px, 20px 20px;
+  background-position: -10px -2px, 0px 0px;
+  background-repeat: repeat-x, repeat;
+}
+
+button{
+    background: #800000;
+    border: 0;
+    color: beige;
+    padding: 5px 7px;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+button:focus{
+  outline: #a3613d auto 5px;
+}
+
+
+#cleartasks{
+  height: calc(100%/6 - 4px);
+  line-height: 0;
+  margin-top: 7px;
+  color: wheat;
+}
+
+#clear_storage{
+  float:right;
+}
+
+.addButton{
+  background:maroon;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  font-size: 18px;
+  padding: 0px;
+  line-height: 0;
+}
+
+.noteandweather{
+  display:flex;
+  height:20%;
+  min-height: 130px;
+}
+
+.noteandweather div{
+  width:50%;
+}
+
+#notepad{
+ 
+}
+
+#notes{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  color:white;
+}
+
+#notes input{
+    border-radius: 5px;
+    background: radial-gradient(#603E2B,#3a2112);
+    border: 1px solid #6b4f40;
+    box-shadow: inset 0px 0px 10px #211305;
+    margin: 2px 0px;
+    width:95%;
+    color:wheat;
+}
+
+#weather{
+  background: radial-gradient(#570000,black 90%);
+  border-radius: 10px;
+  color:white;
+  text-align: center;
+  display:flex;
+}
+
+#weather div:nth-child(1){
+  width:80%;
+}
+
+#weather h2{
+  font-family: cursive;
+  margin-bottom: 0;
+}
+
+#weather .description{
+  margin:auto;
+  width:100%;
+}
+
+#weather img{
+  width:100px;
+  filter: sepia(1) saturate(1.5);
+}
+
+select{
+    background: linear-gradient(#570000,maroon);
+    color: wheat;
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.calendar_container{
+   height: 90%;
+   text-align: center;
+   padding-top: 5px;
+}
+
+#calendar{
+  border-collapse: collapse;
+  table-layout:fixed;
+  width:100%;
+  height:100%;
+}
+
+#calendar ul{
+  list-style-type: none;
+  padding-left: 2px;
+  margin: 0;
+  width: 97%;
+  overflow-y: auto;
+  height: calc(100% - 18px);
+  line-height: 1;
+  margin-top: 2px;
+  scrollbar-color: maroon transparent;
+}
+
+#calendar ul::-webkit-scrollbar-thumb {
+    background: maroon;
+}
+
+#calendar ul::-webkit-scrollbar {
+    background: transparent;
+}
+
+#calendar ul li .button{
+  float:right;
+  height:13px;
+  width:13px;
+  font-size:13px;
+  padding:1px;
+  background:white;
+  border-radius:1px;
+  margin:1px;
+  text-align:center;
+  font-family:arial;
+  color:black;
+  display:flex;
+  background: #f5ecbc;
+  text-indent: 2px;
+}
+
+#calendar ul div img{
+  width:100%;
+  height:100%;
+}
+
+#calendar li{
+  margin:2px 0px;
+  width:95%;
+  background:maroon;
+  color:white;
+  font-size:13px;
+  display:flex;
+  padding-left:2px;
+  border-radius:3px;
+}
+
+#calendar li div:not(.button){
+  width: 70%;
+}
+
+tr td:nth-child(7) ul li.mobileList{
+  margin-left: -40px !important;
+}
+
+
+th{
+  height:20px;
+  background:maroon;
+  color:#f1e3bf;
+  box-shadow: 0px 0px 10px #3e1111;
+  overflow:hidden;
+}
+
+th,td{
+  border:1px solid black;
+  vertical-align: baseline;
+  border:0;
+}
+
+td{
+  height:50px;
+  background: url(https://github.com/gabrielajohnson/CalendarApp/blob/master/images/td_design.png?raw=true),radial-gradient(beige,tan);
+  box-shadow: inset 0px 0px 10px #9f702e;
+  background-position: left bottom, center;
+  background-size: 20px 20px, 100% 100%;
+  background-repeat:no-repeat;
+  background-blend-mode:overlay;
+  cursor:pointer;
+  position:relative;
+  line-height:1;
+  text-align:left;
+}
+
+td:hover{
+  box-shadow: inset 0px 0px 20px 5px #9f702e;
+}
+
+#calendar tbody{
+  height:100%; 
+}
+
+#eventModal, #editEventModal{
+  width:200px;
+  height:100px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(https://github.com/gabrielajohnson/CalendarApp/blob/master/images/td_design.png?raw=true) no-repeat, maroon;
+  background-blend-mode:soft-light;
+  color: #f1e3bf;
+  box-shadow: 0px 0px 10px #3e1111;
+  border: 2px solid beige;
+  z-index: 200;
+}
+
+#eventModal input, #editEventModal input{
+  background: beige;
+  box-shadow: inset 0px 0px 4px 2px tan;
+  border: 0;
+  margin-top: 30px;
+  font-size:16px;
+  padding: 5px 0px;
+  color: #593811;
+}
+
+#eventModal input:focus, #editEventModal input:focus{
+  outline: #a3613d auto 5px;
+}
+
+#eventModal button, #editEventModal button{
+  background: beige;
+  color:maroon;
+  box-shadow: inset 0px 0px 4px 2px tan;
+  border: 0;
+}
+
+#saveChanges, #save{
+  background: beige;
+  box-shadow: inset 0px 0px 4px 2px tan;
+  border: 0;
+  color:maroon;
+  margin-top:5px;
+}
+
+#close, #editclose{
+  font-size: 20px;
+  padding: 0px 5px;
+  position: absolute;
+  right: 0;
+  line-height: 1;
+}
+
+.hide{
+  display:none;
+}
+
+#calendar ul.mobileList{
+  border-radius:50%;
+  width: 70%;
+  padding-top: 70%;
+  background: radial-gradient(#7e1515,#330606 90%);
+  margin:auto;
+  height:auto;
+}
+
+#calendar ul li.mobileList{
+    display:flex;
+    background:maroon;
+    position:absolute;
+    width:80px;
+    z-index: 100;
+}
+
+
+@media only screen and (max-width: 450px) and (orientation: portrait){  
+
+  #notes{
+    height:100%;
+  }
+
+  #notes input{
+    height: calc(100%/6);
+  }
+
+  #weather{
+    flex-direction: column;
+  }
+
+  #weather div:nth-child(1){
+    width:100%;
+  }
+
+  #weather img{
+    margin: auto;
+    width: auto;
+    height: 100%;
+  }
+
+  #weather h2{
+    font-size:15px;
+  }
+
+  #weather .description{
+    font-size:12px;
+    width:80%;
+  }
+
+  #calendar ul li{
+    display:none;
+  }
+
+  th{
+    font-size: 10px;
+  }
+  
+  td{
+    height:50px; 
+  }
+
+  #eventModal, #editEventModal{
+    width: 90%;
+    height:120px;
+  }
+
+  #eventModal input, #editEventModal input{
+    width: 90%;
+    height: 20%;
+    min-height: 50px;
+  }
+
+  
+}
+

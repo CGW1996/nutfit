@@ -3,29 +3,23 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="fontawesome/all.css">
-    <link rel="stylesheet" href="./css/front_register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/frontPage.css">
+    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="./css/B-resident.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>eCO Daily</title>
-
-    <style>
-
-    </style>
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="image/logo.png" alt=""> </a>
-        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
+        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+        <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o text-light"></i>
+                            <i class="fa fa-envelope-o"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -108,7 +102,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o  text-light"></i>
+                            <i class="fa fa-bell-o"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -178,7 +172,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o text-light"></i>
+                            <i class="fa fa-flag-o"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -262,7 +256,7 @@
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span class=" text-light">Jenny</span>
+                            <span>Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -296,151 +290,105 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="row menubar justify-content-center">
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
-                    <span class="menutxt">社區公告</span>
+    <div class="d-flex">
+        <aside class="sidenav col-2">
+            <section class="sidebar">
+                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                <p class="navName">Jenny</p>
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event_B.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">最新消息</a>
-                    <a class="dropdown-item" href="#">重要資訊</a>
+                <div class="dropdown-container fin">
+                    <a href="managementFee_confirm_B.html">管理費</a>
+                    <a href="payEntrance_B.html">支出</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
                 </div>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-bookmark "></i></span><br>
-                    <span class="menutxt">社區活動</span>
+                <a href="personalMessage_B.html">專屬訊息</a>
+                <a href="comment_B.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">活動報名</a>
-                    <a class="dropdown-item" href="#">團購優惠</a>
+                <div class="dropdown-container">
+                    <a href="pool_B.html">游泳池</a>
+                    <a href="reading_B.html">閱覽室</a>
+                    <a href="aromatherapy_B.html">芳療室</a>
                 </div>
-            </div>
+                <!--  -->
+                <a href="voteList.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
+            </section>
+        </aside>
+        <!--  -->
+        <!--  -->
 
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
-                    <span class="menutxt">生活服務</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">公共建設</a>
-                    <a class="dropdown-item" href="#">預約服務</a>
+        <main class="col-10">
+            <div class="container1" id="customer-list">
+                <div class="custom-main">
+                    <h4>住戶詳細資訊</h4>
+                    <div><input class="search-bar" type="text">
+                        <button class="search-btn">戶號搜尋</button></div>
                 </div>
-            </div>
 
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-archive "></i></span><br>
-                    <span class="menutxt">郵務管理</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">未領包裹</a>
-                    <a class="dropdown-item" href="#">歷史紀錄</a>
-                </div>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-comments "></i></span><br>
-                    <span class="menutxt">討論區</span>
-                </button>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
-                    <span class="menutxt">投票</span>
-                </button>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
-                    <span class="menutxt">行事曆</span>
-                </button>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
-                    <span class="menutxt">財務系統</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">繳管理費</a>
-                    <a class="dropdown-item" href="#">瓦斯抄表</a>
-                </div>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
-                    <span class="menutxt">訊息中心</span>
-                </button>
-            </div>
-        </div>
-
-
-        <main class=" container d-flex">
-            <div class="login">
-                <form class="form" action="">
-                    <h3>住戶註冊</h3>
-                    <div class="input ckeckCode">
-                        <label id="user_ID">請輸入認證碼: <span>(如未取得驗證碼，請洽管委會)</span> </label>
-                        <div class="checkAcode">
-                            <input type="text" name="" id="userID">
-                            <button id="checkBtn">檢查驗證碼</button>
-                            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                <div class="customer">
+                    <div id="member">
+                        <div>住戶資訊</div>
+                    </div>
+                    <div class="acount">
+                        <div class="rule1">戶號:</div>
+                        <div class="rule2">17-4-13</div>
+                    </div>
+                    <div class="acount">
+                        <div class="rule1">住戶代表:</div>
+                        <div class="rule2">史甄湘</div>
+                    </div>
+                    <div class="acount">
+                        <div class="rule1">住戶類別:</div>
+                        <div class="rule2">一般住戶</div>
+                    </div>
+                    <div class="acount">
+                        <div class="rule1">車位號碼:</div>
+                        <div class="rule2">
+                            B201 , B203
                         </div>
-                        <!-- for =""設定與下方連結 -->
-
-                        <!-- <label id="alert" for="">認證碼正確/錯誤</label> -->
-
                     </div>
-                    <div class="input">
-                        <label for="userPwd">姓名:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userName">
-                        <!-- <label id="alert" for="">請輸入正確文字</label> -->
+                    <div class="acount">
+                        <div class="rule1"> 聯絡電話:</div>
+                        <div class="rule2">0952747474</div>
                     </div>
-                    <div class="input">
-                        <label for="userPwd">戶號:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userAcountNum">
-                        <!-- <label id="alert" for="">請輸入正確戶號</label> -->
+                    <div class="acount">
+                        <div class="rule1">E-mail:</div>
+                        <div class="rule2">9527@gamil.com</div>
                     </div>
-                    <div class="input">
-                        <label for="userPwd">電話:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userTel">
-                        <!-- <label id="alert" for="">請輸入電話號碼</label> -->
+                    <div class="acount">
+                        <div class="rule1">眷屬（關係）：</div>
+                        <div class="rule2">史瑞克(父),史萊姆(子),史甄多(女)史瑞克(父),史萊姆(子),史甄多(女)史瑞克(父),史萊姆(子),史甄多(女)</div>
                     </div>
-                    <div class="input">
-                        <label for="userPwd">行動電話:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userPhone">
-                        <!-- <label id="alert" for="">請輸入行動電話號碼</label> -->
+                    <div class="acount">
+                        <div class="rule1">緊急聯絡人：</div>
+                        <div class="rule2">史甄甜</div>
                     </div>
-                    <div class="input">
-                        <label for="">E-Mail:</label><!-- for =""設定與下方連結 -->
-                        <input type="" name="" id="userMail">
-                        <!-- <label id="alert" for="">請輸入信箱號碼</label> -->
+                    <div class="acount">
+                        <div class="rule1">緊急聯絡人電話：</div>
+                        <div class="rule2">0912345678</div>
                     </div>
-                    <div class="btnGroup">
-                        <button class="btn">註冊</button>
+                    <div class="acount remarks">
+                        <div class="rule1">備註:</div>
+                        <div class="rule2">臭臭的</div>
                     </div>
-                </form>
+                </div>
+                <div class="d-flex justify-content-end" style="">
+                    <button class="edit-btn">新增</button>
+                    <button class="edit-btn">修改</button>
+                </div>
             </div>
         </main>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -452,7 +400,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
-
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;

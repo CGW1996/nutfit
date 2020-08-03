@@ -1,0 +1,26 @@
+.main-resident{
+    width: 85%;
+    height: 700px;
+    border: 1px solid grey; 
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+    margin: 50px auto;  
+}
+.sample{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+     border-bottom: 1px solid gray;
+     font-family: 'Noto Sans TC', sans-serif;
+}
+
+.col-4{border-right: 1px solid gray;text-align: center;font-weight: 900;line-height:2.5;}
+.col-8{text-align: center; font-weight: 500;line-height:2.5;}
+.col-mark{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.remarker{display: flex; height: 186px;border-radius:0 0 10px 10px; background:orange; }
+
