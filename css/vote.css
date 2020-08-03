@@ -1,10 +1,11 @@
 
-.main {
+main {
     text-align: left;
-    margin-left: 100px;
+    margin-top: 50px;
+    margin-left: 350px;
     font-family: "Microsoft JhengHei";
 }
-.main fieldset {
+.major fieldset {
     margin-bottom: 10px;
     width: 1300px;
     box-shadow: rgba(0, 0, 0, 0.8) 10px 10px 5px;
@@ -13,7 +14,7 @@
     border-radius: 5px;
     
 }
-.main legend {
+.major legend {
     background-color: black;
     color: rgb(255, 255, 255);
     width: 450px;
