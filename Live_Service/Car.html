@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Public_Utilities</title>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public</title>
+    <link rel="stylesheet" href="../fontawesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/e-community.css">
+    <link rel="stylesheet" href="../css/frontPage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+TC:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/public.css">
+    <link rel="stylesheet" href="../css/Public_Reservation.css">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
-        <nav class="col-10">
+        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="../image/LOGO.png" alt=""> </a>
+        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o"></i>
+                            <i class="fa fa-envelope-o text-light"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -107,7 +105,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o"></i>
+                            <i class="fa fa-bell-o  text-light"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -177,7 +175,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o"></i>
+                            <i class="fa fa-flag-o text-light"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -260,8 +258,8 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span>Jenny</span>
+                            <img class="topImg" src="/image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                            <span class=" text-light">Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -295,127 +293,218 @@
             </ul>
         </nav>
     </header>
-    <div class="d-flex">
-        <aside class="sidenav col-2">
-            <section class="sidebar">
-                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                <p class="navName">Jenny</p>
-                <a href="B_Announcement.html">最新消息</a>
-                <a href="B_activity.html">社區活動</a>
-                <button class="dropdown-btn">生活服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container fin">
-                    <a href="B_managementFee.html">管理費</a>
-                    <a href="B_payEntrance.html">支出</a>
-                    <a href="B_gasData.html">瓦斯抄表</a>
-                    <a href="B_personalFin.html">個人紀錄</a>
-                </div>
-                <a href="B_personalMessage.html">專屬訊息</a>
-                <a href="B_comment.html">意見反映</a>
-                <!-- 下拉式選單 -->
-                <button class="dropdown-btn">預約服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="B_lounge.html">交誼廳</a>
-                    <a href="B_pool.html">游泳池</a>
-                    <a href="B_library.html">閱覽室</a>
-                    <a href="B_gym.html">健身房</a>
-                    <a href="B_meeting.html">會議室</a>
-                    <a href="B_aromatherapy.html">交通接送</a>
-                    <a href="B_aromatherapy.html">家事清潔</a>
-                    <a href="B_aromatherapy.html">包裹快遞</a>
-                </div>
-                <!--  -->
-                <a href="B_vote.html">社區投票</a>
-                <a href="B_Forum.html">討論區</a>
-                <a href="B_postal.html">郵務管理</a>
-                <a href="B_calendar.html">社區行事曆</a>
-            </section>
-        </aside>
+    <div class="container">
+        <div class="row menubar justify-content-center">
 
-        <main class="col-10">
-            <div class="small_title">公共設施</div>
-            <div class="public_reservation ">
-                <div class="lounge_div">
-                    <img src="/image/public/Lounge02.jpg" alt="">
-                    <div class="lounge_text">
-                        <a href="">
-                            <p class="txt">交誼廳/Loung</p>
-                        </a>
+            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
+                    <span class="menutxt">社區公告</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">最新消息</a>
+                    <a class="dropdown-item" href="#">重要資訊</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bookmark "></i></span><br>
+                    <span class="menutxt">社區活動</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">活動報名</a>
+                    <a class="dropdown-item" href="#">團購優惠</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
+                    <span class="menutxt">生活服務</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">公共建設</a>
+                    <a class="dropdown-item" href="#">預約服務</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-archive "></i></span><br>
+                    <span class="menutxt">郵務管理</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">未領包裹</a>
+                    <a class="dropdown-item" href="#">歷史紀錄</a>
+                </div>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-comments "></i></span><br>
+                    <span class="menutxt">討論區</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
+                    <span class="menutxt">投票</span>
+                </button>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
+                    <span class="menutxt">行事曆</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
+                    <span class="menutxt">財務系統</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">繳管理費</a>
+                    <a class="dropdown-item" href="#">瓦斯抄表</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
+                    <span class="menutxt">訊息中心</span>
+                </button>
+            </div>
+        </div>
+
+
+        <main class=" container-">
+
+            <div class="jumbotron car_jumbotron">
+                <h1>交通接送服務</h1>
+                <p>想去哪，只要送出預約，立即環遊世界 ! </p>
+                <p>A thousand-li journey is started by taking the first step.</p>
+                <!-- 標語：千里之行，始於足下 -->
+                <a class="btn btn-primary btn-lg" href="#" role="button">立即預約</a>
+            </div>
+            <div class="smalltitle">
+                <p>|　三大承諾　|</p>
+            </div>
+
+            <div class="car_promise">
+
+                <div class="media">
+                    <img src="../image/Public_Reservation/Car12.png" alt="...">
+                    <div class="media-body">
+                        <h5>服務全口罩</h5>
+                        <p>新型冠狀病毒肺炎（ COVID – 19 ）疫情，面對高傳染性的病毒防疫，司機在提供服務時全程配戴口罩，提供給客戶安心、安全、專業的服務，善盡應有的社會責任。</p>
                     </div>
                 </div>
-                <div class="pool_div">
-                    <img src="/image/public/Pool01.jpg" alt="">
-                    <div class="pool_text">
-                        <a href="">
-                            <p class="txt">游泳池/Swimming Pool</p>
-                        </a>
+                <div class="media">
+                    <div class="media-body">
+                        <h5>趟趟都消毒</h5>
+                        <p>本車隊全面推動服務車輛內部、外部清潔與消毒作業， 每趟乘車服務前後，以 75 % 以上濃度酒精，或同等清潔用品進行消毒車內，以確保乘客安全。</p>
+                    </div>
+                    <img src="../image/Public_Reservation/Car13.png" class="" alt="...">
+                </div>
+                <div class="media">
+                    <img src="../image/Public_Reservation/car14.png" alt="...">
+                    <div class="media-body">
+                        <h5>松山、桃園機場，1小時內抵達</h5>
+                        <p>為體恤清晨即凌晨航班時間的顧客，提供機場接送服務，以減輕顧客疲勞。</p>
+                    </div>s
+                </div>
+            </div>
+            <div class="smalltitle">
+                <p>｜　服務車款　｜</p>
+            </div>
+
+            <div class="car_card"></div>
+            <div class="row">
+                <div class="card" style="width: 22rem;">
+                    <img src="../image/Public_Reservation/Car06 Audi A8L.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">高級轎車</h5>
+                        <p class="card-text">提供 Audi A8 系列車款，擁有豪華優雅的車身流線外型，安全警示系統，可於車輛靜止狀態時偵測後方接近的車輛與騎士，必要時會以閃爍燈號警告乘客與駕駛，同時保護車內乘員與車外的用路人。</p>
+                        <a href="#">立即預約</a>
                     </div>
                 </div>
-                <div class="library_div">
-                    <img src="/image/public/Library01.jpg" alt="">
-                    <div class="library_text">
-                        <a href="">
-                            <p class="txt">閱覽室/Library</p>
-                        </a>
+                <div class="card" style="width: 22rem;">
+                    <img src="../image/Public_Reservation/Car07 Audi Q7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">豪華房車</h5>
+                        <p class="card-text">提供 Audi Q7 系列車款，擁有全景式玻璃天窗、日照感應式四區獨立恆溫空調、靈活的車室空間依乘客使用需求，可調整為二至七人座配置，加裝嬰兒座椅亦不會太擁擠，喜歡舒適的乘坐空間決不要錯過。</p>
+                        <a href="#">立即預約</a>
                     </div>
                 </div>
-                <div class="gym_div">
-                    <img src="/image/public/Gym04.jpg" alt="">
-                    <div class="gym_text">
-                        <a href="">
-                            <p class="txt">健身房/Gym</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="amusement_div">
-                    <img src="/image/public/Amusement01.jpg" alt="">
-                    <div class="amusement_text">
-                        <a href="">
-                            <p class="txt">遊樂區/Amusement</p>
-                        </a>
-                    </div>  
-                </div>
-                <div class="meeting_div">
-                    <img src="/image/public/MettingRoom01.jpg" alt="">
-                    <div class="meeting_text">
-                        <a href="">
-                            <p class="txt">會議室/Meeting Room</p>
-                        </a>
+                <div class="card" style="width: 22rem;">
+                    <img src="../image/Public_Reservation/Car08 Benz The new V-Class.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">尊榮休旅車</h5>
+                        <p class="card-text">提供 Benz The new V-Class 系列車款，外觀視覺、體感、出入動線流暢度，全車滿載，皆能提供乘員充足的伸展空間。位於尾門的單獨開啟式後擋風玻璃電動化操作即可快速開啟，利於順手置放、提取小型行李。</p>
+                        <a href="#">立即預約</a>
                     </div>
                 </div>
             </div>
-            <div class="small_title">預約服務</div>
-            <div class="reservation_div">
-
-                <div class="car_div">
-                    <a href="#"><p>交通接送服務</p></a>
-                    <a href="#"><img src="/image/public/Car01.jpg" alt=""></a>
-                </div>
-                <div class="clean_div">
-                    <a href="#"><p>家事清潔服務</p></a>
-                    <a href="#"> <img src="/image/public/Clean01.jpg" alt=""></a>
-                </div>
-
-
-                <div class="fix_div">
-                    <a href="#"><p>維修維護服務</p></a>
-                    <a href="#"> <img src="/image/public/Fix02.jpg" alt=""></a>
-                </div>
-                <div class="package_div">
-                    <a href="#"><p>快遞服務</p></a>
-                    <a href="#"> <img src="/image/public/Package02.jpg" alt=""></a>
-                </div>
+            <div class="smalltitle">
+                <p>｜　預約注意事項　｜</p>
             </div>
+            <div class="car_notice">
+                <ol >預約方式
+                    <li>請點選「立即預約」，填寫預約資訊即可完成預約，費用請於抵達目的地後以現金或是信用卡支付。</li>
+                    <li>最短搭車日 24小時前皆可預約，例：若 1/4 12:00 要搭車，最晚要在 1/3 12:00 之前預約</li>
+                    <li>為保障用車人的權益，僅接受出發前 24 小時至一個月內的預約。</li>
+                    <li>連續假期預約時間可能會提前關閉，請以系統可預約的時間為準。</li>
+                    <li>部分偏遠區域派車時間較長，依實際派車狀況為準，如無法派車將由客服人員電聯通知。</li>
+                </ol>
+                <ol>加價項目
+                    <li>預約之送機或接機服務時間為夜間 23:00（含）～ 07:00（含）時段者，須加收「夜間服務費用」NT$200
+                        元。若原接機時間於夜間服務時段，而班機實際抵達時間超出該時段，已預付之「夜間服務費用」NT$200 元將不予退還。</li>
+                    <li>兒童安全座椅加價：因應政府道路交通管理處罰條例第三十一條第三項規定、『小型車附載幼童安全乘坐實施及宣導辦法』規範，幼童（指年齡在四歲以下，且體重在十八公斤以下之兒童）、12
+                        歲以下或體重三十六公斤以下之兒童乘坐小客車，須依相關規定繫安全帶、使用安全座椅（增高座）墊乘坐。預約本服務如有幼童或兒童同行，應於預約時選擇租用安全座椅。如需使用安全座椅（增高座墊）設備，每張安全座椅（增高座墊）須另加收
+                        NT$200 元。
+                        <ul>
+                            <li>因車型限制，高級轎車與豪華房車最多限預約一張安全座椅（增高座墊）。</li>
+                            <li>若預約二張（含）安全座椅（增高座墊）須升級尊榮休旅車。</li>
+                            <li>每趟每張兒童座椅（增高座墊）須另加收 NT$200 元。</li>
+                            <li>兒童安全座椅（增高座墊）規格有三種，請於預約時選擇所需規格。
+                                嬰兒型（0～1 歲或體重未達十公斤）。
+                                幼童型（1～4 歲且體重在十公斤以上至十八公斤以下）。
+                                兒童增高坐墊（ 4～12 歲或體重逾十八公斤至三十六公斤以下，如其體型可依規定使用安全帶者，不在此限）。</li>
+                            <li>【提醒您】安全座椅皆以符合政府規範為主，恕無法指定品牌。</li>
+                        </ul>
+                    </li>
+                    <li>寵物加價：為維護所有車輛搭乘者權益以及車輛行駛間安全考量，預約本服務如欲攜帶寵物同行，須另支付清潔費用 NT$800 元。</li>
+                    <li>待時費用：
+                        <ul>
+                            <li>送機待時：依預約時間到達預約指定地點，乘客如逾時 30 分鐘以上，而司機無法繼續等候，視同已使用服務，恕無法退款。</li>
+                            <li>接機待時：接機等候時間為原預約航班實際抵達時間 60 分鐘內，司機於該班機實際抵達時間起算 60
+                                分鐘後離開，並視同已使用過該趟服務；若預約時間為指定時間者（註※），司機於指定時間起算 60 分鐘後離開，並視同已使用過該趟服務。若乘客須待時接送，需視司機行程允許，第 61
+                                分鐘起，每小時酌收待時費用 NT$300 元，不足一小時以一小時計算，最長等候 120 分鐘（依航班實際抵達時間或指定時間起算）。「肯驛國際叫車吧」保留接受乘客待時接送權利。
+                                ※ 指定時間：係指依乘客指定時間，非航班表定抵達時間前往接機。預約時如原預約航班與表定接送時間不符，則接送當日將依乘客指定時間前往服務，服務人員將不再確認原預約航班抵達時間。
+                            </li>
+                        </ul>
+                    </li>
+
+                </ol>
+
+            </div>
+
     </div>
-
-
-
 
     </main>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -427,6 +516,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
+
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;

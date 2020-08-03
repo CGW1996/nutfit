@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation_B</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/e-community.css">
+    <link rel="stylesheet" href="../css/Public_Reservation.css">
+</head>
+
+<body>
+    <header class="d-flex">
+        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
+        <nav class="col-10">
+            <ul class="nav justify-content-end mt-1">
+                <li class="nav-item mail">
+                    <div class="dropdown">
+                        <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label bg-success">4</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Marco
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Be a little kinder than you have to.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Thomas
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Everything in moderation, including moderation.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Leo
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Would you like to go on a date with me?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Mom
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Don't waste money</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Einstein
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Always do what you're afraid to do.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item notifications">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label bg-danger">5</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-primary"></i>
+                                            </div>
+                                            <h6>
+                                                5 member join today
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-warning mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                Very long description here that may not fit into the page and may cause
+                                                design problems
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-warning"></i>
+                                            </div>
+                                            <h6>
+                                                5 new members joined
+                                            </h6>
+
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-shopping-cart mr-2 text-success"></i>
+                                            </div>
+                                            <h6>
+                                                25 sales made
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-user mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                You changed your username
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">View All</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item todoList">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label bg-warning">6</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">todo 5 things</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                AdminLTE Design Team
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item profile">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="topImg" src="../image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                            <span>Jenny</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu userDrop">
+                                    <li class="userHeader">
+                                        <img class="headerImg"
+                                            src="../image/adult-attractive-beautiful-beauty-415829.jpg"
+                                            class="img-circle" alt="User Image">
+                                        <h6>
+                                            Park Jenny- <small>H302</small>
+                                        </h6>
+                                    </li>
+                                    <li class="userBody">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>followers</h6>
+                                            <h6>sales</h6>
+                                            <h6>friends</h6>
+                                        </div>
+                                    </li>
+                                    <li class="userFooter">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>profile</h6>
+                                            <h6>sign out</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex">
+        <aside class="sidenav col-2">
+            <section class="sidebar">
+                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                <p class="navName">Jenny</p>
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event_B.html">社區活動</a>
+                <button class="dropdown-btn">財務系統
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container fin">
+                    <a href="management_Fee_B.html">管理費</a>
+                    <button class="dropdown-btn">支出
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container finDetail">
+                        <a class="third" href="payKeyIn_B.html">支出登錄作業</a>
+                        <a class="third" href="payList.html">支出總表</a>
+                    </div>
+                    <button class="dropdown-btn">收入
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container finDetail">
+                        <a class="third" href="incomeKeyIn_B.html">收入登錄作業</a>
+                        <a class="third" href="incomeList_B.html">收入總表</a>
+                    </div>
+                    <a href="financial.html">支出總表</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
+                </div>
+                <a href="personalMessage_B.html">專屬訊息</a>
+                <a href="comment_B.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container fin">
+                    <button class="dropdown-btn">公設預約
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container finDetail">
+                        <a class="third" href="payKeyIn_B.html">閱覽室</a>
+                        <a class="third" href="payList.html">娛樂區</a>
+                    </div>
+                    <button class="dropdown-btn">生活服務
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container finDetail">
+                        <a class="third" href="incomeKeyIn_B.html">交通接送</a>
+                        <a class="third" href="incomeList_B.html">維修維護</a>
+                        <a class="third" href="incomeList_B.html">家事清潔</a>
+                    </div>
+                </div>
+                <!--  -->
+                <a href="voteList.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
+            </section>
+        </aside>
+
+        <main class="col-10">
+            <div class="reservationB_div">
+                <div class="reservation_form">生活服務預約表單</div>
+                <figure>
+                    <legend>基本資料</legend>
+                    <div class="room_number">
+                        <label for="room_number">戶號：</label>
+                        <input type="text" name="room_number" id="room_number" size="10" placeholder="ex.B-302">
+                        <!-- </div> -->
+                        <!-- <div class="resident_name"> -->
+                        <label for="resident_name">姓名：</label>
+                        <input type="text" name="resident_name" id="resident_name" size="10" placeholder="ex.強大熱">
+                        <label for="resident_phone">連絡電話：</label>
+                        <input type="text" name="esident_phone" id="esident_phone" placeholder="請輸入家電或是手機" size="20">
+
+                    </div>
+                </figure>
+                <figure>
+                    <legend>預約內容</legend>
+                    <div class="">
+                        <label for="">預約項目：</label>
+                        <div class="">
+                            <input type="radio" name="reservation_project" id="car" value="car"><label
+                                for="car">交通接送</label><br>
+
+                            <label for="">　乘客人數：</label>
+                            <input type="text" name="" id="" size="5">
+                            <label for="">寵物：</label>
+                            <input type="radio" name="pet" id="pet_yes"><label for="pet_yes">有</label>
+                            <input type="radio" name="pet" id="pet_no"><label for="pet_no">無</label>
+                            <label for="">種類及數量：</label>
+                            <input type="text" name="" id="" placeholder="ex.狗1隻，巨型貴賓狗" size="25"><br>
+                            <label for="destination">　目的地：</label>
+                            <input type="text" name="destination" id="destination" size="50"
+                                placeholder="ex.台北市大安區信義路三段153號">
+                            <label for="">預約車種：</label>
+                            <select name="" id="">
+                                <option value="" selected>請選擇</option>
+                                <option value="">高級轎車</option>
+                                <option value="">豪華房車</option>
+                                <option value="">尊榮休旅車</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <input type="radio" name="reservation_project" id="fix" value="fix"><label
+                                for="fix">維修維護</label>
+                            <select name="" id="">
+                                <option value="" selected>請選擇</option>
+                                <option value="">水管裝修</option>
+                                <option value="">電力維修</option>
+                                <option value="">馬桶裝修</option>
+                                <option value="">燈具安裝及維修</option>
+                                <option value="">冷氣機維修及清潔</option>
+                                <option value="">洗衣機維修及清潔</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <input type="radio" name="reservation_project" id="clean" value="clean"><label
+                                for="clean">家事清潔</label>
+                            <select name="" id="">
+                                <option value="" selected>請選擇</option>
+                                <option value="">客廳清潔</option>
+                                <option value="">廚房清潔</option>
+                                <option value="">庭院清潔</option>
+                                <option value="">浴室清潔</option>
+                                <option value="">臥室清潔</option>
+                                <option value="">木質地面養護</option>
+                                <option value="">石材地面養護</option>
+                                <option value="">車輛清潔</option>
+                            </select>
+                            <label for="">寵物：</label>
+                            <input type="radio" name="pet" id="pet_yes"><label for="pet_yes">有</label>
+                            <input type="radio" name="pet" id="pet_no"><label for="pet_no">無</label>
+                            <label for="">種類：</label>
+                            <input type="text" name="" id="" placeholder="ex.狗" size="5">
+                        </div>
+                        <div class="">
+                            <label for="">預約日期：</label>
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="">
+                            <label for="">預約時間：</label>
+                            <select name="" id="">
+                                <option value="" selected>請選擇</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                            </select>
+                            <label for="">時</label>
+                            <select name="" id="">
+                                <option value="" selected>請選擇</option>
+                                <option value="">00</option>
+                                <option value="">10</option>
+                                <option value="">20</option>
+                                <option value="">30</option>
+                                <option value="">40</option>
+                                <option value="">50</option>
+                            </select>
+                            <label for="">分</label>
+                        </div>
+                        <div class="">
+                            <label for="reservation_memo">備註事項：</label>
+                        </div>
+                        <div class="">
+                            <textarea name="reservation_memo" id="reservation_memo" cols="60" rows="10"
+                                placeholder="請將特殊注意事項註記於此。"></textarea>
+                        </div>
+                        <div class="">
+                            <input type="submit" name="" id="" value="確定預約" onclick="ok()">
+                            <input type="reset" name="" id="" value="清除資料" onclick="clear()">
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="">
+                <h6>預約單填寫說明</h6>
+                <ol>
+                    <li>一份預約單僅得以預約一項服務，若要預約兩項以上的服務，請填寫相對張數之預約單。</li>
+                    <li>預約交通服務者，請填寫人數、是否攜帶寵物，若有乘坐輪椅者，請於備註欄註名，以利派遣車輛之車型。</li>
+                    <li>攜帶寵物者，請將寵物放入寵物籃內，以避免寵物因恐慌，造成行車上安全顧慮。</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

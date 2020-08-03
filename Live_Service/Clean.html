@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public</title>
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/frontPage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Public_Reservation.css">
+</head>
+
+<body>
+    <header class="d-flex">
+        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="../image/LOGO.png" alt=""> </a>
+        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
+            <ul class="nav justify-content-end mt-1">
+                <li class="nav-item mail">
+                    <div class="dropdown">
+                        <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o text-light"></i>
+                            <span class="label bg-success">4</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 4 messages</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Marco
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Be a little kinder than you have to.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Thomas
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Everything in moderation, including moderation.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Leo
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Would you like to go on a date with me?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Mom
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Don't waste money</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Einstein
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Always do what you're afraid to do.</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item notifications">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell-o  text-light"></i>
+                            <span class="label bg-danger">5</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-primary"></i>
+                                            </div>
+                                            <h6>
+                                                5 member join today
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-warning mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                Very long description here that may not fit into the page and may cause
+                                                design problems
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-users mr-2 text-warning"></i>
+                                            </div>
+                                            <h6>
+                                                5 new members joined
+                                            </h6>
+
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-shopping-cart mr-2 text-success"></i>
+                                            </div>
+                                            <h6>
+                                                25 sales made
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <i class="fa fa-user mr-2 text-danger"></i>
+                                            </div>
+                                            <h6>
+                                                You changed your username
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">View All</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item todoList">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag-o text-light"></i>
+                            <span class="label bg-warning">6</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="header">todo 5 things</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri1.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri2.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                AdminLTE Design Team
+                                                <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri3.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri4.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message">
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img class="messageImg" src="image/nutri5.jpg" class="img-circle"
+                                                    alt="User Image">
+                                            </div>
+                                            <h6>
+                                                Support Team
+                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h6>
+                                            <p>Why not buy a new awesome theme?</p>
+                                        </a>
+                                    </li>
+                                    <li class="message footer pt-2"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item profile">
+                    <div class="dropdown">
+                        <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="topImg" src="/image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                            <span class=" text-light">Jenny</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu userDrop">
+                                    <li class="userHeader">
+                                        <img class="headerImg" src="image/adult-attractive-beautiful-beauty-415829.jpg"
+                                            class="img-circle" alt="User Image">
+                                        <h6>
+                                            Park Jenny- <small>H302</small>
+                                        </h6>
+                                    </li>
+                                    <li class="userBody">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>followers</h6>
+                                            <h6>sales</h6>
+                                            <h6>friends</h6>
+                                        </div>
+                                    </li>
+                                    <li class="userFooter">
+                                        <div class="d-flex justify-content-around">
+                                            <h6>profile</h6>
+                                            <h6>sign out</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row menubar justify-content-center">
+
+            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
+                    <span class="menutxt">社區公告</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">最新消息</a>
+                    <a class="dropdown-item" href="#">重要資訊</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-bookmark "></i></span><br>
+                    <span class="menutxt">社區活動</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">活動報名</a>
+                    <a class="dropdown-item" href="#">團購優惠</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
+                    <span class="menutxt">生活服務</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">公共建設</a>
+                    <a class="dropdown-item" href="#">預約服務</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-archive "></i></span><br>
+                    <span class="menutxt">郵務管理</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">未領包裹</a>
+                    <a class="dropdown-item" href="#">歷史紀錄</a>
+                </div>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-comments "></i></span><br>
+                    <span class="menutxt">討論區</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
+                    <span class="menutxt">投票</span>
+                </button>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
+                    <span class="menutxt">行事曆</span>
+                </button>
+            </div>
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
+                    <span class="menutxt">財務系統</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">繳管理費</a>
+                    <a class="dropdown-item" href="#">瓦斯抄表</a>
+                </div>
+            </div>
+
+            <div class="btn-group menu">
+                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
+                    <span class="menutxt">訊息中心</span>
+                </button>
+            </div>
+        </div>
+
+
+        <main class=" container-">
+
+            <div class="jumbotron clean_jumbotron">
+                <h1>家事清潔服務</h1>
+                <p>家裡髒兮兮，只要送出預約，大內高手給您一個乾淨! </p>
+                <p>Whatever is worth doing is worth doing well.</p>
+                <!-- 標語：任何值得做的事就值得把它做好 -->
+                <a class="btn btn-primary btn-lg" href="#" role="button">立即預約</a>
+            </div>
+            <div class="smalltitle">
+                <p>|　三大特色　|</p>
+            </div>
+            <div class="clean_promise">
+                <div class="clean_promise_div">
+                    <img src="../image/Public_Reservation/Clean11.png" alt="">
+                    <h5>創新服務</h5>
+                    <p>即時媒合家事服務，節省時間</p>
+                </div>
+                <div class="clean_promise_div">
+                    <img src="../image/Public_Reservation/Clean12.png" alt="">
+                    <h5>簡易預約</h5>
+                    <p>操作簡單，網路直接預約下單</p>
+                </div>
+                <div class="clean_promise_div">
+                    <img src="../image/Public_Reservation/Clean13.png" alt="">
+                    <h5>顧客管理</h5>
+                    <p>專業居家清潔人員</p>
+                </div>
+            </div>
+            <div class="smalltitle">
+                <p>｜　服務項目　｜</p>
+            </div>
+            <div class="clean_card">
+                <div class="row clean_row">
+                    <div class="card clean_smcards" style="width: 30rem; height: 38rem;">
+                        <img src="../image/Public_Reservation/Clean04.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">客廳清潔</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>沙發擦拭</li>
+                                <li>地毯除塵</li>
+                                <li>桌、櫃擦拭</li>
+                                <li>地板清潔</li>
+                                <li>燈具表面擦拭</li>
+                                <li>雜物整理</li>
+                            </ul>
+                            <ul class="clean_itemsXX">
+                                <li>沙發深層污漬</li>
+                                <li>地毯深層污漬</li>
+                                <li>天花板層板清潔</li>
+                                <li>吊燈清潔</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：0.5~1.5小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 38rem;">
+                        <img src="../image/Public_Reservation/Clean05.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">廚房清潔</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>流理檯擦拭</li>
+                                <li>洗碗、水槽清潔</li>
+                                <li>瓦斯爐台</li>
+                                <li>集油槽油污處理</li>
+                                <li>抽油煙機</li>
+                                <li>櫥櫃擦拭</li>
+                                <li>地板清潔</li>
+                                <li>冰箱外觀</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1~3小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 35rem;">
+                        <img src="../image/Public_Reservation/Clean06.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">庭院清潔</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>桌椅擦拭</li>
+                                <li>曬衣桿擦拭</li>
+                                <li>地板刷洗</li>
+                                <li>雜物整理</li>
+                            </ul>
+                            <ul class="clean_itemsXX">
+                                <li>除蟲害</li>
+                                <li>園藝、花草照料</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1~1.5小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 35rem;">
+                        <img src="../image/Public_Reservation/Clean07.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">浴室清潔</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>馬桶刷洗</li>
+                                <li>鏡面光亮</li>
+                                <li>浴缸清潔</li>
+                                <li>磁磚刷洗</li>
+                                <li>洗手檯面清潔</li>
+                                <li>浴門清潔</li>
+                                <li>清理水垢、皂垢</li>
+                                <li>局部小範圍除霉</li>
+                            </ul>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1~2小時</p>
+                            </div>
+                            </p>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 38rem;">
+                        <img src="../image/Public_Reservation/Clean08.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">臥室清潔</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>衣櫃外觀擦拭</li>
+                                <li>桌面清潔</li>
+                                <li>棉被、衣物整理</li>
+                                <li>家電外觀擦拭</li>
+                                <li>地板清潔</li>
+                                <li>雜物整理</li>
+                                <li>床單換洗</li>
+                                <li>垃圾打包</li>
+                            </ul>
+                            <ul class="clean_itemsXX">
+                                <li>家電拆卸清洗</li>
+                                <li>整理衣櫃內部衣物</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：0.5~1.5小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 38rem;">
+                        <img src="../image/Public_Reservation/Clean15.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">木質地面養護</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>地面打蠟</li>
+                                <li>地板翻新</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1~3小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 32rem;">
+                        <img src="../image/Public_Reservation/Clean14.jpeg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">石材地面養護</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>石材養護</li>
+                                <li>拋光美容</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1~2小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                    <div class="card clean_smcards" style="width: 30rem; height: 32rem;">
+                        <img src="../image/Public_Reservation/Clean09.jpg" class="card-img-top" alt="...">
+                        <div class="clean-body">
+                            <h5 class="clean-title">車輛清潔美容</h5>
+                            <p class="clean-text">
+                            <ul class="clean_itemsOO">
+                                <li>車身、內部美容</li>
+                                <li>漆面處理</li>
+                                <li>汽車防護</li>
+                                <li>臭氧消毒</li>
+                            </ul>
+                            </p>
+                            <div class="clean_spendtime">
+                                <p>預估使用時間：1.5~4小時</p>
+                            </div>
+                            <a href="#">立即預約</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="smalltitle">
+                <p>｜　預約注意事項　｜</p>
+            </div>
+            <div class="clean_notice">
+                <ol>
+                    <li>請點選「立即預約」，填寫預約資訊即可完成預約，費用依鐘點時間計算。</li>
+                    <li>最晚清潔日24小時前皆可預約，例：若 1/4 12:00 要預約打掃，最晚要在 1/3 12:00 之前預約</li>
+                    <li>為保障顧客的權益，僅接受前24小時至一個月內的預約。</li>
+                    <li>連續假期預約時間可能會提前關閉，請以系統可預約的時間為準。</li>
+                    <li>過年期間/假日每個清潔人員的鐘點定價會加收100元。</li>
+                    <li>若您家中有寵物，請於實施清潔時，暫時將寵物放置非打掃區域。</li>
+                </ol>
+            </div>
+
+        </main>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
