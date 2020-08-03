@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e1eaf1!important;
+}
+.write{
+    width: 120px;
+    height: 60px;
+    margin-top: 70px;
+    border-radius: 80px!important;
+    background-color: black!important;
+    color: white!important;
+    box-shadow: rgba(128, 127, 127, 0.8) 5px 3px 3px;
+}
+.major{
+    height: 800px;
+    width: 1326px;
+    overflow-y: scroll;
+}
+.search{
+    display: flex;
+    width: 300px;
+    margin-left: 90%;
+}
+.search div{
+    padding-left: 10px;
+}
+.chPage{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+.main table{
+    width: 1300px;
+    background-color: white;
+    table-layout: fixed;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.main tr{
+    width: 1300px;
+    height: 40px;
+}
+.main tr:hover{
+    box-shadow:0 5px 3px 1px rgb(155, 155, 155);
+}
+.main td{
+    padding: 5px;
+    border-bottom: 3px solid rgb(204, 204, 204);
+}
+.person{
+    width:200px;
+    text-align: left;
+    font-weight: bold;
+}
+.title{
+    width:200px;
+    text-align: center;
+    font-weight: bold;
+}
+.description{
+    width: 700px;
+    color: rgb(167, 166, 164);
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.date{
+    width:200px;
+    text-align: center;
+    font-weight: bold;
+}
