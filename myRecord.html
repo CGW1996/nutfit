@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/frontPage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="js/echarts.min.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/financial.css">
     <title>eCO Daily</title>
 
     <style>
@@ -354,7 +351,8 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="managementFee_confirm.html">繳管理費</a>
                     <a class="dropdown-item" href="gasData.html">瓦斯抄表</a>
-                    <a class="dropdown-item" href="#">社區財務</a>
+                    <a class="dropdown-item" href="financialFront.html">社區財務</a>
+                    <a class="dropdown-item" href="myRecord.html">我的紀錄</a>
                 </div>
             </div>
 
@@ -367,28 +365,20 @@
         </div>
 
 
-        <main class=" container">
-
-            <div class="outer">
-                <div class="inner">
-                    <h2>收支表</h2>
-                    <label for="selectYear">年度:</label>
-                    <select name="selectYear" id="selectYear">
-                        <option value="tztz">2020</option>
-                        <option value="tzon">2019</option>
-                        <option value="tzoe">2018</option>
-                    </select>
-                    <br>
-                    <label for="selectMonth">月份:</label>
-                    <select name="selectMonth" id="selectMonth">
-                        <option value="jan">1</option>
-                        <option value="feb">2</option>
-                        <option value="mar">3</option>
-                    </select>
+        <main class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>天然氣使用量</h3>
+                    <p>本期使用量: <span>30度</span></p>
+                    <p>去年同期使用量: <span>36度</span></p>
+                    <p>與去年同期使用量相比: <span>-6度</span></p>
+                    1度/1.88kgCO2e=0.25棵樹一年二氧化碳固定量
                 </div>
-                <div id="piChart" style=" width: 1250px;height: 400px;"></div>
+                <div class="col-8">
+                    <div id="gasChart" style="height:600px"></div>
+                </div>
             </div>
-            <div id="totalChart" style="margin: 0 auto; width: 800px;height: 600px;"></div>
+
         </main>
     </div>
 
@@ -397,6 +387,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/gasRecord.js"></script>
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -414,8 +406,7 @@
             });
         }
     </script>
-    <script src="js/piChart.js"></script>
-    <script src="js/financialBarLine.js"></script>
+
 </body>
 
 </html>
