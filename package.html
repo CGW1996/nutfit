@@ -393,13 +393,13 @@
             <div class="packagebtns d-flex">
                 <button type="button" id="unreceive" class="btn btn-outline-info col-4">未領取</button>
                 <button type="button" id="received" class="btn btn-outline-info col-4">已領取</button>
-                <button type="button" id="received" class="btn btn-outline-info col-4">退貨紀錄</button>
+                <button type="button" id="return" class="btn btn-outline-info col-4">退貨紀錄</button>
 
             </div>
 
             <div class="packageboxsss mt-4">
                 <div class="row packagebox mb-3">
-                    <img class="pkgpic" src="image/package/package.png" alt="">
+                    <img class="pkgpic" id="idpkg" src="image/package/package.png" alt="">
                     <div class="packagemsg ml-4">
                         <h3>大榮貨運</h3>
                         <div>寄件者： 吳怡農</div>
@@ -411,7 +411,7 @@
 
 
                 <div class="row packagebox mb-3">
-                    <img class="pkgpic" src="image/package/mail.png" alt="">
+                    <img class="pkgpic" id="idmail" src="image/package/mail.png" alt="">
                     <div class="packagemsg ml-4">
                         <h3>中華郵政</h3>
                         <div>寄件者： 台灣彩券</div>
@@ -452,6 +452,17 @@
                 }
             });
         }
+
+        $("#received").click(function () {
+            $("#idpkg").attr("src", "image/package/package_received.png")
+            $("#idmail").attr("src", "image/package/mail_received.png")
+            $(".packagemsg").css("color", "gray")
+        })
+        $("#unreceive").click(function () {
+            $("#idpkg").attr("src", "image/package/package.png")
+            $("#idmail").attr("src", "image/package/mail.png")
+            $(".packagemsg").css("color", "black")
+        })
     </script>
 
 </body>
