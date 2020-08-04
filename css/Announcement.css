@@ -12,9 +12,12 @@ main{
     width: 20vh;
 
 }
+.carousel-caption h3,p{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 .carousel-item a{
-    color:white;
+    color:black;
 }
 
 
