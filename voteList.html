@@ -393,213 +393,58 @@
         <form action="" class="main">
             <fieldset>
                 <legend>近期投票</legend>
+                <div class="wrap">
+                    <div class="search">
+                        <input class="search-bar" type="text" name="search" id="search" placeholder="搜尋">
+                        <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="date">
+                        <span>發起日期：</span>
+                        <input type="date">
+                    </div>
+                    <div class="date">
+                        <span>截止日期：</span>
+                        <input type="date">
+                    </div>
+                    <div class="status">
+                        <span>投票狀態：</span>
+                        <select name="List" id="">
+                            <option value="null"></option>
+                            <option value="On">投票中</option>
+                            <option value="Off">已截止</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="tb">
-                    <table>
+                    <table class="table-dark">
                         <tr style="background-color: black;">
-                            <td></td>
-                            <td>投票主題</td>
-                            <td>發起日期</td>
-                            <td>截止日期</td>
-                            <td>已投票人數</td>
-                            <td>投票狀態</td>
+                            <thead>
+                                <th></th>
+                                <th>投票主題</th>
+                                <th>發起日期</th>
+                                <th>截止日期</th>
+                                <th>已投票人數</th>
+                                <th>投票狀態</th>
+                            </thead>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td><a href="vote.html">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
+                            <td><a href="vote.html">社區主委選舉</a></td>
+                            <td>2020/08/03</td>
+                            <td>2020/08/10</td>
                             <td>1200 人</td>
                             <td style="color: rgb(14, 160, 14);">投票中</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
+                            <td><a href="vote.html">社區居民代表選舉</a></td>
+                            <td>2020/08/01</td>
+                            <td>2020/08/04</td>
+                            <td>2000 人</td>
+                            <td style="color: rgb(180, 12, 12);">已截止</td>
                         </tr>
-                        <tr>
-                            <td>3</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(228, 3, 3);">已截止</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td><a href="#">是否參加烤肉大會</a></td>
-                            <td>2020/07/22</td>
-                            <td>2020/07/30</td>
-                            <td>1200 人</td>
-                            <td style="color: rgb(14, 158, 14);">投票中</td>
-                        </tr>
-
                     </table>
-
                 </div>
-                <a href="#" class="more">...更多</a>
             </fieldset>
         </form>
 
