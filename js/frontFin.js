@@ -1,3 +1,20 @@
+//add month
+let year;
+let thisYear = new Date().getFullYear();
+let thisMonth = new Date().getMonth();
+let month;
+for (let i = thisYear; i > 2010; i--) {
+    year = document.createElement("option");
+    year.innerHTML = i;
+    document.querySelector("#selectYear").appendChild(year);
+}
+for (let i = thisMonth + 1; i > 0; i--) {
+    month = document.createElement("option");
+    month.innerHTML = i;
+    document.querySelector("#selectMonth").appendChild(month);
+}
+
+//chart
 var piChart = echarts.init(document.getElementById('piChart'));
 let bgColor = 'transparent';
 let payTitle = '社區總支出';

@@ -416,7 +416,7 @@
                         <h3>中華郵政</h3>
                         <div>寄件者： 台灣彩券</div>
                         <div>收件者： 一同</div>
-                        <div>內容物： 中獎通知</div>
+                        <div>內容物： 中獎通知 (掛號號碼：571149 091813 61)</div>
                         <div>送達時間：2020-07-28</div>
                     </div>
                 </div>
@@ -453,16 +453,26 @@
             });
         }
 
-        $("#received").click(function () {
-            $("#idpkg").attr("src", "image/package/package_received.png")
-            $("#idmail").attr("src", "image/package/mail_received.png")
-            $(".packagemsg").css("color", "gray")
-        })
+        // color: #fff;
+        // font-weight: bold;
+        // background-color: #17a2b8;
+        // border-color: #17a2b8;
         $("#unreceive").click(function () {
             $("#idpkg").attr("src", "image/package/package.png")
+            $(this).css("color", "#fff").css("backgroundColor", "#17a2b8")
+                .siblings().css("color", "#17a2b8").css("backgroundColor", "#fff")
             $("#idmail").attr("src", "image/package/mail.png")
             $(".packagemsg").css("color", "black")
         })
+
+        $("#received").click(function () {
+            $("#idpkg").attr("src", "image/package/package_received.png")
+            $(this).css("color", "#fff").css("backgroundColor", "#17a2b8")
+                .siblings().css("color", "#17a2b8").css("backgroundColor", "#fff")
+            $("#idmail").attr("src", "image/package/mail_received.png")
+            $(".packagemsg").css("color", "#c8c8c8")
+        })
+
     </script>
 
 </body>

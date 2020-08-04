@@ -38,35 +38,44 @@ main{
     display: flex;
     justify-content: space-between;
 }
+/* 發文 */
+.pomessage .topImg{
+    height: 50px;
+    width: 50px;
+}
 .po{
      
-    box-shadow: 2px 2px 4px 1px #ccc;
+    /* box-shadow: 2px 2px 4px 1px #ccc;
     background-color: white;
     border-radius:10px ;
     height: 50px;
-    width: 300px;
-
+    width: 500px; */
 }
 #input-message{
     border-width: 0;
     border-radius: 5px;
     height: 50px;
-    width: 300px;
-    
+    width: 530px;   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
  
 }
 .boxpo{
-    height: 140px;
-    background-color: #ACD6FF;
+    /* height: 140px; */
+    /* background-color: rgb(192, 187, 187); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius:10px ;
+    width: 600px;
+    
+    
+}
+.dispatch{
+    width: 1140px;
+    display: flex;
+    justify-content:center;
+    
 }
 .pomessage{
-    display: flex;
-    text-align: center;
-    justify-content: center;  
-    
+    display: flex; 
 }
 .btnsummit{
     background: linear-gradient(135deg, #6e8efb,aquamarine); 

@@ -4,7 +4,7 @@
     font-family: 微軟正黑體;
 }
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245) !important;
 }
 
 .logoimg {
