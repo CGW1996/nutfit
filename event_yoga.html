@@ -37,6 +37,10 @@
             text-decoration: none;
             color: white;
         }
+
+        .eventsignup:hover {
+            color: white !important;
+        }
     </style>
 </head>
 
@@ -436,8 +440,9 @@
                 <div class="ml-4  mb-3">請自備瑜珈墊、水及毛巾，請假恕不退費</div>
 
                 <div class="eventsignup mt-5">
-                    <button type="button" class="btn btn-outline-info"> <a href="/event_signup.html">我要報名</a>
-                    </button>
+                    <a id="signupbtn" href="/event_signup.html">
+                        <button type="button" class="btn btn-outline-info"> 我要報名</button>
+                    </a>
                 </div>
             </div>
 
@@ -456,6 +461,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
+
 
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
