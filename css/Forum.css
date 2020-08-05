@@ -141,10 +141,10 @@ p {
 } */
 
 .masonry {
-    /* Masonry container */
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+    /* Masonry container   */
+    -webkit-column-count: 3;   /* column-count 把div元素中的文本划分成三列：*/
+    -moz-column-count: 3;
+    column-count: 3;
     -webkit-column-gap: 1em;
     -moz-column-gap: 1em;
     column-gap: 1em;
@@ -197,7 +197,7 @@ p {
     word-break: break-word;;
 }
 
-
+/* 控制長寬 */
 @media only screen and (max-width: 320px) {
     .masonry {
         -moz-column-count: 1;
@@ -222,11 +222,11 @@ p {
     }
 }
 
-@media only screen and (min-width: 1201px) {
+/* @media only screen and (min-width: 1201px) {
     .masonry {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
     }
-}
+} */
 
