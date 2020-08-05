@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/frontPage.css">
     <link rel="stylesheet" href="css/Forum.css">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="js/Forum.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
     <title>Document</title>
@@ -389,23 +391,37 @@
 
 
         <main class=" mt-3">
-            <div class="dispatch">
+            <div class="dispatch col">
                 <div class="boxpo">
-                    <div class="pomessage">
-                        <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                        <div class="po pl-2">
-                            <textarea style="resize: none;" name="message" type="text"  id="input-message"
+                    <div class="theme">
+                        <img class="topImg mt-1 ml-1 mr-1" src="image/adult-attractive-beautiful-beauty-415829.jpg"
+                            alt="">
+                        <textarea class="mt-3" style="resize: none;" name="message" type="text" id="input-theme"
+                            placeholder="主題"></textarea>
+                    </div>
+                    <div class="pomessage pt-2">
+                        <div class="po">
+                            <textarea style="resize: none;" name="message" type="text" id="input-message"
                                 placeholder="留個言吧"></textarea>
-                        </div>                   
+                        </div>
                     </div>
                     <hr>
-                    <div class="btn">
-                        <input class="btnsummit" type="button" value="發文">
-                        <input type="button" id="poimg" value="上傳照片">                             
-                    </div>              
+                    <form id="uploadimg" action="/somewhere/to/upload" enctype="multipart/form-data">
+                        <div class="btnform">
+                            <input class="btn btn-info" type="button" value="發文">
+                            <label class="btn btn-info ml-3">                                
+                                <input type="file" style="display:none;" onchange="readURL(this)"   
+                                    targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png">  <!-- 改變很醜的filebtn -->
+                                <i class="fa fa-photo"></i> 上傳圖片
+                            </label>
+                        </div>
+                        <div class="showimg pb-3">
+                            <img id="preview_progressbarTW_img" src="#" />
+                        </div>
+                    </form>
                 </div>
             </div>
-            
+
 
 
 
@@ -413,74 +429,255 @@
             <div class="masonry">
                 <div class="item">
                     <div class="d-flex" id="name">
-                        <input type="image" src="image/Forum/user.png" alt="">
-                        <p>帥哥</p>
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
+                        <h5 class="mt-1">Jasmimi</h5>
                     </div>
-                    <p>新球”正式落地”前
-                        再度上頂樓先拍一波
-                        (其實也就走一層樓而已)
-                        為什麼說再度
-                        因去年買前一顆新球時
-                        也有上來拍嘿
-                        那時則是第一次
-                        在球上做寫字的這動作
-                        (穿插於照片中)
-                        ⠀⠀
-                        話說
-                        頂樓已默默成伸展台
-                        以及自個兒悄悄看日出、日落、吹風
-                        還有與星星聊天傾訴之處</p>
-                    <img src="image/article2.jpg">
+                    <div class="mt-2">
+                        <h4>熱騰騰的"垃圾案"決議</h4>
+                        <p>聽委員說昨日(10)管委會已決議
+                            要關閉資源回收室囉
+                            方式還要再議
+
+                            最近常下大雨大家要穿好雨具
+                            老人小孩孕婦要看好不要滑倒
+                            還有麻煩管委會要把門口清理乾淨
+                            不要到時廚餘漬垃圾塑膠袋到處飛
+
+                            另外管理服務品質下滑
+                            請問可以要求降管理費嗎?
+                            開始覺得這管理費花得不值了...
+
+                            大夥準備每晚8點來全民運動囉!</p>
+                    </div>
+                    <img src="image/Forum/garbage.jpg">
                     <hr>
                     <div class="touch">
                         <img src="image/Forum/good.png">
-                        <img src="image/Forum/message.png">                        
+                        <img src="image/Forum/message.png">
                         <img src="image/Forum/report.png">
                     </div>
                     <hr>
-                    <div>
-                        <input type="image" src="image/Forum/user.png" alt="">                        
-                        <textarea name="" style="resize: none;" id="message" cols="20" placeholder="留言" rows="1"></textarea>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
                         <input type="button" value="送出" id="btnmessage" />
                     </div>
-
                 </div>
 
                 <div class="item">
+                    <div class="d-flex" id="name">
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
 
-                    <img src="image/nutri2.jpg">
+                        <h5>Awater</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h4>停車場管理辦法</h4>
+                        <p>大家好：
+
+                            劣幣驅逐良幣：
+                            義大利作家卡爾維諾寫道：「在一個人人都偷竊的國家裡，唯一不去偷竊的人就會成為眾矢之的，成為被攻擊的目標。因為在羊群中出現了一隻黑羊，這隻黑羊就是「另類」，一定會被驅逐出去。」
+
+                            社區裡有許多的黑羊，我也是其中一隻。
+
+                            昨日看到管委會在處理違規停車的問題，實在非常感動!!!
+                            我覺得這個新的「停車場管理辦法」非常有用!!!
+                            以前管委會都是用違規勸導方式，沒公德心的住戶依然不理會，導致附近住戶車子不好出入，鄰居之間的關係也變的很糟糕。
+                            現在增加了「罰款」辦法，違規停車的住戶就自動變乖了，總算替守規矩的住戶鬆了一口氣!!!(本來打算要去蓋農舍了說~~~)
+
+                            感謝管委會的辛勞了~~~</p>
+                    </div>
+                    <img src="image/Forum/stopcar.jpg">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
                 </div>
-                <div class="item">
 
-                    <img src="image/nutri3.jpg">
-
-                </div>
                 <div class="item1">
                     <div class="d-flex" id="name">
-                        <input type="image" src="image/Forum/user.png" alt="">
-                        <p>管理者</p>
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
+
+                        <h5>管委會</h5>
                     </div>
-                    <img src="image/nutri4.jpg">
+                    <div class="mt-2">
+                        <h4>第一屆區權大會</h4>
+                        <p>各位住戶好：
+
+                            2016年的住戶大會預定於12/11日，AM9:00~12:00 舉辦，請大家踴躍參加~~~
+                            這次的會議議程的提案討論有6個，如下所示：
+                            1.修改規約案。
+                            2.社區圍牆下陷修繕案。
+                            3.203~232號住家中庭公共走道塌陷修繕案。
+                            4.區權會議，區權人出席費表決案。
+                            5.南方松平台討論案。
+                            6.公設點交案。
+
+                            看來社區需要維修的地方很多!!!</p>
+                    </div>
+                    <img src="">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
                 </div>
 
                 <div class="item">
-                    <img src="image/article5.jpg">
+                    <div class="d-flex" id="name">
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
+
+                        <h5>DoctorWu</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h4>徵求社區志工</h4>
+                        <p>徵求社區志工!!!
+
+                            有興趣的住戶，可以去詢問管理中心。
+
+                            感謝社區住戶!!!</p>
+                    </div>
+                    <img src="">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
                 </div>
+
+                <div class="item">
+                    <div class="d-flex" id="name">
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
+
+                        <h5>Angarybard</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h4>甚麼年代還要追垃圾車</h4>
+                        <p>剛去倒垃圾
+                            旁邊的鄰居告知我
+                            資源回收室要關了
+                            我聽了非常傻眼
+                            說為了省下30幾萬收垃圾的錢
+                            便要住戶犧牲使用資源回收室的權益,但:
+
+                            請問:還有哪一個現代化社區還要住戶去追垃圾車?
+                            請問:是要讓晚歸的住戶垃圾擺哪?
+                            請問:社區省下的經費不是都灌入水費中嗎?哪可是轉嫁
+                            在住戶身上!等於住戶不但失去了使用資源回收室
+                            的基本權利,還得自負隨水費徵收的費用!對住戶
+                            而言是雙輸局面不是嗎?
+                            請問:省下的經費是想用在哪?永遠修不完的設備嗎?資
+                            源回收室的使用與維護重要性可不亞於修不完的
+                            設備機電,而管委會總是把設備機電列首位!
+                            請問:這麼重大的議題可以不用選票計票嗎?舉手時有錄
+                            影嗎?如此粗糙草率的投票方式令人不敢苟同!
+                            請問:這兩年社區經費消耗神速,管委會有平衡預算收支
+                            嗎?消耗過度導致預算擠壓到要犧牲住戶基本生
+                            活權益,這會不會太霸道了些?
+
+                            住戶要去追垃圾車絕對是對基本生活權益的嚴重剝奪,
+                            對房價是大大扣分!環境美化要從控管不必要的機電泥
+                            作設備支出省出經費來處理(大家去看財報便可知錢是怎花掉的!),我以身為守規約,繳管理費,認真作好資源回收的住戶要大聲說:為什麼要懲罰我?
+
+                            期待新的管委會能認真看待妥善處理此議題!</p>
+                    </div>
+                    <img src="">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
+                </div>
+
                 <div class="item1">
                     <div class="d-flex" id="name">
-                        <input type="image" src="image/Forum/user.png" alt="">
-                        <p>管理者</p>
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
+
+                        <h5>管委會</h5>
                     </div>
-                    <img src="image/nutri2.jpg">
+                    <div class="mt-2">
+                        <h4>管理中心針對:住戶違規事項</h4>
+                        <p>針對部份住戶違反規定必須作執行動作處理。故在執行事項有遇到困難時，必須想辦法立即解決，如還是想不出如何執行辦法時須向警察反應請教，不能將事情放著不管。
+                            這樣不僅造成管委會及住戶的不信任，也浪費大家時間，故請各位住戶務必遵守規定，免受良心譴責。
+                        </p>
+                    </div>
+                    <img src="">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
                 </div>
                 <div class="item">
+                    <div class="d-flex" id="name">
+                        <img class="mr-2" src="image/Forum/user.png" alt="">
 
-                    <img src="image/highlight.png">
+                        <h5>Sam</h5>
+                    </div>
+                    <div class="mt-2">
+                        <h4>好康相報，歡迎嚐鮮解饞</h4>
+                        <p>社區附近香雞排 + 超大杯，新店開張，好康優惠喔！
+                            3/12 - 3/31
+                            龍祥街 86 號</p>
+                    </div>
+                    <img src="image/Forum/bibbe.jpg">
+                    <hr>
+                    <div class="touch">
+                        <img src="image/Forum/good.png">
+                        <img src="image/Forum/message.png">
+                        <img src="image/Forum/report.png">
+                    </div>
+                    <hr>
+                    <div class="reply">
+                        <img class="" src="image/Forum/user.png" alt="">
+                        <textarea  name="" style="resize: none;" id="message" cols="20" placeholder="留言"
+                            rows="1"></textarea>
+                        <input type="button" value="送出" id="btnmessage" />
+                    </div>
                 </div>
-                <div class="item">
 
-                    <img src="image/nutri5.jpg">
-                </div>
+
 
 
             </div>
