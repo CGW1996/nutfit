@@ -319,7 +319,7 @@
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">活動報名</a>
-                    <a class="dropdown-item" href="#">團購優惠</a>
+                    <a class="dropdown-item" href="#">二手品交換</a>
                 </div>
             </div>
 
@@ -396,20 +396,47 @@
                     <div class="">
                         <label>
                             <select class="form-control_select mr-sm-2">
-                                <option value="category">分類</option>
-                                <option value="activity">社區活動</option>
+                                <option value="allCategory">分類</option>
+                                <option value="sport">運動</option>
+                                <option value="lesson">課程</option>
                                 <option value="buytogether">團購</option>
+                                <option value="gathering">聚會</option>
+                                <option value="buytogether">表演</option>
+                                <option value="other">其他</option>
                             </select>
                         </label>
                     </div>
-                    <input class="form-control_1 mr-sm-2" type="search" placeholder=" 搜尋活動" aria-label="Search">
-                    <input class="form-control mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
+                    <input class="form-control_1 mr-sm-2" type="search" placeholder="請輸入關鍵字" aria-label="Search">
+                    <span> 日期：</span>
+                    <input class="form-control_date mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
+                        aria-label="Search"> <span> 到 &nbsp;</span>
+                    <input class="form-control_date mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
                         aria-label="Search">
                     <button type="button" class="btn btn-info"> <i class="fa fa-search"></i> 搜尋</button>
                 </form>
             </div>
+            <div class="row">
+                <div class="orderby mt-4">排序方式：
+                    <label>
+                        <select class="form-control_select mr-sm-2" style="width: 120px">
+                            <option value="sport">由近到遠</option>
+                            <option value="lesson">由遠到近</option>
+                        </select>
+                    </label>
+                </div>
 
-            <section class="cards container d-flex mt-4">
+                <div class="orderby mt-4">
+                    <label>
+                        <select class="form-control_select mr-sm-2">
+                            <option value="allCategory">費用</option>
+                            <option value="buytogether">免費</option>
+                            <option value="gathering">付費</option>
+                        </select>
+                    </label>
+                </div>
+
+            </div>
+            <section class="cards container d-flex">
 
                 <article class="card card2  col-4">
                     <div class="card__img"></div>
