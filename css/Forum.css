@@ -2,16 +2,7 @@ main{
     height: 100%;
     
 }
-#message{
-    border-radius: 15px;
-}
-#name{
-    font-weight:bold;
-    
-}
-#name p{
-    margin-left: 10px;
-}
+
 .active{
     color:black;
 }
@@ -38,10 +29,21 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
 /* 發文 */
-.pomessage .topImg{
+.boxpo .topImg{
     height: 50px;
     width: 50px;
+}
+.theme{
+    display:  flex;    
+    justify-content:right;
+}
+#input-theme{
+    border-width: 0;
+    border-radius: 5px;
+    height: 30px;      
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .po{
      
@@ -51,11 +53,23 @@ main{
     height: 50px;
     width: 500px; */
 }
+#preview_progressbarTW_img{
+    height: 300px;
+    width: 500px;
+    /* display: none; */
+
+}
+.showimg{
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+
+}
 #input-message{
     border-width: 0;
     border-radius: 5px;
     height: 50px;
-    width: 530px;   
+    width: 590px;   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
  
 }
@@ -75,23 +89,26 @@ main{
     
 }
 .pomessage{
-    display: flex; 
+    display: flex;  
+    justify-content:  center;
 }
-.btnsummit{
+.btn-info{
     background: linear-gradient(135deg, #6e8efb,aquamarine); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 70px;
+    width: 120px;
     height: 40px;
     border-radius: 5px;
     color: white;
     
 }
 .boxpo hr{
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
 
 }
-.btn{
-    width: 100%;  
+.btnform{
+    display: flex;
+    justify-content:center;
+   /* width: 100%;   */
    
 }
 #poimg{   
@@ -107,9 +124,32 @@ main{
     background: linear-gradient(135deg, #6e8efb,aquamarine); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 40px;
-    height:  30px;
+    height:  35px;
     border-radius: 5px;
     color: white;
+}
+/* 留言 */
+#message{
+    border-radius: 10px;
+    width: 12vw;
+    height: 35px;
+    padding: 5px;
+}
+.reply{
+    display: flex;
+    justify-content: space-around;
+}
+#name{
+    font-weight:bold;
+    
+}
+#name p{
+    margin-left: 10px;
+}
+
+.Reply{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -141,10 +181,10 @@ p {
 } */
 
 .masonry {
-    /* Masonry container */
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+    /* Masonry container   */
+    -webkit-column-count: 3;   /* column-count 把div元素中的文本划分成x列：*/
+    -moz-column-count: 3;
+    column-count: 3;
     -webkit-column-gap: 1em;
     -moz-column-gap: 1em;
     column-gap: 1em;
@@ -155,7 +195,12 @@ p {
     column-gap: 1.5em;
     font-size: .85em;
 }
+.masonry p{
+    font-size:18px;
+    line-height: 30px;
+    letter-spacing: 3px;
 
+}
 .item {
     display: inline-block;
     background: #fff;
@@ -168,6 +213,13 @@ p {
     -webkit-box-sizing: border-box;
     box-shadow: 2px 2px 4px 0 #ccc;
 }
+.item hr{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.item h4{
+    font-weight:bold;
+}
 
 
 .item img {
@@ -178,26 +230,34 @@ p {
 }
 
 .item1 {
-    display: inline-block;
-    background: #ACD6FF;
+    display: inline-block;  
+    background: #ffe4c4;
     padding: 1em;
     margin: 0 0 1.5em;
     width: 100%;
     /* -webkit-transition: 1s ease all; */
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;         /* -moz-column-count:3;  用在Firefox */                                          
+    -webkit-box-sizing: border-box;      /*-webkit-column-count:3; 用在 Safari and Chrome */
     box-shadow: 2px 2px 4px 0 #ccc;
+  
 }
-
+.item1 h4{
+    font-weight:bold;
+}
 .item1 img {
     max-width: 100%;
 }
 .item1 p {
     word-break: break-word;;
 }
+.item1 hr{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 
+}
 
+/* 控制寬和列數 */
 @media only screen and (max-width: 320px) {
     .masonry {
         -moz-column-count: 1;
@@ -222,11 +282,11 @@ p {
     }
 }
 
-@media only screen and (min-width: 1201px) {
+/* @media only screen and (min-width: 1201px) {
     .masonry {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
     }
-}
+} */
 
