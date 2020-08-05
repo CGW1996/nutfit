@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public</title>
-    <link rel="stylesheet" href="../fontawesome/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/frontPage.css">
+    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="css/voteList_B.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/Public_Reservation.css">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="../image/LOGO.png" alt=""> </a>
-        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
+        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+        <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o text-light"></i>
+                            <i class="fa fa-envelope-o"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -105,7 +102,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o  text-light"></i>
+                            <i class="fa fa-bell-o"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -175,7 +172,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o text-light"></i>
+                            <i class="fa fa-flag-o"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -258,8 +255,8 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <img class="topImg" src="/image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span class=" text-light">Jenny</span>
+                            <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                            <span>Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -293,255 +290,102 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="row menubar justify-content-center">
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
-                    <span class="menutxt">社區公告</span>
+    <div class="d-flex">
+        <aside class="sidenav col-2">
+            <section class="sidebar">
+                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                <p class="navName">Jenny</p>
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event_B.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">最新消息</a>
-                    <a class="dropdown-item" href="#">重要資訊</a>
+                <div class="dropdown-container fin">
+                    <a href="managementFee_confirm_B.html">管理費</a>
+                    <a href="payEntrance_B.html">支出</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
                 </div>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-bookmark "></i></span><br>
-                    <span class="menutxt">社區活動</span>
+                <a href="personalMessage_B.html">專屬訊息</a>
+                <a href="comment_B.html">意見反映</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">活動報名</a>
-                    <a class="dropdown-item" href="#">團購優惠</a>
+                <div class="dropdown-container">
+                    <a href="pool_B.html">游泳池</a>
+                    <a href="reading_B.html">閱覽室</a>
+                    <a href="aromatherapy_B.html">芳療室</a>
                 </div>
-            </div>
+                <!--  -->
+                <a href="vote_B.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
+            </section>
+        </aside>
 
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
-                    <span class="menutxt">生活服務</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">公共建設</a>
-                    <a class="dropdown-item" href="#">預約服務</a>
-                </div>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-archive "></i></span><br>
-                    <span class="menutxt">郵務管理</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">未領包裹</a>
-                    <a class="dropdown-item" href="#">歷史紀錄</a>
-                </div>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-comments "></i></span><br>
-                    <span class="menutxt">討論區</span>
-                </button>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
-                    <span class="menutxt">投票</span>
-                </button>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
-                    <span class="menutxt">行事曆</span>
-                </button>
-            </div>
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
-                    <span class="menutxt">財務系統</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">繳管理費</a>
-                    <a class="dropdown-item" href="#">瓦斯抄表</a>
-                </div>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
-                    <span class="menutxt">訊息中心</span>
-                </button>
-            </div>
-        </div>
-
-
-        <main class=" container">
-            <div class="public_div">
-                <!-- 公共設施小標題 -->
-                <div class="smalltitle">
-                    <p>|　公共設施　|</p>
-                </div>
-                <!-- 公共設施介紹6個鈕 -->
-                <div class="public_introduction">
-                    <ul class="public_buttngroup">
-                        <li class="public_buttn">交誼廳</li>
-                        <li class="public_buttn">閱覽室</li>
-                        <li class="public_buttn">健身房</li>
-                        <li class="public_buttn">游泳池</li>
-                        <li class="public_buttn">會議室</li>
-                        <li class="public_buttn">歡唱室</li>
-                    </ul>
-                    <!-- 交誼廳圖片 -->
-                    <div id="page_0" class="public_content">
-                        <img src="../image/Public_Reservation/Lounge01.jpg" alt="交誼廳">
-                        <img src="../image/Public_Reservation/Lounge02.jpg" alt="交誼廳">
-                        <img src="../image/Public_Reservation/Lounge03.jpg" alt="交誼廳">
-                        <!-- 交誼廳介紹內容 -->
-                        <div class="public_project">
-                            <h5><i class="fas fa-coffee"></i>交誼廳/Lounge</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>品味美學和寧靜悠雅的環境，人與人自在互動，閒情的午後一杯香醇咖啡或花茶，靜思與好鄰居聊聊天，也可稍作休憩、沉潛心念。</dd>
-                                <dt>開放時間：</dt>
-                                <dd>24小時。</dd>
-                            </dl>
+        <main class="">
+            <form action="" class="major">
+                <fieldset>
+                    <legend>近期投票</legend>
+                    <div><a href="vote_B.html" class="new">+ 新增投票</a></div>
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="搜尋">
+                            <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="date">
+                            <span>發起日期：</span>
+                            <input type="date">
+                        </div>
+                        <div class="date">
+                            <span>截止日期：</span>
+                            <input type="date">
+                        </div>
+                        <div class="status">
+                            <span>投票狀態：</span>
+                            <select name="List" id="">
+                                <option value="null"></option>
+                                <option value="On">投票中</option>
+                                <option value="Off">已截止</option>
+                            </select>
                         </div>
                     </div>
-                    <!-- 閱覽室圖片 -->
-                    <div id="page_1" class="public_content hide">
-                        <img src="../image/Public_Reservation/Library03.jpg" alt="閱覽室">
-                        <img src="../image/Public_Reservation/Library04.jpg" alt="閱覽室">
-                        <img src="../image/Public_Reservation/Library05.jpg" alt="閱覽室">
-                        <div class="public_project">
-                            <!-- 閱覽室介紹內容 -->
-                            <h5><i class="fas fa-book-open"></i>閱覽室/Library</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>溫馨的小空間、配合經典藏書及近期熱門書刊，優閒的時光配上書香味，</dd>
-                                <dt>開放時間：</dt>
-                                <dd>每日上午08:00至下午18:00，每月第四週星期四為消毒日。</dd>
-                                <dt>注意事項
-                                    <ul>
-                                        <li>閱覽室內請勿飲食，避免破壞書本刊。</li>
-                                        <li>書刊不提供借閱，請勿私自將書刊帶離閱覽室。</li>
-                                        <li>晚上18:00後為清潔時間，請勿擅自進入使用。</li>
-                                    </ul>
-                                </dt>
-                            </dl>
-                        </div>
+                    <div class="tb">
+                        <table class="table-dark">
+                            <tr style="background-color: black;">
+                                <thead>
+                                    <th></th>
+                                    <th>投票主題</th>
+                                    <th>發起日期</th>
+                                    <th>截止日期</th>
+                                    <th>已投票人數</th>
+                                    <th>投票狀態</th>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="vote.html">社區主委選舉</a></td>
+                                <td>2020/08/03</td>
+                                <td>2020/08/10</td>
+                                <td>1200 人</td>
+                                <td style="color: rgb(14, 160, 14);">投票中</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="vote.html">社區居民代表選舉</a></td>
+                                <td>2020/08/01</td>
+                                <td>2020/08/04</td>
+                                <td>2000 人</td>
+                                <td style="color: rgb(180, 12, 12);">已截止</td>
+                            </tr>
+                        </table>
                     </div>
-                    <!-- 健身房圖片 -->
-                    <div id="page_2" class="public_content hide">
-                        <img src="../image/Public_Reservation/Gym02.jpg" alt="健身房">
-                        <img src="../image/Public_Reservation/Gym04.jpg" alt="健身房">
-                        <img src="../image/Public_Reservation/Gym08.jpg" alt="健身房">
-                        <div class="public_project">
-                            <!-- 健身房介紹內容 -->
-                            <h5><i class="fas fa-dumbbell"></i>健身房/Gym</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>各項器材項目豐富，無論是提升心肺功能、想減重及雕塑身形，或者是想要重量訓練，應有盡有。</dd>
-                                <dt>開放時間：</dt>
-                                <dd>每日上午08:00至下午21:00，每月第四週星期四為消毒日。</dd>
-                                <dt>注意事項
-                                    <ul>
-                                        <li>請攜帶毛巾及水瓶，提供75%酒精消毒健身器材。</li>
-                                        <li>請適當實施暖身活東及收操伸展活動。</li>
-                                        <li>請勿破壞健身器材，器材皆附有說明，建議依照使用說明進行訓練。</li>
-                                        <li>晚上21:00後為清潔時間，請勿擅自進入使用。</li>
-                                    </ul>
-                                </dt>
-                            </dl>
-                        </div>
-                    </div>
-                    <!-- 游泳池圖片 -->
-                    <div id="page_3" class="public_content hide">
-                        <img src="../image/Public_Reservation/Pool01.jpg" alt="游泳池">
-                        <img src="../image/Public_Reservation/Pool02.jpg" alt="游泳池">
-                        <img src="../image/Public_Reservation/Pool03.jpg" alt="游泳池">
-                        <!-- 游泳池介紹內容 -->
-                        <div class="public_project">
-                            <h5><i class="fas fa-swimmer"></i>游泳池/Swimming Pool</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>全長25米室內溫水泳池，簡單服的設計，不過多繁雜的配飾，使得人身、心、靈皆放鬆。蒸氣箱、烤箱及盥洗室一應具全，讓喜歡游泳的你，天天都可以盡情享受。</dd>
-                                <dt>開放時間：</dt>
-                                <dd>每日上午08:00至下午20:00，每月第四週星期四為消毒日。</dd>
-                                <dt>注意事項
-                                    <ul>
-                                        <li>請穿著泳衣、泳帽及蛙鏡，進入泳池前，請先至林水區，沖洗過後，再行下水。</li>
-                                        <li>提醒游泳時請自行攜帶水瓶，適時補充水分。</li>
-                                        <li>晚上20:00後為清潔時間，請勿擅自進入使用。</li>
-                                    </ul>
-                                </dt>
-                            </dl>
-                        </div>
-                    </div>
-                    <!-- 會議室圖片 -->
-                    <div id="page_4" class="public_content hide">
-                        <img src="../image/Public_Reservation/MettingRoom01.jpg" alt="會議室">
-                        <img src="../image/Public_Reservation/MettingRoom02.jpg" alt="會議室">
-                        <!-- 會議室介紹內容 -->
-                        <div class="public_project">
-                            <h5><i class="fas fa-briefcase"></i>會議室/Metting Room</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>提供兩間會議室供住戶使用，可用於公室小型會議，或者是讀書會等使用，並設有電視螢幕供簡報投放等。</dd>
-                                <dt>開放時間：</dt>
-                                <dd>每日上午08:00至下午21:00，每月第四週星期四為消毒日。</dd>
-                                <dt>注意事項
-                                    <ul>
-                                        <li>此設施須填寫預約單，每次預約一次最短1小時、最長4小時。</li>
-                                        <li>為使得所有住戶皆得想用此設施，禁止連續預約使用。</li>
-                                        <li>晚上18:00後為清潔時間，請勿擅自進入使用。</li>
-                                        <a href="Page_Reservation.html">立即預約</a>
-                                    </ul>
-                                </dt>
-                            </dl>
-                        </div>
-                    </div>
-                    <!-- 歡唱室圖片 -->
-                    <div id="page_5" class="public_content hide">
-                        <img src="../image/Public_Reservation/KTV01.jpg" alt="歡唱室">
-                        <img src="../image/Public_Reservation/KTV03.jpg" alt="歡唱室">
-                        <!-- 歡唱室介紹內容 -->
-                        <div class="public_project">
-                            <h5><i class="fas fa-music"></i>歡唱室/KTV</h5>
-                            <dl>
-                                <dt>設施說明：</dt>
-                                <dd>提供兩間歡唱室供住戶使用，無論是一家人一同歡唱、與三五好友小聚，亦或是個人練唱，皆是極佳場所。</dd>
-                                <dt>開放時間：</dt>
-                                <dd>每日上午08:00至晚上18:00，每月第四週星期四為消毒日。</dd>
-                                <dt>注意事項
-                                    <ul>
-                                        <li>此設施須填寫預約單，每次預約一次最短1小時、最長3小時。</li>
-                                        <li>為使得所有住戶皆得想用此設施，禁止連續預約使用。</li>
-                                        <li>歡唱室可飲食，但請住戶自行將垃圾帶離。</li>
-                                        <li>晚上18:00後為清潔時間，請勿擅自進入使用。</li>
-                                        <a href="Page_Reservation.html">立即預約</a>
-                                    </ul>
-                                </dt>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </fieldset>
+            </form>
         </main>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -553,7 +397,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
-
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
@@ -570,7 +413,6 @@
             });
         }
     </script>
-     <script src="../js/Live_Service.js"></script>
 
 </body>
 
