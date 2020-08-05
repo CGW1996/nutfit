@@ -185,9 +185,10 @@ p {
     width: 100%;
     /* -webkit-transition: 1s ease all; */
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;         /* -moz-column-count:3;  用在Firefox */                                          
+    -webkit-box-sizing: border-box;      /*-webkit-column-count:3; 用在 Safari and Chrome */
     box-shadow: 2px 2px 4px 0 #ccc;
+  
 }
 
 .item1 img {
@@ -197,7 +198,7 @@ p {
     word-break: break-word;;
 }
 
-/* 控制長寬 */
+/* 控制寬和列數 */
 @media only screen and (max-width: 320px) {
     .masonry {
         -moz-column-count: 1;
