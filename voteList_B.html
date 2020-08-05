@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/e-community.css">
-    <link rel="stylesheet" href="css/vote_B.css">
+    <link rel="stylesheet" href="css/voteList_B.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
+        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
         <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -296,12 +296,12 @@
                 <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
                 <p class="navName">Jenny</p>
                 <a href="Announcement_B.html">最新消息</a>
-                <a href="activity_B.html">社區活動</a>
+                <a href="event_B.html">社區活動</a>
                 <button class="dropdown-btn">生活服務
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container fin">
-                    <a href="managementFee_B.html">管理費</a>
+                    <a href="managementFee_confirm_B.html">管理費</a>
                     <a href="payEntrance_B.html">支出</a>
                     <a href="gasData_B.html">瓦斯抄表</a>
                     <a href="personalFin_B.html">個人紀錄</a>
@@ -325,39 +325,64 @@
             </section>
         </aside>
 
-        <main class="col-10">
-            <form action="" class="main">
-                <div class="major">
-                    <h3>編輯投票</h3>
-                    <hr>
-                    <div>
-                        <label for="" class="lab">標題：</label>
-                        <input class="txt" type="text" autofocus tabindex="0">
-                    </div>
-                    <div>
-                        <label for="" class="lab">截止日期：</label>
-                        <input type="date">
-                    </div>
-                    <div>
-                        <label for="" class="lab">發起人：</label>
-                        <input class="txt" type="text">
-                    </div>
-                    <div>
-                        <label for="" class="lab">內容：</label>
-                        <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
-                    </div>
-                    <div class="d-flex">
-                        <label for="" class="lab" style="padding-top: 10px;">選項：</label>
-                        <div class="op" id="options">
-                            <input id="txtbox" class="txt" type="text">
-                            <input type="button" class="new" id="add" value="+ 新增選項">
+        <main class="">
+            <form action="" class="major">
+                <fieldset>
+                    <legend>近期投票</legend>
+                    <div><a href="vote_B.html" class="new">+ 新增投票</a></div>
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="搜尋">
+                            <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="date">
+                            <span>發起日期：</span>
+                            <input type="date">
+                        </div>
+                        <div class="date">
+                            <span>截止日期：</span>
+                            <input type="date">
+                        </div>
+                        <div class="status">
+                            <span>投票狀態：</span>
+                            <select name="List" id="">
+                                <option value="null"></option>
+                                <option value="On">投票中</option>
+                                <option value="Off">已截止</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="but">
-                        <input class="btn btn-primary btn-lg" type="submit" value="確認">
-                        <input class="btn btn-primary btn-lg" type="reset" value="取消">
+                    <div class="tb">
+                        <table class="table-dark">
+                            <tr style="background-color: black;">
+                                <thead>
+                                    <th></th>
+                                    <th>投票主題</th>
+                                    <th>發起日期</th>
+                                    <th>截止日期</th>
+                                    <th>已投票人數</th>
+                                    <th>投票狀態</th>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="vote.html">社區主委選舉</a></td>
+                                <td>2020/08/03</td>
+                                <td>2020/08/10</td>
+                                <td>1200 人</td>
+                                <td style="color: rgb(14, 160, 14);">投票中</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="vote.html">社區居民代表選舉</a></td>
+                                <td>2020/08/01</td>
+                                <td>2020/08/04</td>
+                                <td>2000 人</td>
+                                <td style="color: rgb(180, 12, 12);">已截止</td>
+                            </tr>
+                        </table>
                     </div>
-                    </fieldset>
+                </fieldset>
             </form>
         </main>
     </div>
@@ -388,35 +413,7 @@
             });
         }
     </script>
-    <script>
-        window.onload = function () {
-            let btnadd = document.getElementById("add");
-            let btndel = document.getElementById("delete");
-            let dv = document.getElementById("options");
-            let div = document.getElementById("options");
-            btnadd.onclick = function () {
-                var br = document.createElement("br");
-                var tbox = document.createElement("input");
-                var del=document.createElement("input")
-                tbox.type = "text";
-                tbox.id="newTxt"
-                tbox.className = "txt";
-                del.type="button";
-                del.value="- 刪除選項"
-                del.className="new";
-                del.id="delete";
-                dv.insertBefore(tbox,document.getElementById("txtbox"));
-                dv.insertBefore(del,document.getElementById("txtbox"));
-                dv.insertBefore(br,document.getElementById("txtbox"));
-            }
-            btndel.onclick = function(){
-                var boxs = div.getElementsByID("newTxt");
-                if (boxs.length > 0) {
-                    div.removeChild(boxs[0]);
-                }
-            }
-        }
-    </script>
+
 </body>
 
 </html>

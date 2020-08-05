@@ -27,6 +27,9 @@
     margin: 10px;
     margin-left: 80px;
 }
+.op{
+    margin: 0!important;
+}
 .des{
     width: 800px;
     height: 400px;
@@ -35,6 +38,7 @@
     font-size: 20px;
 }
 .new{
+    margin-left: 5px;
     width: 100px;
     height: 30px;
     background-color: black;
