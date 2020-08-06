@@ -56,7 +56,7 @@ main{
 #preview_progressbarTW_img{
     height: 300px;
     width: 500px;
-    /* display: none; */
+    display: none;
 
 }
 .showimg{
@@ -68,7 +68,7 @@ main{
 #input-message{
     border-width: 0;
     border-radius: 5px;
-    height: 50px;
+    height: 60px;
     width: 590px;   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
  
@@ -255,6 +255,20 @@ p {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 
+}
+.article p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:10;
+    -webkit-box-orient: vertical;
+}
+.article p:hover{
+    overflow:auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:10;
+    -webkit-box-orient: vertical;
 }
 
 /* 控制寬和列數 */
