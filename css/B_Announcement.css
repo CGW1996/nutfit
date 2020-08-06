@@ -70,6 +70,22 @@ textarea {
     padding-bottom: 10px;
     float: left; 
 }
+.Features button{
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+}
+.search button{
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
 /* ----------------------------------- */
 
 .box{

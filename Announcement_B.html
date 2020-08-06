@@ -337,19 +337,11 @@
                         <h3>公告資訊</h3>
                         <div>
                             <div class="AnnouncementInformation">
-                                <label class="AnnouncementId" for="">公告編號:</label>
-                                <input type="text" autocomplete="off" autofocus>
-                            </div>
-                            <div class="AnnouncementInformation">
                                 <label class="AnnouncementId" for="">公告標題:</label>
                                 <input type="text" autocomplete="off" autofocus>
                             </div>
                             <div class="AnnouncementInformation">
                                 <label class="AnnouncementId" for="">公告日期:</label>
-                                <input type="text" autocomplete="off" autofocus>
-                            </div>
-                            <div class="AnnouncementInformation">
-                                <label class="AnnouncementId" for="">發佈人:</label>
                                 <input type="text" autocomplete="off" autofocus>
                             </div>
                             <div class="AnnouncementInformation">
@@ -361,7 +353,6 @@
                             </div>
                         </div>
 
-
                     </fieldset>
                     <hr>
                     <div class="SR">
@@ -371,66 +362,63 @@
 
 
                 </form>
-
-                <!-- ----------- -->
-                <div class="btn">
-                    <button id="add">A.新增</button>
-                    <button id="search">S.查詢</button>
-                    <button id="modify">M.修改</button>
-                    <button id="delete">D.刪除</button>
-                    <button id="head">H.首筆</button>
-                    <button id="tail">T.尾筆</button>
-                    <button id="previous">P.前筆</button>
-                    <button id="next">N.後筆</button>
-                    <button id="submit">提交</button>
-                    <button id="abandon">放棄</button>
-                </div>
-
-
-                <!-- ----- -->
+                <nav>
+                    <form action="" class="search">
+                        <button id="search">S.查詢</button>
+                        <input type="search">
+                    </form>
+                </nav>
 
                 <table class="table mt-3">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">勾選</th>
                             <th scope="col">編號</th>
                             <th scope="col">公告標題</th>
                             <th scope="col">發布日期</th>
                             <th scope="col">內容</th>
                             <th scope="col">瀏覽量</th>
-
+                            <th scope="col">功能</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">
-                                <input type="checkbox">
+                                1
                             </th>
-                            <td>1</td>
                             <td>公園整修</td>
                             <td>2014-07-07</td>
                             <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
                             <td>123</td>
+                            <td class="Features">
+                                <button id="modify">M.修改</button>
+                                <button id="delete">D.刪除</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">
-                                <input type="checkbox">
+                                2
                             </th>
-                            <td>1</td>
                             <td>公園整修</td>
                             <td>2014-07-07</td>
                             <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
                             <td>123</td>
+                            <td class="Features">
+                                <button id="modify">M.修改</button>
+                                <button id="delete">D.刪除</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">
-                                <input type="checkbox">
+                                3
                             </th>
-                            <td>1</td>
                             <td>公園整修</td>
                             <td>2014-07-07</td>
                             <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
                             <td>123</td>
+                            <td class="Features">
+                                <button id="modify">M.修改</button>
+                                <button id="delete">D.刪除</button>
+                            </td>
                         </tr>
                 </table>
             </div>

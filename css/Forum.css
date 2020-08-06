@@ -68,15 +68,15 @@ main{
 #input-message{
     border-width: 0;
     border-radius: 5px;
-    height: 60px;
+    height: 100px;
     width: 590px;   
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  
 }
 .boxpo{
     /* height: 140px; */
     /* background-color: rgb(192, 187, 187); */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius:10px ;
     width: 600px;
     
