@@ -502,7 +502,77 @@ h1, p
 
 /* 預約單 */
 
-.page_buttngroup
+.page_form
+{
+    border:2px solid black;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+figure
+{
+    padding: 15px 0;
+    border:2px solid black;
+    border-radius: 20px;
+    width: 1043px;
+    margin: 15px;
+}
+legend
+{
+    text-align: center;
+    font-weight: 800;
+    font-size: 26px;
+    /* padding: 10px 0; */
+}
+.reservation_info
+{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600; 
+}
+.reservation_info2
+{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;   
+    margin-left: 200px;
+}
+.reservation_info3
+{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;   
+}
+
+textarea
+{
+    resize: none;
+}
+.reservation_btn
+ {
+    margin-left: 210px;
+    margin-top: 10px;
+ }
+ .reservation_btn input
+ {
+     background-color: black;
+     border-radius: 10px;
+     color: white;
+     padding: 5px;
+ }
+ .reservation_btn input:focus
+ {
+     outline: none;
+ }
+ .reservation_btn input:hover
+ {
+    color: yellow;
+ }
+
+
+
+/* .page_buttngroup
 {
     display: flex;
     list-style-type: none;
@@ -551,4 +621,4 @@ figure
 .hidden
 {
     display: none;
-}
+} */
