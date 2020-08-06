@@ -392,7 +392,55 @@
 
         <main class="container">
             <div class="main">
-                <button type="button" class="write btn btn-outline-success">撰寫</button>
+                <button type="button" class="write btn btn-outline-success" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@ecodaily.com">撰寫</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">撰寫郵件</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="bl">
+                                        <label for="" class="lab">收件人 ：</label><br>
+                                        <input type="text" name="mailto" class="txt">
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">主旨 ：</label><br>
+                                        <input type="text" name="title" class="txt">
+                                    </div>
+                                    <div class="bl" style="padding-bottom: 0;">
+                                        <label for="" class="lab">內容 ：</label><br>
+                                        <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
+                                    </div>
+                                    <div class="b1" style="padding-top: 0px;">
+                                        <div class="txtEditor">
+                                            <button class="textEdit fa fa-font"></button>
+                                            <button class="textEdit fa fa-bold"></button>
+                                            <button class="textEdit fa fa-italic"></button>
+                                            <button class="textEdit fa fa-underline"></button>
+                                            <button class="textEdit fa fa-text-height"></button>
+                                            <button class="textEdit fa fa-text-width"></button>
+                                        </div>
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">附加檔案 ：</label>
+                                        <input type="file">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> 送出</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="search">
                     <div>
                         <select name="sort" id="">
@@ -401,7 +449,7 @@
                         </select>
                     </div>
                     <div>
-                        <button class="chPage"><</button>
+                        <button class="chPage fa fa-chevron-left"></button>
                     </div>
                     <div>
                         <select name="page" id="">
@@ -412,13 +460,21 @@
                         <p>/ 頁</p>
                     </div>
                     <div>
-                        <button class="chPage">></button>
+                        <button class="chPage fa fa-chevron-right"></button>
                     </div>
                 </div>
                 <div class="major">
 
                     <table>
+                        <thead>
+                            <th class="ip"></th>
+                            <th class="person">寄件人</th>
+                            <th class="title">標題</th>
+                            <th class="description">內容</th>
+                            <th class="date">日期</th>
+                        </thead>
                         <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
                             <td class="person">foodpanda</td>
                             <td class="title"><span>您已下了訂單</span></td>
                             <td class="description">
@@ -427,102 +483,19 @@
                             <td class="date">7月22日</td>
                         </tr>
                         <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
                             <td class="person">foodpanda</td>
                             <td class="title"><span>您已下了訂單</span></td>
                             <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
                             <td class="date">7月22日</td>
                         </tr>
                         <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
                             <td class="person">foodpanda</td>
                             <td class="title"><span>您已下了訂單</span></td>
                             <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
                             <td class="date">7月22日</td>
                         </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-                        <tr>
-                            <td class="person">foodpanda</td>
-                            <td class="title"><span>您已下了訂單</span></td>
-                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
-                            <td class="date">7月22日</td>
-                        </tr>
-
                     </table>
                 </div>
             </div>
@@ -558,7 +531,6 @@
             });
         }
     </script>
-
 </body>
 
 </html>
