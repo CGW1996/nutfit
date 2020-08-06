@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+    <header class="d-flex" style="position: fixed; width: 100%>
+        <a class=" logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
         <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -332,7 +332,15 @@
                 <div class="custom-main">
                     <h4>住戶詳細資訊</h4>
                     <div><input class="search-bar" type="text">
-                        <button class="search-btn">戶號搜尋</button></div>
+                        <select style="margin-left: 10px;font-size: 20px;">
+                            <option>聯絡電話</option>
+                            <option>住戶代表</option>
+                            <option>戶號</option>
+
+                            <option>車位</option>
+
+                        </select>
+                        <button class="search-btn edit-btn"> 搜尋 </button></div>
                 </div>
 
                 <div class="customer">
@@ -382,7 +390,7 @@
                         <div class="rule2">臭臭的</div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end" style="">
+                <div class="d-flex justify-content-end">
                     <button class="edit-btn">新增</button>
                     <button class="edit-btn">修改</button>
                 </div>

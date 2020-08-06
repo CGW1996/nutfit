@@ -70,12 +70,17 @@
             margin: auto;
         }
         .search-btn{
+            width: 100px;
             border-radius: 5px;
         }
+
         .edit-btn {
             border-radius: 5px;
             width: 100px;
             margin-left: 20px;
+        }
+        .edit-btn:focus{
+            outline: none;
         }
         .custom-main{
             display: flex;
