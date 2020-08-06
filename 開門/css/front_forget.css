@@ -1,8 +1,15 @@
+body{
+   background-image: url("../image/XVbCpW.jpg");
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
+}
         .login {
             width: 500px;
             height: 500px;
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255,255,255, 0.01);
             border-radius: 5%;
             /* border: 10px solid white; */
             box-shadow: 0 0 10px #000;
@@ -13,12 +20,12 @@
             justify-content: center;
             align-items: center;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 150px;
         }
 
         .form {
             width: 400px;
-            color: black;
+            color: white;
         }
 
         .form h3 {
@@ -48,11 +55,11 @@
         .form .btn {
             font-size: 20px;
             border: none;
-            background-color: #aaa;
+             background-color: rgba(29, 201, 72, 0.2);
             width: 190px;
             padding: 10px 0;
             border-radius: 10px;
-            color: black;
+            color: white;
         }
         .btnGroup{
             display: flex;

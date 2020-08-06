@@ -21,7 +21,7 @@ body{
             justify-content: center;
             align-items: center;
             margin: auto;
-            margin-top: 200px;
+            margin-top: 150px;
         }
 
         .form {
@@ -33,7 +33,7 @@ body{
         }
 
         .form h3 {
-            border-bottom: 1px solid #fff;
+            border-bottom:2px solid #fff;
             font-size: x-large;
         }
 
@@ -81,6 +81,7 @@ body{
 
         .btnGroup .btn+.btn {
             margin-left: 10px;
+            transition: .3s; 
         }
         .btnGroup a{
             color: white;
@@ -88,8 +89,11 @@ body{
         }
         .btnGroup a:hover{
             color: white;
-            outline: none;
             text-decoration: none;
+        }
+        .btnGroup button:hover{
+            color: white;
+            outline: none;
             font-size: 24px;
             transition: .3s;
         }
