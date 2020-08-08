@@ -72,19 +72,20 @@ option = {
     title: [{
             text: '{name|' + payTitle + '}\n{val|' + formatNumber(payTotal) + '}',
             top: '23%',
-            left: '52%',
+            left: '51%',
             textStyle: {
                 rich: {
                     name: {
-                        fontSize: 14,
-                        fontWeight: 'normal',
-                        color: '#666666',
-                        padding: [10, 18],
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                        color: '#333333',
+                        padding: [10, 22],
                     },
                     val: {
                         fontSize: 32,
                         fontWeight: 'bold',
                         color: '#333333',
+                        padding: [0, 0, 0, 25]
                     }
                 }
             }
@@ -95,15 +96,16 @@ option = {
             textStyle: {
                 rich: {
                     name: {
-                        fontSize: 14,
-                        fontWeight: 'normal',
-                        color: '#666666',
-                        padding: [10, 18]
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                        color: '#333333',
+                        padding: [10, 22],
                     },
                     val: {
                         fontSize: 32,
                         fontWeight: 'bold',
                         color: '#333333',
+                        padding: [0, 0, 0, 25]
                     }
                 }
             }

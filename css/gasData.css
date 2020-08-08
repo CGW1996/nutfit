@@ -36,3 +36,8 @@ input {
 .redArea {
     margin-left: 20px;
 }
+
+.bg {
+    background-color: rgb(187, 186, 186);
+    padding: 50px 0;
+}
