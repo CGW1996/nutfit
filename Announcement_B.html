@@ -337,10 +337,18 @@
                 <h1>公告管理</h1>
 
                 <div class="d-flex justify-content-between mt-5">
+                    <nav>
+                        <form action="" class="search">
+                            <button id="search">S.查詢</button>
+                            <input type="search">
+                        </form>
+                    </nav>
+
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         新增公告
                     </button>
+
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -369,7 +377,7 @@
                                                         <input type="text" id='datetime'>到
                                                         <input type="text" id='datetime'>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div class="AnnouncementInformation">
                                                     <label class="AnnouncementId" for="">公告內容:</label>
@@ -401,12 +409,6 @@
                         </div>
                     </div>
 
-                    <nav>
-                        <form action="" class="search">
-                            <button id="search">S.查詢</button>
-                            <input type="search">
-                        </form>
-                    </nav>
 
                 </div>
 
@@ -458,7 +460,7 @@
                             </th>
                             <td>公園整修</td>
                             <td>2014-07-07</td>
-                            <td>2014-07-07</td>  
+                            <td>2014-07-07</td>
                             <td>環境整修的更清爽，設置成人體健設施、木屑舖面的繩網攀爬設施，還有大型的木製溜滑梯遊戲組。</td>
                             <td>123</td>
                             <td class="Features">
@@ -497,10 +499,10 @@
             });
         }
         $('#datetime').datetimepicker({
-            autoclose:true,   
-            todayBtn:true,
-            todayHighlight:true,
-            language:"zh-TW"
+            autoclose: true,
+            todayBtn: true,
+            todayHighlight: true,
+            language: "zh-TW"
         });
     </script>
 
