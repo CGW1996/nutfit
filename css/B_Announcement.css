@@ -1,5 +1,5 @@
 main{
-    /* height: 100%; */
+    height: 110vh;
 }
 
 
@@ -79,10 +79,6 @@ textarea {
     float: left;
     display:flex;
 }
-}
-.modal-dialog{
-    width:1000px;
-}
 
 .box{
     background-color: white;
@@ -93,4 +89,9 @@ textarea {
     background-color: wheat;
     border-radius: 15px 15px 0px 0px;
    
+}
+/* 分業 */
+.pagination{
+    display: flex;
+    justify-content: center;
 }

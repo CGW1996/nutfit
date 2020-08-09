@@ -85,9 +85,13 @@ main{
 
 
 .bigbox img{
-    height: 45vh;
+    height: 75%;
     width: 100%;
     border-radius: 5px 5px 0px 0px;
+}
+.boxC{
+    /* height: 5%; */
+    width:100%;
 }
 .man{
     width: auto;
@@ -100,7 +104,7 @@ main{
     height: 100px;
 }
 .smbox img{
-    height: 15vh;
+    height: 50%;
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
