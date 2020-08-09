@@ -537,19 +537,25 @@ h1, p
     width: 200px;
     text-align: center;
 }
+.current_table th
+{
+   height: 50px;
+   font-size: 22px;
+   background-color: gray;
+}
 .current_table td
 {
    height: 70px;
 }
-
-
-
-
-.reservationB_free
+.Page_navigation
 {
-    border: 2px solid black;
+    margin-top: 10px;
 }
-
+.pagination a
+{
+    background-color:rgb(112, 126, 250);
+    color: white;
+}
 
 
 
