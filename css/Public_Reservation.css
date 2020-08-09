@@ -516,19 +516,30 @@ h1, p
     /* border: 3px solid black; */
     margin: 0 20px 20px 20px;
 }
-
+.reservationB_options
+{
+    /* border: 2px solid black; */
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    font-size: 22px;
+}
 .current_table
 {
     border: 4px solid black;
     border-collapse: collapse;
-    font-size: 24px;
-    margin-top: 50px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .current_table th,td
 {
     border: 2px solid black;
     width: 200px;
     text-align: center;
+}
+.current_table td
+{
+   height: 70px;
 }
 
 
