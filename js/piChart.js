@@ -59,15 +59,16 @@ option = {
             textStyle: {
                 rich: {
                     name: {
-                        fontSize: 14,
-                        fontWeight: 'normal',
-                        color: '#666666',
-                        padding: [10, 18],
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                        color: '#333333',
+                        padding: [10, 22],
                     },
                     val: {
                         fontSize: 32,
                         fontWeight: 'bold',
                         color: '#333333',
+                        padding: [0, 0, 0, 25]
                     }
                 }
             }
@@ -78,15 +79,16 @@ option = {
             textStyle: {
                 rich: {
                     name: {
-                        fontSize: 14,
-                        fontWeight: 'normal',
-                        color: '#666666',
-                        padding: [10, 18]
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                        color: '#333333',
+                        padding: [10, 22],
                     },
                     val: {
                         fontSize: 32,
                         fontWeight: 'bold',
                         color: '#333333',
+                        padding: [0, 0, 0, 25]
                     }
                 }
             }
@@ -109,8 +111,8 @@ option = {
         type: 'pie',
         avoidLabelOverlap: true,
         // clockWise: false,
-        radius: ['35%', '45%'],
-        center: ['20%', '50%'],
+        radius: ['45%', '55%'],
+        center: ['22%', '50%'],
         data: payChartData,
         hoverOffset: 15,
         itemStyle: {
@@ -164,8 +166,8 @@ option = {
         type: 'pie',
         avoidLabelOverlap: true,
         minAngle: 0,
-        radius: ['35%', '45%'],
-        center: ['72%', '50%'],
+        radius: ['45%', '55%'],
+        center: ['73.5%', '50%'],
         data: incomeChartData,
         hoverOffset: 15,
         itemStyle: {

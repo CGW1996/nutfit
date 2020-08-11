@@ -1,5 +1,5 @@
 main{
-    height: 100%;
+    height: 110vh;
 }
 
 
@@ -13,40 +13,27 @@ main{
 }
 
 /* ------------表單----------- */
-td,
-th {
+.tableAll td,th {
    
     width: 7vh;
-    height: 7vh;
+    height: 5vh;
 }
-thead {
+.tableAll thead {
     background-color:black;
     color:#ffffff;
     text-transform:capitalize;
     text-align:center;
 }
-tbody {
+.tableAll tbody {
     background-color:	white;
     text-align:center;
 }
-/* tbody tr:nth-child(2n) {
-    background-color:	#97CBFF;
-}
-tbody tr:nth-child(2n+1) {
-    background-color:#66b3ff;
-} */
-tbody tr:hover {
+
+.tableAll tbody tr:hover {
     background-color:paleturquoise;
     color:purple;
 }
 
-
-legend {
-     
-     /* font-weight:bold; */
-     /* text-align:center; */
-     /* margin-left:40px; */
- }
 textarea {
     resize: none;
 }
@@ -64,8 +51,6 @@ textarea {
     float: left;
 }
 .AnnouncementInformation{
-    width: 450px;
-    text-align:left;
     margin: 20px;
     padding-bottom: 10px;
     float: left; 
@@ -86,15 +71,27 @@ textarea {
     border-radius: 5px;
     color: white;
 }
-/* ----------------------------------- */
+.daytime{
+    display:flex;
+    float: left;
+}
+.left{
+    float: left;
+    display:flex;
+}
 
 .box{
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 2px 2px 4px 0 #ccc;
+    /* box-shadow: 2px 2px 4px 0 #ccc; */
 }
 .box h3{
     background-color: wheat;
     border-radius: 15px 15px 0px 0px;
    
+}
+/* 分業 */
+.pagination{
+    display: flex;
+    justify-content: center;
 }

@@ -356,139 +356,180 @@
         </aside>
 
         <main class="col-10">
-            <div class="reservationB_div">
-                <div class="reservation_form">生活服務預約表單</div>
-                <figure>
-                    <legend>基本資料</legend>
-                    <div class="room_number">
-                        <label for="room_number">戶號：</label>
-                        <input type="text" name="room_number" id="room_number" size="10" placeholder="ex.B-302">
-                        <!-- </div> -->
-                        <!-- <div class="resident_name"> -->
-                        <label for="resident_name">姓名：</label>
-                        <input type="text" name="resident_name" id="resident_name" size="10" placeholder="ex.強大熱">
-                        <label for="resident_phone">連絡電話：</label>
-                        <input type="text" name="esident_phone" id="esident_phone" placeholder="請輸入家電或是手機" size="20">
+            <!-- 預約現況 左-->
+            <div class="reservationB_current">     
+                <caption ><h1>｜　生活服務預約現況表　｜</h1></caption>
+                <!-- 已預約現況表 -->
+                <div class="reservationB_options">
+                    <label for="">預約日期:</label>
+                    <input type="date">
+                    <label for="">棟別：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">E</option>
+                    </select>
+                    <label for="">預約項目：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">會議室</option>
+                        <option value="">歡唱室</option>
+                        <option value="">交通接送服務</option>
+                        <option value="">維修維護服務</option>
+                        <option value="">家事清潔服務</option>
+                    </select>
+                    <label for="">預約狀態：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">完成</option>
+                        <option value="">未完成</option>
+                    </select>
 
-                    </div>
-                </figure>
-                <figure>
-                    <legend>預約內容</legend>
-                    <div class="">
-                        <label for="">預約項目：</label>
-                        <div class="">
-                            <input type="radio" name="reservation_project" id="car" value="car"><label
-                                for="car">交通接送</label><br>
 
-                            <label for="">　乘客人數：</label>
-                            <input type="text" name="" id="" size="5">
-                            <label for="">寵物：</label>
-                            <input type="radio" name="pet" id="pet_yes"><label for="pet_yes">有</label>
-                            <input type="radio" name="pet" id="pet_no"><label for="pet_no">無</label>
-                            <label for="">種類及數量：</label>
-                            <input type="text" name="" id="" placeholder="ex.狗1隻，巨型貴賓狗" size="25"><br>
-                            <label for="destination">　目的地：</label>
-                            <input type="text" name="destination" id="destination" size="50"
-                                placeholder="ex.台北市大安區信義路三段153號">
-                            <label for="">預約車種：</label>
-                            <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">高級轎車</option>
-                                <option value="">豪華房車</option>
-                                <option value="">尊榮休旅車</option>
-                            </select>
-                        </div>
-                        <div class="">
-                            <input type="radio" name="reservation_project" id="fix" value="fix"><label
-                                for="fix">維修維護</label>
-                            <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">水管裝修</option>
-                                <option value="">電力維修</option>
-                                <option value="">馬桶裝修</option>
-                                <option value="">燈具安裝及維修</option>
-                                <option value="">冷氣機維修及清潔</option>
-                                <option value="">洗衣機維修及清潔</option>
-                            </select>
-                        </div>
-                        <div class="">
-                            <input type="radio" name="reservation_project" id="clean" value="clean"><label
-                                for="clean">家事清潔</label>
-                            <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">客廳清潔</option>
-                                <option value="">廚房清潔</option>
-                                <option value="">庭院清潔</option>
-                                <option value="">浴室清潔</option>
-                                <option value="">臥室清潔</option>
-                                <option value="">木質地面養護</option>
-                                <option value="">石材地面養護</option>
-                                <option value="">車輛清潔</option>
-                            </select>
-                            <label for="">寵物：</label>
-                            <input type="radio" name="pet" id="pet_yes"><label for="pet_yes">有</label>
-                            <input type="radio" name="pet" id="pet_no"><label for="pet_no">無</label>
-                            <label for="">種類：</label>
-                            <input type="text" name="" id="" placeholder="ex.狗" size="5">
-                        </div>
-                        <div class="">
-                            <label for="">預約日期：</label>
-                            <input type="date" name="" id="">
-                        </div>
-                        <div class="">
-                            <label for="">預約時間：</label>
-                            <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">08</option>
-                                <option value="">09</option>
-                                <option value="">10</option>
-                                <option value="">11</option>
-                                <option value="">12</option>
-                                <option value="">13</option>
-                                <option value="">14</option>
-                                <option value="">15</option>
-                                <option value="">16</option>
-                                <option value="">17</option>
-                            </select>
-                            <label for="">時</label>
-                            <select name="" id="">
-                                <option value="" selected>請選擇</option>
-                                <option value="">00</option>
-                                <option value="">10</option>
-                                <option value="">20</option>
-                                <option value="">30</option>
-                                <option value="">40</option>
-                                <option value="">50</option>
-                            </select>
-                            <label for="">分</label>
-                        </div>
-                        <div class="">
-                            <label for="reservation_memo">備註事項：</label>
-                        </div>
-                        <div class="">
-                            <textarea name="reservation_memo" id="reservation_memo" cols="60" rows="10"
-                                placeholder="請將特殊注意事項註記於此。"></textarea>
-                        </div>
-                        <div class="">
-                            <input type="submit" name="" id="" value="確定預約" onclick="ok()">
-                            <input type="reset" name="" id="" value="清除資料" onclick="clear()">
-                        </div>
-                    </div>
-                </figure>
+                </div>
+                <table class="current_table"> 
+                    <thead>
+                        <tr>
+                            <th>項次</th>
+                            <th>預約日期/時間</th>
+                            <th>預約戶號/住戶</th>
+                            <th>聯絡電話</th>
+                            <th>預約項目</th>
+                            <th>預約狀態</th>
+                            <th>功能</th>
+                            <th>備註事項</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2020/08/07<br>0900-1200</td>
+                            <td>B-302<br>強大熱</td>
+                            <td>0972-117-275</td>
+                            <td>家事清潔服務<br>客廳清潔</td>
+                            <td>已完成通知</td> 
+                            <td><button class="btn btn-danger">通知住戶</button></td>     
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2020/08/07<br>0800-1200</td>
+                            <td>A-702<br>高文英</td>
+                            <td>0972-132-999</td>
+                            <td>歡唱室</td>
+                            <td>未完成通知</td> 
+                            <td><button class="btn btn-danger">通知住戶</button></td>     
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Page_navigation">
+                    <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item ">
+                        <a class="page-link" href="#" tabindex="-1" >Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                
+
             </div>
-            <div class="">
-                <h6>預約單填寫說明</h6>
-                <ol>
-                    <li>一份預約單僅得以預約一項服務，若要預約兩項以上的服務，請填寫相對張數之預約單。</li>
-                    <li>預約交通服務者，請填寫人數、是否攜帶寵物，若有乘坐輪椅者，請於備註欄註名，以利派遣車輛之車型。</li>
-                    <li>攜帶寵物者，請將寵物放入寵物籃內，以避免寵物因恐慌，造成行車上安全顧慮。</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-            </div>
+    
+
+
+
         </main>
     </div>
 
@@ -518,6 +559,7 @@
             });
         }
     </script>
+    <script src="../js/Live_Service.js"></script>
 
 </body>
 

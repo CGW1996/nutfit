@@ -204,6 +204,14 @@
     color: yellow;
 }
 
+.public_project img
+{
+    margin: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+
 .hide
 {
     display: none;
@@ -388,6 +396,7 @@ h1, p
 {
     margin: 30px 0;
 }
+
 .clean-title
 {
     font-size: 28px;
@@ -441,6 +450,14 @@ h1, p
     color: gray;
 }
 
+
+
+
+
+
+
+
+
 /* fix */
 .fix_jumbotron
 {
@@ -492,9 +509,86 @@ h1, p
 
 
 
-
-
 /* -------Reservation_B--------- */
+
+.reservationB_current
+{
+    /* border: 3px solid black; */
+    margin: 0 20px 20px 20px;
+}
+.reservationB_options
+{
+    /* border: 2px solid black; */
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    font-size: 22px;
+}
+.current_table
+{
+    border: 4px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.current_table th,td
+{
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+}
+.current_table th
+{
+   height: 50px;
+   font-size: 22px;
+   background-color: gray;
+}
+.current_table td
+{
+   height: 70px;
+}
+.Page_navigation
+{
+    margin-top: 10px;
+}
+.pagination a
+{
+    background-color:rgb(112, 126, 250);
+    color: white;
+}
+
+
+
+
+/* Reservation_detail_B */
+
+.Reservation_detail_B
+{
+    border: 3px solid black;
+    border-radius: 20px;
+    /* width: 800px; */
+    height: 300px;
+    margin: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
