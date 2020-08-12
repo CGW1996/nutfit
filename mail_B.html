@@ -3,57 +3,23 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../fontawesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/frontPage.css">
-    <!-- <link rel="stylesheet" href="css/event.css"> -->
+    <link rel="stylesheet" href="css/e-community.css">
+    <link rel="stylesheet" href="css/mail_B.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>ECOMMINITY - 社區活動</title>
-
-    <style>
-        .eventsignup {
-            width: 100px;
-            margin: auto;
-        }
-
-        .bkg {
-            background-color: ghostwhite;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            padding: 20px;
-        }
-
-        .singbtntop {
-            text-align: right;
-        }
-
-        .btn a {
-            text-decoration: none;
-            color: #17a2b8;
-        }
-
-        .btn a:hover {
-            text-decoration: none;
-            color: white;
-        }
-
-        .eventsignup:hover {
-            color: white !important;
-        }
-    </style>
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="../image/logo.png" alt=""> </a>
-        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
+        <a class="logo col-2" href="homepage_B.html"><span>E-<b>Community</b></span></a>
+        <nav class="col-10">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o text-light"></i>
+                            <i class="fa fa-envelope-o"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -136,7 +102,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o  text-light"></i>
+                            <i class="fa fa-bell-o"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -206,7 +172,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o text-light"></i>
+                            <i class="fa fa-flag-o"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -290,7 +256,7 @@
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span class=" text-light">Jenny</span>
+                            <span>Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -324,122 +290,151 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="row menubar justify-content-center">
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="../Announcement.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-bullhorn "></i></span><br>
-                    <span class="menutxt"> 社區公告 </span>
-                </a>
-            </div>
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="event.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-bookmark"></i></span><br>
-                    <span class="menutxt"> 社區活動 </span>
-                </a>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-wrench "></i></span><br>
-                    <span class="menutxt">生活服務</span>
+    <div class="d-flex">
+        <aside class="sidenav col-2">
+            <section class="sidebar">
+                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
+                <p class="navName">Jenny</p>
+                <a href="Announcement_B.html">最新消息</a>
+                <a href="event/event_B.html">社區活動</a>
+                <button class="dropdown-btn">生活服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="../Live_Service/Public.html">公共設施</a>
-                    <a class="dropdown-item" href="../Live_Service/Reservation.html">預約服務</a>
+                <div class="dropdown-container fin">
+                    <a href="managementFee_B.html">管理費</a>
+                    <a href="payEntrance_B.html">支出</a>
+                    <a href="gasData_B.html">瓦斯抄表</a>
+                    <a href="personalFin_B.html">個人紀錄</a>
                 </div>
-            </div>
-
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="../package/package.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-archive"></i></span><br>
-                    <span class="menutxt"> 郵務管理</span>
-                </a>
-            </div>
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="../Forum.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-comments "></i></span><br>
-                    <span class="menutxt"> 討論區</span>
-                </a>
-            </div>
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="../voteList.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-cubes"></i></span><br>
-                    <span class="menutxt"> 投票</span>
-                </a>
-            </div>
-
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-calendar-alt"></i></span><br>
-                    <span class="menutxt">行事曆</span>
+                <a href="mail_B.html">訊息中心</a>
+                <!-- 下拉式選單 -->
+                <button class="dropdown-btn">預約服務
+                    <i class="fa fa-caret-down"></i>
                 </button>
-            </div>
+                <div class="dropdown-container">
+                    <a href="pool_B.html">游泳池</a>
+                    <a href="reading_B.html">閱覽室</a>
+                    <a href="aromatherapy_B.html">芳療室</a>
+                </div>
+                <!--  -->
+                <a href="voteList_B.html">社區投票</a>
+                <a href="Forum_B.html">討論區</a>
+                <a href="postal_B.html">郵務管理</a>
+                <a href="calendar_B.html">社區行事曆</a>
+            </section>
+        </aside>
 
-            <div class="btn-group menu">
-                <button type="button" class="btn change" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="icon"><i class="fa fa-dollar-sign "></i></span><br>
-                    <span class="menutxt">財務系統</span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="../managementFee_confirm.html">繳管理費</a>
-                    <a class="dropdown-item" href="../gasData.html">瓦斯抄表</a>
-                    <a class="dropdown-item" href="../financialFront.html">社區財務</a>
+        <main class="">
+            <div class="main">
+                <button type="button" class="write btn btn-outline-success" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@ecodaily.com">撰寫</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">撰寫郵件</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="bl">
+                                        <label for="" class="lab">收件人 ：</label><br>
+                                        <input type="text" name="mailto" class="txt">
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">主旨 ：</label><br>
+                                        <input type="text" name="title" class="txt">
+                                    </div>
+                                    <div class="bl" style="padding-bottom: 0;">
+                                        <label for="" class="lab">內容 ：</label><br>
+                                        <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
+                                    </div>
+                                    <div class="b1" style="padding-top: 0px;">
+                                        <div class="txtEditor">
+                                            <button class="textEdit fa fa-font"></button>
+                                            <button class="textEdit fa fa-bold"></button>
+                                            <button class="textEdit fa fa-italic"></button>
+                                            <button class="textEdit fa fa-underline"></button>
+                                            <button class="textEdit fa fa-text-height"></button>
+                                            <button class="textEdit fa fa-text-width"></button>
+                                        </div>
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">附加檔案 ：</label>
+                                        <input type="file">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> 送出</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <select name="sort" id="">
+                            <option value="new">最新</option>
+                            <option value="old">最舊</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="chPage fa fa-chevron-left"></button>
+                    </div>
+                    <div>
+                        <select name="page" id="">
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>/ 頁</p>
+                    </div>
+                    <div>
+                        <button class="chPage fa fa-chevron-right"></button>
+                    </div>
+                </div>
+                <div class="major">
+
+                    <table>
+                        <thead>
+                            <th class="ip"></th>
+                            <th class="person">寄件人</th>
+                            <th class="title">標題</th>
+                            <th class="description">內容</th>
+                            <th class="date">日期</th>
+                        </thead>
+                        <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
+                            <td class="person">foodpanda</td>
+                            <td class="title"><span>您已下了訂單</span></td>
+                            <td class="description">
+                                <span>您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉您的餐點正在製作中，再等一下就可以享用囉</span>
+                            </td>
+                            <td class="date">7月22日</td>
+                        </tr>
+                        <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
+                            <td class="person">foodpanda</td>
+                            <td class="title"><span>您已下了訂單</span></td>
+                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
+                            <td class="date">7月22日</td>
+                        </tr>
+                        <tr>
+                            <td class="ip"><button class="star fa fa-star-o"></button></td>
+                            <td class="person">foodpanda</td>
+                            <td class="title"><span>您已下了訂單</span></td>
+                            <td class="description"><span>您的餐點正在製作中，再等一下就可以享用囉</span></td>
+                            <td class="date">7月22日</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-
-            <div class="btn-group menu" style="border-left: 1px solid rgb(200, 200, 200);">
-                <a href="../mail.html" class="btn change" role="button" aria-pressed="true">
-                    <span class="icon"><i class="fa fa-envelope"></i></span><br>
-                    <span class="menutxt"> 訊息中心</span>
-                </a>
-            </div>
-
-
-
-        </div>
-
-
-        <main class="container mt-4">
-            <!-- <div class="mb-1 singbtntop">
-                <button type="button" class="btn btn-outline-info">我要報名</button>
-            </div> -->
-            <img src="../image/event/yoga_signup.png" alt="">
-            <div class="bkg">
-                <h3 class="font-weight-bold">肩頸背深度延展 瑜珈輪初學課程</h3>
-                <h5 class="font-weight-bold"> <i class="fa fa-clock-o"></i> 活動時間</h5>
-                <div class="ml-4">2020-08-10(一) - 2020-10-12(一)</div>
-                <div class="ml-4 mb-3">每周一晚間 19:00-20:00 </div>
-                <h5 class="font-weight-bold"><i class="fa fa-map-marker"></i> 活動地點 </h5>
-                <div class="ml-4  mb-3">瑜珈教室</div>
-                <h5 class="font-weight-bold"><i class="fa fa-paperclip"></i> 活動內容 </h5>
-                <div class="ml-4  mb-3">
-                    瑜珈輪穩固的中空圓形支柱設計，增加瑜珈練習時的靈活度，建立力量，開創更多伸展空間，為後彎與平衡帶來穩定信心，同時感到安全與放鬆，幫助舒緩緊繃僵硬的肌肉，鍛鍊核心與平衡，適合瑜珈初學者或想更進一步放鬆身體的學員。
-                </div>
-                <h5 class="font-weight-bold"><i class="fa fa-dollar-sign"></i> 報名費用 </h5>
-                <div class="ml-4  mb-3"> $1500 / 10堂</div>
-                <h5 class="font-weight-bold"><i class="fa fa-exclamation"></i> 注意事項</h5>
-                <div class="ml-4  mb-3">請自備瑜珈墊、水及毛巾，請假恕不退費</div>
-
-                <div class="eventsignup mt-5">
-                    <a id="signupbtn" href="event_signup.html">
-                        <button type="button" class="btn btn-outline-info"> 我要報名</button>
-                    </a>
-                </div>
-            </div>
-
         </main>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -451,8 +446,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
-
-
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
