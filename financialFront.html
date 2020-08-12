@@ -11,6 +11,7 @@
     <script src="js/echarts.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/financial.css">
+    <link rel="stylesheet" href="css/Public_Reservation.css">
     <title>eCO Daily</title>
 
     <style>
@@ -383,178 +384,185 @@
 
 
         <main class=" container">
+            <div class="page_reservation_form">
+                <ul class="public_buttngroup">
+                    <li class="public_buttn">財務明細</li>
+                    <li class="public_buttn">財務統計</li>
+                </ul>
 
-            <div class="outer">
-                <div class="inner">
-                    <div class="smalltitle">
-                        <p>|　各期收支表　|</p>
+                <div class="outer">
+                    <div class="inner">
+                        <h2>各期收支表</h2>
+                        <label for="selectYear">年度:</label>
+                        <select name="selectYear" id="selectYear">
+                        <option value="-1">年</option>
+                    </select>
+                        <br>
+                        <label for="selectMonth">月份:</label>
+                        <select name="selectMonth" id="selectMonth">
+                        <option value="-1">月</option>
+                    </select>
                     </div>
-                    <label for="selectYear">年度:</label>
-                    <select name="selectYear" id="selectYear">
-                        <option value="tztz">2020</option>
-                        <option value="tzon">2019</option>
-                        <option value="tzoe">2018</option>
-                    </select>
-                    <br>
-                    <label for="selectMonth">月份:</label>
-                    <select name="selectMonth" id="selectMonth">
-                        <option value="jan">1</option>
-                        <option value="feb">2</option>
-                        <option value="mar">3</option>
-                    </select>
+
                 </div>
-                <div id="piChart" style=" width: 1250px;height: 400px;"></div>
+                <div id="page_0" class="page_form public_content hide">
+                    <h2>支出明細</h2>
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>流水編號</th>
+                                <th>日期</th>
+                                <th>類別</th>
+                                <th>廠商名稱</th>
+                                <th>廠商電話-</th>
+                                <th>品名</th>
+                                <th>用途-</th>
+                                <th>數量</th>
+                                <th>價格</th>
+                                <th>稅別-</th>
+                                <th>付款方式-</th>
+                                <th>小計</th>
+                                <th>購買人</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>2020/05/08</td>
+                                <td>活動</td>
+                                <td>阿美滷肉飯</td>
+                                <td>66316666</td>
+                                <td>滷肉飯</td>
+                                <td>活動供餐</td>
+                                <td>50</td>
+                                <td>25</td>
+                                <td>免稅</td>
+                                <td>現金</td>
+                                <td>1250</td>
+                                <td>小美</td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>2020/06/08</td>
+                                <td>修繕</td>
+                                <td>阿朱電梯</td>
+                                <td>37856945</td>
+                                <td>電梯檢修</td>
+                                <td>定期檢查</td>
+                                <td>1</td>
+                                <td>4000</td>
+                                <td>應稅</td>
+                                <td>月結</td>
+                                <td>4000</td>
+                                <td>小朱</td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>2020/08/08</td>
+                                <td>人事</td>
+                                <td>阿花人力派遣</td>
+                                <td>78945213</td>
+                                <td>打掃阿姨</td>
+                                <td>環境清潔</td>
+                                <td>3</td>
+                                <td>3000</td>
+                                <td>應稅</td>
+                                <td>月結</td>
+                                <td>9000</td>
+                                <td>小花</td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>2020/07/08</td>
+                                <td>雜費</td>
+                                <td>阿明五金行</td>
+                                <td>56248596</td>
+                                <td>塑膠椅</td>
+                                <td>中秋烤肉使用</td>
+                                <td>50</td>
+                                <td>60</td>
+                                <td>免稅</td>
+                                <td>現金</td>
+                                <td>3000</td>
+                                <td>小明</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>收入明細</h2>
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>流水編號</th>
+                                <th>入賬日期</th>
+                                <th>類別</th>
+                                <th>名稱</th>
+                                <th>金額</th>
+                                <th>付款人</th>
+                                <th>收款人</th>
+                                <th>交代事項</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>105</td>
+                                <td>2020/07/01</td>
+                                <td>管理費</td>
+                                <td>管理費</td>
+                                <td>3685429</td>
+                                <td>住戶</td>
+                                <td>管委會</td>
+                                <td>2020年4-6月的管理費</td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>2020/05/08</td>
+                                <td>管理費</td>
+                                <td>利息</td>
+                                <td>429</td>
+                                <td>瑞士銀行</td>
+                                <td>管委會</td>
+                                <td>2019年存款利息</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>2020/01/05</td>
+                                <td>場地租借</td>
+                                <td>基地台</td>
+                                <td>685429</td>
+                                <td>中華電信</td>
+                                <td>管委會</td>
+                                <td>2019年1-12月架設基地台的租借費</td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>2019/09/08</td>
+                                <td>活動</td>
+                                <td>中秋烤肉</td>
+                                <td>5429</td>
+                                <td>活動餘額</td>
+                                <td>管委會</td>
+                                <td>2020年中秋烤肉活動剩餘款</td>
+                            </tr>
+                            <tr>
+                                <td>101</td>
+                                <td>2019/03/28</td>
+                                <td>廣告</td>
+                                <td>電梯內廣告</td>
+                                <td>30000</td>
+                                <td>海龜老人會</td>
+                                <td>管委會</td>
+                                <td>A-H棟電梯內刊登廣告</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="page_1" class="page_form public_content hide">
+                    <div id="piChart" style=" width: 1250px;height: 400px;"></div>
+                    <div id="totalChart" style="margin: 0 auto; width: 800px;height: 600px;"></div>
+                </div>
             </div>
-            <!-- <div id="totalChart" style="margin: 0 auto; width: 800px;height: 600px;"></div> -->
-            <h2>支出明細</h2>
-            <table class="order-table">
-                <thead>
-                    <tr>
-                        <th>流水編號</th>
-                        <th>日期</th>
-                        <th>類別</th>
-                        <th>廠商名稱</th>
-                        <th>廠商電話-</th>
-                        <th>品名</th>
-                        <th>用途-</th>
-                        <th>數量</th>
-                        <th>價格</th>
-                        <th>稅別-</th>
-                        <th>付款方式-</th>
-                        <th>小計</th>
-                        <th>購買人</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>2020/05/08</td>
-                        <td>活動</td>
-                        <td>阿美滷肉飯</td>
-                        <td>66316666</td>
-                        <td>滷肉飯</td>
-                        <td>活動供餐</td>
-                        <td>50</td>
-                        <td>25</td>
-                        <td>免稅</td>
-                        <td>現金</td>
-                        <td>1250</td>
-                        <td>小美</td>
-                    </tr>
-                    <tr>
-                        <td>002</td>
-                        <td>2020/06/08</td>
-                        <td>修繕</td>
-                        <td>阿朱電梯</td>
-                        <td>37856945</td>
-                        <td>電梯檢修</td>
-                        <td>定期檢查</td>
-                        <td>1</td>
-                        <td>4000</td>
-                        <td>應稅</td>
-                        <td>月結</td>
-                        <td>4000</td>
-                        <td>小朱</td>
-                    </tr>
-                    <tr>
-                        <td>003</td>
-                        <td>2020/08/08</td>
-                        <td>人事</td>
-                        <td>阿花人力派遣</td>
-                        <td>78945213</td>
-                        <td>打掃阿姨</td>
-                        <td>環境清潔</td>
-                        <td>3</td>
-                        <td>3000</td>
-                        <td>應稅</td>
-                        <td>月結</td>
-                        <td>9000</td>
-                        <td>小花</td>
-                    </tr>
-                    <tr>
-                        <td>004</td>
-                        <td>2020/07/08</td>
-                        <td>雜費</td>
-                        <td>阿明五金行</td>
-                        <td>56248596</td>
-                        <td>塑膠椅</td>
-                        <td>中秋烤肉使用</td>
-                        <td>50</td>
-                        <td>60</td>
-                        <td>免稅</td>
-                        <td>現金</td>
-                        <td>3000</td>
-                        <td>小明</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>收入明細</h2>
-            <table class="order-table">
-                <thead>
-                    <tr>
-                        <th>流水編號</th>
-                        <th>入賬日期</th>
-                        <th>類別</th>
-                        <th>名稱</th>
-                        <th>金額</th>
-                        <th>付款人</th>
-                        <th>收款人</th>
-                        <th>交代事項</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>105</td>
-                        <td>2020/07/01</td>
-                        <td>管理費</td>
-                        <td>管理費</td>
-                        <td>3685429</td>
-                        <td>住戶</td>
-                        <td>管委會</td>
-                        <td>2020年4-6月的管理費</td>
-                    </tr>
-                    <tr>
-                        <td>104</td>
-                        <td>2020/05/08</td>
-                        <td>管理費</td>
-                        <td>利息</td>
-                        <td>429</td>
-                        <td>瑞士銀行</td>
-                        <td>管委會</td>
-                        <td>2019年存款利息</td>
-                    </tr>
-                    <tr>
-                        <td>103</td>
-                        <td>2020/01/05</td>
-                        <td>場地租借</td>
-                        <td>基地台</td>
-                        <td>685429</td>
-                        <td>中華電信</td>
-                        <td>管委會</td>
-                        <td>2019年1-12月架設基地台的租借費</td>
-                    </tr>
-                    <tr>
-                        <td>102</td>
-                        <td>2019/09/08</td>
-                        <td>活動</td>
-                        <td>中秋烤肉</td>
-                        <td>5429</td>
-                        <td>活動餘額</td>
-                        <td>管委會</td>
-                        <td>2020年中秋烤肉活動剩餘款</td>
-                    </tr>
-                    <tr>
-                        <td>101</td>
-                        <td>2019/03/28</td>
-                        <td>廣告</td>
-                        <td>電梯內廣告</td>
-                        <td>30000</td>
-                        <td>海龜老人會</td>
-                        <td>管委會</td>
-                        <td>A-H棟電梯內刊登廣告</td>
-                    </tr>
-                </tbody>
-            </table>
+
         </main>
     </div>
     <footer>
@@ -616,7 +624,8 @@
         }
     </script>
     <script src="js/piChart.js"></script>
-    <!-- <script src="js/financialBarLine.js"></script> -->
+    <script src="js/financialBarLine.js"></script>
+    <script src="js/Live_Service.js"></script>
 </body>
 
 </html>
