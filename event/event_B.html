@@ -326,12 +326,37 @@
         </aside>
 
         <main class="col-10 ">
+
             <h1 class="ml-5 font-weight-bold">社區活動管理</h1>
             <section class="cards container d-flex justify-content-end my-4 ">
 
                 <div class="addnewevent "> <a class="px-3" href="event_add1_B.html"> <i class="fa fa-plus"></i> 新增活動</a>
                 </div>
             </section>
+            <div class="searchbar mb-4">
+                <form class="form-inline my-2 my-lg-0 ">
+                    <div class="">
+                        <label>
+                            <select class="form-control_select mr-sm-2">
+                                <option value="allCategory">分類</option>
+                                <option value="sport">運動</option>
+                                <option value="lesson">課程 </option>
+                                <option value="buytogether">團購</option>
+                                <option value="gathering">聚會</option>
+                                <option value="buytogether">招募</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </label>
+                    </div>
+                    <input class="form-control_1 mr-sm-2" type="search" placeholder="請輸入關鍵字" aria-label="Search">
+                    <span> 日期：</span>
+                    <input class="form-control_date mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
+                        aria-label="Search"> <span> 到 &nbsp;</span>
+                    <input class="form-control_date mr-sm-2" id="datepicker" type="date" placeholder="請選擇日期"
+                        aria-label="Search">
+                    <button type="button" class="btn btn-info"> <i class="fa fa-search"></i> 搜尋</button>
+                </form>
+            </div>
             <section class="cards container d-flex">
                 <article class="card card2  col-4">
                     <div class="card__img"></div>

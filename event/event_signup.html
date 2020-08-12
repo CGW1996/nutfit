@@ -93,6 +93,14 @@
         .white:hover {
             color: white;
         }
+
+        .creditcardnote {
+            display: none;
+        }
+
+        .cashnote {
+            display: none;
+        }
     </style>
 </head>
 
@@ -472,7 +480,7 @@
 
         <main class="container mt-4 signup row">
             <div class="col-4">
-                <img class="smimg mt-5" src="image/event/yoga_signup.png" alt="">
+                <img class="smimg mt-5" src="../image/event/yoga_signup.png" alt="">
                 <div class="gray">
                     <div style="font-weight: bold;">肩頸背深度延展 瑜珈輪初學課程 / 放鬆舒壓 <br> -Jade Yoga </div>
                     <div> 2020-03-28(六) 10:00 ~ 2020-08-31(一) 00:00 (GMT+8)</div>
@@ -492,15 +500,32 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="other">其他</option>
                         </select>
                     </div>
 
                     <fieldset class="fieldset1 mt-4">
                         <legend class="legend1">參加人1</legend>
-                        <div class="mt-2">姓名</div>
-                        <input class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        <div>
+                            <label for="txtsigneraddress" class="mt-2">戶號<span style="color: red;">*</span></label>
+                            <input id="txtsigneraddress" class="txtStyle" type="text" value="A305" readonly>
+                        </div>
+
+                        <div>
+                            <label for="txtsignerName" class="mt-2">姓名</label>
+                            <input id="txtsignerName" class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerPhone" class="mt-2">聯絡電話</label>
+                            <input class="txtStyle" id="txtsignerPhone" type="text" placeholder=" 請輸入聯絡電話">
+                        </div>
+
+                        <div>
+                            <label for="txtsigneremail" class="mt-2">電子郵件</label>
+                            <input class="txtStyle" id="txtsigneremail" type="email" placeholder="請輸入E-MAIL">
+                        </div>
+
+
                         <div class="mt-2">
                             <div for="" class="t1">性別 </div>
                             <label>
@@ -510,16 +535,30 @@
                                 <input type="radio" name="gender" value="female"> 女
                             </label>
                         </div>
-                        <div class="">生日</div>
-                        <input class="txtStyle" type="date" placeholder="請選擇出生年月日">
-                        <div class="mt-2">聯絡電話</div>
-                        <input class="txtStyle" type="text" placeholder=" 請輸入聯絡電話">
-
                     </fieldset>
-                    <fieldset class="fieldset2 mt-4">
+
+
+                    <fieldset class="fieldset1 mt-4">
                         <legend class="legend1">參加人2</legend>
-                        <div class="mt-2">姓名</div>
-                        <input class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        <div>
+                            <label for="txtsigneraddress" class="mt-2">戶號<span style="color: red;">*</span></label>
+                            <input id="txtsigneraddress" class="txtStyle" type="text" value="請輸入戶號">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerName" class="mt-2">姓名</label>
+                            <input id="txtsignerName" class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerPhone" class="mt-2">聯絡電話</label>
+                            <input class="txtStyle" id="txtsignerPhone" type="text" placeholder=" 請輸入聯絡電話">
+                        </div>
+
+                        <div>
+                            <label for="txtsigneremail" class="mt-2">電子郵件</label>
+                            <input class="txtStyle" id="txtsigneremail" type="email" placeholder="請輸入E-MAIL">
+                        </div>
                         <div class="mt-2">
                             <div for="" class="t1">性別 </div>
                             <label>
@@ -529,16 +568,30 @@
                                 <input type="radio" name="gender" value="female"> 女
                             </label>
                         </div>
-                        <div class="">生日</div>
-                        <input class="txtStyle" type="date" placeholder="請選擇出生年月日">
-                        <div class="mt-2">聯絡電話</div>
-                        <input class="txtStyle" type="text" placeholder=" 請輸入聯絡電話">
-
                     </fieldset>
+
+
+                    <div class="mt-2">
+                        <div for="" class="t1 paymethod">選擇付款方式 </div>
+                        <label>
+                            <input type="radio" name="paymethod" value="cash" id="paybycash"> 現金　
+                        </label>
+                        <label>
+                            <input type="radio" name="paymethod" value="creditcard" id="paybycreditcard"> 銀行轉帳
+                        </label>
+                        <div class="creditcardnote">
+                            <div>匯款銀行：中華郵政</div>
+                            <div for="">匯款帳號：0012345 6789012</div>
+                            <div for="">最晚請於開課前三天(2020-09-20前)繳款完畢，並回覆匯款帳號後5碼</div>
+                        </div>
+                        <div class="cashnote">
+                            <div>請於第一天上課日繳交全額費用</div>
+                        </div>
+                    </div>
 
                     <div class="mb-4  totalprice">
 
-                        <h4>總金額：<span>$ 1,500</span></h4>
+                        <h4>總金額：<span>$ 3,000</span></h4>
                     </div>
                     <hr>
                     <div><input type="checkbox"> 我已閱讀並同意eCO DAILY <a href="#">票券訂購暨使用須知</a>
@@ -546,7 +599,7 @@
                     <div class="signuporcancel row mt-4">
                         <button type="button" id="btncancel" class="btn btn-outline-info_cancel col-5 mr-1">取消</button>
                         <div id="btnyes" class="btn btn-outline-info_yes col-5 ml-1">
-                            <a href="event.html"><button type="button" class="btn white">確定報名</button></a>
+                            <a href="event_signup2.html"><button type="button" class="btn white">下一步</button></a>
 
                         </div>
 
@@ -585,6 +638,15 @@
                 }
             });
         }
+
+        $("#paybycash").click(function () {
+            $(".cashnote").css("display", "block")
+            $(".creditcardnote").css("display", "none")
+        })
+        $("#paybycreditcard").click(function () {
+            $(".cashnote").css("display", "none")
+            $(".creditcardnote").css("display", "block")
+        })
 
         $("#btnyes").click(function () {
             alert("報名成功!");
