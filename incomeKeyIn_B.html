@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/B_payKeyIn.css">
 </head>
+<style>
+    .t1 {
+        width: 100px;
+        float: left;
+        text-align: right;
+    }
+</style>
 
 <body>
     <header class="d-flex">
@@ -324,11 +331,13 @@
             </nav>
             <form action="">
                 <section>
-                    <label for="number">流水號碼:</label>
+                    <label class="t1" for="number">流水號碼:</label>
                     <input type="text" name="number" id="number">
                     <label for="incomeDate">入賬日期:</label>
                     <input type="text" name="incomeDate" id="incomeDate">
-                    <label for="type">類別:</label>
+                </section>
+                <section>
+                    <label class="t1" for="type">類別:</label>
                     <select name="type" id="type">
                         <option value="tManageFee">管理費</option>
                         <option value="ad">廣告</option>
@@ -339,16 +348,15 @@
                     <input type="text" name="item" id="item">
                     <label for="incomeMoney">金額:</label>
                     <input type="text" name="incomeMoney" id="incomeMoney">
-
                 </section>
                 <section>
-                    <label for="source">來源:</label>
+                    <label class="t1" for="source">來源:</label>
                     <input type="text" name="source" id="source">
                     <label for="payee">收款人:</label>
                     <input type="text" name="payee" id="payee">
                 </section>
                 <section class="d-flex">
-                    <label for="remark">交代事項:</label>
+                    <label class="t1" for="remark">交代事項:</label>
                     <textarea name="remark" id="remark" cols="90" rows="5"></textarea>
                 </section>
             </form>
