@@ -453,6 +453,7 @@ h1, p
     margin: 15px 0;
     color: gray;
 }
+/* 評估時間及按鈕 */
 .time_a
 {
     position: absolute;
@@ -578,25 +579,6 @@ h1, p
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 預約單 */
 
 .page_form
@@ -669,53 +651,9 @@ textarea
 
 
 
-/* .page_buttngroup
+footer
 {
-    display: flex;
-    list-style-type: none;
+    height: 400px;
+    background-color: black;
+    border: 5px solid black;
 }
-
-.page_buttn
-{
-    background-color: rgb(8, 8, 8);
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
-    font-weight: 800;
-    text-align: center;
-    width: 350px;
-    margin-right: 1rem;
-}
-.page_buttn:hover
-{
-    color: yellow;
-    cursor: pointer;
-} 
-.page_content img
-{
-    margin-top: 20px;
-    margin-left: 30px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    box-shadow: 0 0 9px lightslategray;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.reservationB_div
-{
-    width: 750px;
-    float: left;
-    border: 3dpx solid black;
-}
-figure
-{
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.hidden
-{
-    display: none;
-} */
