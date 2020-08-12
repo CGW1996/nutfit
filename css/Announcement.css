@@ -7,13 +7,20 @@ main{
 .carousel{
     padding: 0%;
 }
+
 .carousel-inner .carousel-item img { 
     height:50vh;
     width: 20vh;
 
 }
-.carousel-caption h3,p{
+.carousel-caption h3,p
+{
     background-color: rgba(255, 255, 255, 0.7);
+
+}
+.carousel-inner a:hover
+{
+    text-decoration: none;
 }
 
 .carousel-item a{

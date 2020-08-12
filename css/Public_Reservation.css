@@ -1,130 +1,4 @@
 
-/*-公共設施- */
-/* .small_title
-{
-    color: rgb(230, 230, 240);
-    font-size: 40px;
-    font-weight: 900;
-    font-family: 微軟正黑體;
-    margin: 10px 0;
-    width: 340px;
-    height: 150px;
-    padding-top: 70px;
-    padding-left: 90px;
-    margin:20px 0 20px 40%;
-
-    background-image: url(/image/public/BG_NO_smtitle.png);
-}
-
-.public_reservation
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-.public_reservation img
-{
-    width: 1024px;
-    border: 10px double rgb(118, 152, 228) ;
-    border-radius: 15px;  
-}
-/* -交誼廳- */
-/* .lounge_div,.pool_div,.library_div,
-.gym_div,.amusement_div,.meeting_div
-{
-    position: relative;
-    margin: 20px auto;
-}
-.lounge_text,.pool_text,.library_text,
-.gym_text,.amusement_text,.meeting_text
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    border-radius: 15px;
-    transition: .5s ease;
-    background-color: rgba(248, 249, 250, 0.76); 
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(82, 76, 62, 0.5);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .8s ease; 
-    border-radius: 15px;
-}
-.lounge_div:hover .lounge_text,
-.pool_div:hover .pool_text,
-.library_div:hover .library_text,
-.gym_div:hover .gym_text,
-.amusement_div:hover .amusement_text,
-.meeting_div:hover .meeting_text
-{
-    opacity: 1;
-    bottom: 0;
-    height: 100%;
-}
-
-.txt {
-    color: rgba(218, 215, 173, 0.938);
-    position: absolute;
-    font-size: 40px;
-    font-family: 'Acme', sans-serif, 'Noto Sans TC', sans-serif;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}  */
-
-
-/* -預約服務- */
-/* .reservation_div
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-.reservation_div img
-{
-    width: 626px;
-    height: 396px;
-}
-.reservation_div img:hover
-{
-    outline:5px solid rgb(236, 130, 195); 
-    border: 10px solid transparent;
-    border-radius: 30px;
-    transition: 1s ease-in-out;
-}
-
-.reservation_div p
-{
-    color: rgb(61, 36, 36);
-    font-size: 24px;
-    font-family: 'Acme', sans-serif, 'Noto Sans TC', sans-serif;
-    margin: 20px 0 10px 0;
-}
-.reservation_div p:hover
-{
-    color: rgb(134, 90, 90);
-}
-
-.reservation_div a:hover
-{
-   text-decoration: none;
-} */
-
-
-
-
-
 /* -------Public--------- */
 .public_div
 {
@@ -223,8 +97,8 @@
 .reservation_jumbotron
 {
     margin-top: 20px;
-    background-color: rgb(34, 45, 50);
-    color:rgb(255, 255, 255);
+    background-color: rgb(203, 198, 198);
+    color:rgb(34, 32, 32);
 }
 .reservation_jumbotron h1
 {
@@ -279,7 +153,6 @@ h1, p
 .smalltitle
 {
     padding: 20px 0;
-    /* border: 2px solid red; */
 }
 .smalltitle p
 {
@@ -562,23 +435,6 @@ h1, p
 }
 
 
-
-
-/* Reservation_detail_B */
-
-.Reservation_detail_B
-{
-    border: 3px solid black;
-    border-radius: 20px;
-    /* width: 800px; */
-    height: 300px;
-    margin: 0 30px;
-}
-
-
-
-
-
 /* 預約單 */
 
 .page_form
@@ -588,6 +444,7 @@ h1, p
     border-radius: 15px;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
+
 figure
 {
     padding: 15px 0;
@@ -648,12 +505,3 @@ textarea
  {
     color: yellow;
  }
-
-
-
-footer
-{
-    height: 400px;
-    background-color: black;
-    border: 5px solid black;
-}

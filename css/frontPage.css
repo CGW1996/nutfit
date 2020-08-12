@@ -337,7 +337,7 @@ header nav .footer {
 }
 
 main {
-    height: 100vh;
+    height: auto;
     /* background-color: #e1eaf1; */
 }
 
@@ -349,4 +349,46 @@ main {
 
     background-color: rgb(34, 45, 50) !important;
     color: white !important;
+}
+
+
+
+
+.footer_div
+{
+    /* height: 200px; */
+    background-color: rgb(34, 45, 50);
+    margin-top: 50px;
+}
+.footer_info
+{
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    /* border-left: 2px solid gray; */
+    margin:30px 80px;
+    padding-left: 80px;
+}
+.footer_info a
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+.footer_info a:hover
+{
+    text-decoration: none;
+    color: yellow;
+}
+
+.smalltitle
+{
+    padding: 20px 0;
+    text-align: center;
+}
+.smalltitle p
+{
+    font-size: 34px;
+    font-weight: 900;
 }
