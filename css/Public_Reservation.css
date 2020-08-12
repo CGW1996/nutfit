@@ -141,7 +141,7 @@
 }
 .public_buttn
 {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     color: white;
     font-size: 24px;
@@ -191,7 +191,7 @@
 }
 .public_project a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin-left: 850px;
@@ -218,13 +218,12 @@
 }
 
 
-/* -------Public_B--------- */
 
 /* -------Reservation--------- */
 .reservation_jumbotron
 {
     margin-top: 20px;
-    background-color: rgb(13, 14, 9);
+    background-color: rgb(34, 45, 50);
     color:rgb(255, 255, 255);
 }
 .reservation_jumbotron h1
@@ -330,7 +329,7 @@ h1, p
 }
 .card-body a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px 90px;
@@ -359,6 +358,8 @@ h1, p
 {
     list-style-type: disc;
 }
+
+
 /* clean */
 .clean_jumbotron
 {
@@ -392,10 +393,13 @@ h1, p
     display: flex;
     justify-content: space-around;
 }
+    
 .clean_smcards
 {
     margin: 30px 0;
+    position: relative;
 }
+
 
 .clean-title
 {
@@ -409,7 +413,7 @@ h1, p
 }
 .clean-body a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px 170px;
@@ -449,12 +453,11 @@ h1, p
     margin: 15px 0;
     color: gray;
 }
-
-
-
-
-
-
+.time_a
+{
+    position: absolute;
+    top: 500px;
+}
 
 
 

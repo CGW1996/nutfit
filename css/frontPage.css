@@ -5,6 +5,7 @@
 }
 body {
     background-color: rgb(245, 245, 245) !important;
+    
 }
 
 .logoimg {
@@ -27,9 +28,9 @@ body {
 }
 
 .menubar {
+    margin-top: 80px;
     margin: auto;
     color: rgb(34, 45, 50);
-
 }
 
 .menu {
