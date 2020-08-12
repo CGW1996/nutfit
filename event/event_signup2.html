@@ -3,23 +3,109 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../fontawesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/e-community.css">
+    <link rel="stylesheet" href="../css/frontPage.css">
+    <!-- <link rel="stylesheet" href="css/event.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/event_B.css">
+    <title>ECOMMINITY - 社區活動</title>
+
+    <style>
+        body {
+            background-color: rgb(249, 249, 249);
+        }
+
+        .smimg {
+            width: 350px;
+            height: auto;
+        }
+
+        .signup {
+            background-color: white;
+            height: 100%;
+
+        }
+
+        .txtStyle {
+            width: 500px;
+            height: 35px;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        fieldset {
+            border: solid 1px rgb(220, 220, 220);
+            border-radius: 3px;
+            padding: 0px 20px 20px 20px;
+            width: 540px;
+            /* margin: 10px; */
+        }
+
+        .legend1 {
+            font-size: 20px;
+            width: auto;
+        }
+
+        .totalprice {
+            text-align: right;
+            margin-top: 20px;
+            width: 520px;
+        }
+
+        .signuporcancel {
+            text-align: right;
+            max-width: 1000px;
+            margin-bottom: 100px;
+        }
+
+        .btn-outline-info_next {
+            color: white;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-outline-info_next:hover {
+            color: white;
+            background-color: #3ebccf;
+        }
+
+        .btn-outline-info_cancel {
+            color: black;
+            background-color: ghostwhite;
+            border: rgb(173, 172, 172) 1px solid;
+        }
+
+        .btn-outline-info_cancel:hover {
+            background-color: white;
+        }
+
+        .gray {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .white,
+        .white:hover {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage.html"><span>E-<b>Community</b></span></a>
-        <nav class="col-10">
+        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="image/logo.png" alt=""> </a>
+        <nav class="col-10" style="background-color: rgb(34, 45, 50);">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
                     <div class="dropdown">
                         <button class="btn text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-envelope-o"></i>
+                            <i class="fa fa-envelope-o text-light"></i>
                             <span class="label bg-success">4</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -102,7 +188,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o"></i>
+                            <i class="fa fa-bell-o  text-light"></i>
                             <span class="label bg-danger">5</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -172,7 +258,7 @@
                     <div class="dropdown">
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-flag-o"></i>
+                            <i class="fa fa-flag-o text-light"></i>
                             <span class="label bg-warning">6</span>
                         </button>
                         <ul class="dropdown-menu">
@@ -256,7 +342,7 @@
                         <button class="btn  text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <img class="topImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                            <span>Jenny</span>
+                            <span class=" text-light">Jenny</span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -290,78 +376,122 @@
             </ul>
         </nav>
     </header>
-    <div class="d-flex">
-        <aside class="sidenav col-2">
-            <section class="sidebar">
-                <img class="sideImg" src="image/adult-attractive-beautiful-beauty-415829.jpg" alt="">
-                <p class="navName">Jenny</p>
-                <a href="Announcement_B.html">最新消息</a>
-                <a href="event_B.html">社區活動</a>
-                <button class="dropdown-btn">生活服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container fin">
-                    <a href="management_Fee_B.html">管理費</a>
-                    <a href="payEntrance_B.html">支出</a>
-                    <a href="gasData_B.html">瓦斯抄表</a>
-                    <a href="personalFin_B.html">個人紀錄</a>
-                </div>
-                <a href="personalMessage_B.html">專屬訊息</a>
-                <a href="comment_B.html">意見反映</a>
-                <!-- 下拉式選單 -->
-                <button class="dropdown-btn">預約服務
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="pool_B.html">游泳池</a>
-                    <a href="reading_B.html">閱覽室</a>
-                    <a href="aromatherapy_B.html">芳療室</a>
-                </div>
-                <!--  -->
-                <a href="voteList.html">社區投票</a>
-                <a href="Forum_B.html">討論區</a>
-                <a href="postal_B.html">郵務管理</a>
-                <a href="calendar_B.html">社區行事曆</a>
-            </section>
-        </aside>
+    <div class="container">
 
-        <main class="col-10 ">
-            <div><i class="fa fa-spinner"></i>&nbsp;完成度 </div>
-            <div class="progress mb-4">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%"
-                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+        <main class="container mt-4 signup row">
+            <div class="col-4">
+                <img class="smimg mt-5" src="../image/event/yoga_signup.png" alt="">
+                <div class="gray">
+                    <div style="font-weight: bold;">肩頸背深度延展 瑜珈輪初學課程 / 放鬆舒壓 <br> -Jade Yoga </div>
+                    <div> 2020-03-28(六) 10:00 ~ 2020-08-31(一) 00:00 (GMT+8)</div>
+                    <div> 台灣台北市大安區忠孝東路四段75-11號12 </div>
+                    <div> 訂單編號：2008030850386454977930 </div>
+
+                </div>
             </div>
-            <form>
-                <fieldset>
-                    <legend>Step3 : 設定票券</legend>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">票券種類 <span class="text-danger">*</span></label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>請選擇</option>
-                            <option value="free">免費</option>
-                            <option value="fee">付費 </option>
-
+            <div class="col-7  mt-4 ml-4">
+                <form action="#">
+                    <div class="ppls ml-3">
+                        <h4>-填寫參加人資訊-</h4>
+                        <h5 class=" mt-3">報名人數</h5>
+                        <select class="form-control_select mr-sm-2 txtStyle">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </div>
 
+                    <fieldset class="fieldset1 mt-4">
+                        <legend class="legend1">參加人1</legend>
+                        <div>
+                            <label for="txtsigneraddress" class="mt-2">戶號<span style="color: red;">*</span></label>
+                            <input id="txtsigneraddress" class="txtStyle" type="text" value="A305" readonly>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">報名人數上限 </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="若無上限則不需填寫">
+                        <div>
+                            <label for="txtsignerName" class="mt-2">姓名</label>
+                            <input id="txtsignerName" class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerPhone" class="mt-2">聯絡電話</label>
+                            <input class="txtStyle" id="txtsignerPhone" type="text" placeholder=" 請輸入聯絡電話">
+                        </div>
+
+                        <div>
+                            <label for="txtsigneremail" class="mt-2">電子郵件</label>
+                            <input class="txtStyle" id="txtsigneremail" type="email" placeholder="請輸入E-MAIL">
+                        </div>
+
+
+                        <div class="mt-2">
+                            <div for="" class="t1">性別 </div>
+                            <label>
+                                <input type="radio" name="gender" value="male"> 男　
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female"> 女
+                            </label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="fieldset1 mt-4">
+                        <legend class="legend1">參加人2</legend>
+                        <div>
+                            <label for="txtsigneraddress" class="mt-2">戶號<span style="color: red;">*</span></label>
+                            <input id="txtsigneraddress" class="txtStyle" type="text" value="請輸入戶號">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerName" class="mt-2">姓名</label>
+                            <input id="txtsignerName" class="txtStyle" type="text" placeholder=" 請輸入姓名">
+                        </div>
+
+                        <div>
+                            <label for="txtsignerPhone" class="mt-2">聯絡電話</label>
+                            <input class="txtStyle" id="txtsignerPhone" type="text" placeholder=" 請輸入聯絡電話">
+                        </div>
+
+                        <div>
+                            <label for="txtsigneremail" class="mt-2">電子郵件</label>
+                            <input class="txtStyle" id="txtsigneremail" type="email" placeholder="請輸入E-MAIL">
+                        </div>
+                        <div class="mt-2">
+                            <div for="" class="t1">性別 </div>
+                            <label>
+                                <input type="radio" name="gender" value="male"> 男　
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female"> 女
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="mb-4  totalprice">
+
+                        <h4>總金額：<span>$ 3,000</span></h4>
                     </div>
+                    <hr>
+                    <div><input type="checkbox"> 我已閱讀並同意eCO DAILY <a href="#">票券訂購暨使用須知</a>
+                        內容所有條款</div>
+                    <div class="signuporcancel row mt-4">
+                        <button type="button" id="btncancel" class="btn btn-outline-info_cancel col-5 mr-1">取消</button>
+                        <div id="btnyes" class="btn btn-outline-info_next col-5 ml-1">
+                            <a href="event.html"><button type="button" class="btn white">下一步</button></a>
+
+                        </div>
 
 
-                </fieldset>
-                <input class="btn btn-primary" type="button" value="取消">
-                <a href="event_add2_B.html" class="btn btn-primary">上一步</a>
-                <a href="event_add4_B.html" class="btn btn-primary">下一步</a>
-                <!-- <input class="btn btn-primary" type="submit" value="下一步"> -->
-
-            </form>
-
+                    </div>
+                </form>
+            </div>
         </main>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -373,6 +503,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
+
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
@@ -388,6 +519,10 @@
                 }
             });
         }
+
+        $("#btnyes").click(function () {
+            alert("報名成功!");
+        })
     </script>
 
 </body>
