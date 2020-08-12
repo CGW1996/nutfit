@@ -1,3 +1,4 @@
+// Page_Reservation
 
 const switchPage = function( id ){
 
@@ -13,7 +14,6 @@ const switchPage = function( id ){
     document.querySelector(`#${id}`).classList.remove("hide");
 }
 
-
 //裝上事件聆聽
 document.querySelectorAll(".public_buttn").forEach(
     (item, index) =>{
@@ -27,3 +27,7 @@ document.querySelectorAll(".public_buttn").forEach(
         )
     }
 )
+
+
+// Reservation_B
+

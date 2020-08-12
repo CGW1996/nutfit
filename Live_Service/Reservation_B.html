@@ -360,53 +360,81 @@
             <div class="reservationB_current">     
                 <caption ><h1>｜　生活服務預約現況表　｜</h1></caption>
                 <!-- 已預約現況表 -->
+                <div class="reservationB_options">
+                    <label for="">預約日期:</label>
+                    <input type="date">
+                    <label for="">棟別：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">E</option>
+                    </select>
+                    <label for="">預約項目：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">會議室</option>
+                        <option value="">歡唱室</option>
+                        <option value="">交通接送服務</option>
+                        <option value="">維修維護服務</option>
+                        <option value="">家事清潔服務</option>
+                    </select>
+                    <label for="">預約狀態：</label>
+                    <select name="" id="">
+                        <option value="" selected>請選擇</option>
+                        <option value="">完成</option>
+                        <option value="">未完成</option>
+                    </select>
+
+
+                </div>
                 <table class="current_table"> 
                     <thead>
                         <tr>
                             <th>項次</th>
-                            <th>預約日期</th>
-                            <th>預約時間</th>
-                            <th>預約戶號</th>
-                            <th>預約住戶</th>
+                            <th>預約日期/時間</th>
+                            <th>預約戶號/住戶</th>
+                            <th>聯絡電話</th>
                             <th>預約項目</th>
-                            <th>詳細內容</th>
-                            <th>協助預約</th>
+                            <th>預約狀態</th>
+                            <th>功能</th>
                             <th>備註事項</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>2020/08/07</td>
-                            <td>0900-1200</td>
-                            <td>B-302</td>
-                            <td>強大熱</td>
-                            <td>會議室</td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>     
+                            <td>2020/08/07<br>0900-1200</td>
+                            <td>B-302<br>強大熱</td>
+                            <td>0972-117-275</td>
+                            <td>家事清潔服務<br>客廳清潔</td>
+                            <td>已完成通知</td> 
+                            <td><button class="btn btn-danger">通知住戶</button></td>     
                             <td></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>2020/08/07</td>
-                            <td>1020</td>
-                            <td>A-702</td>
-                            <td>高文英</td>
-                            <td>交通接送</td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td>2020/08/07<br>0800-1200</td>
+                            <td>A-702<br>高文英</td>
+                            <td>0972-132-999</td>
+                            <td>歡唱室</td>
+                            <td>未完成通知</td> 
+                            <td><button class="btn btn-danger">通知住戶</button></td>     
                             <td></td>
+                            
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>2020/08/07</td>
-                            <td>1400</td>
-                            <td>C-202</td>
-                            <td>文鋼太</td>
-                            <td>家事清潔</td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
                         </tr>
                         <tr>
                             <td>4</td>
@@ -415,8 +443,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -426,8 +453,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -437,8 +463,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -448,8 +473,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -459,8 +483,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -470,8 +493,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                         <tr>
@@ -481,13 +503,12 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-warning">預約詳細內容</button></td> 
-                            <td><button class="btn btn-danger">已完成通知</button></td>  
+                            <td></td>
                             <td></td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="">
+                <div class="Page_navigation">
                     <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                       <li class="page-item ">
@@ -538,6 +559,7 @@
             });
         }
     </script>
+    <script src="../js/Live_Service.js"></script>
 
 </body>
 

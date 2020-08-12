@@ -141,7 +141,7 @@
 }
 .public_buttn
 {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     color: white;
     font-size: 24px;
@@ -191,7 +191,7 @@
 }
 .public_project a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin-left: 850px;
@@ -218,13 +218,12 @@
 }
 
 
-/* -------Public_B--------- */
 
 /* -------Reservation--------- */
 .reservation_jumbotron
 {
     margin-top: 20px;
-    background-color: rgb(13, 14, 9);
+    background-color: rgb(34, 45, 50);
     color:rgb(255, 255, 255);
 }
 .reservation_jumbotron h1
@@ -330,7 +329,7 @@ h1, p
 }
 .card-body a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px 90px;
@@ -359,6 +358,8 @@ h1, p
 {
     list-style-type: disc;
 }
+
+
 /* clean */
 .clean_jumbotron
 {
@@ -392,10 +393,13 @@ h1, p
     display: flex;
     justify-content: space-around;
 }
+    
 .clean_smcards
 {
     margin: 30px 0;
+    position: relative;
 }
+
 
 .clean-title
 {
@@ -409,7 +413,7 @@ h1, p
 }
 .clean-body a
 {
-    background-color: rgb(34, 34, 30);
+    background-color: rgb(34, 45, 50);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px 170px;
@@ -449,12 +453,11 @@ h1, p
     margin: 15px 0;
     color: gray;
 }
-
-
-
-
-
-
+.time_a
+{
+    position: absolute;
+    top: 500px;
+}
 
 
 
@@ -516,13 +519,20 @@ h1, p
     /* border: 3px solid black; */
     margin: 0 20px 20px 20px;
 }
-
+.reservationB_options
+{
+    /* border: 2px solid black; */
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+    font-size: 22px;
+}
 .current_table
 {
     border: 4px solid black;
     border-collapse: collapse;
-    font-size: 24px;
-    margin-top: 50px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .current_table th,td
 {
@@ -530,15 +540,25 @@ h1, p
     width: 200px;
     text-align: center;
 }
-
-
-
-
-.reservationB_free
+.current_table th
 {
-    border: 2px solid black;
+   height: 50px;
+   font-size: 22px;
+   background-color: gray;
 }
-
+.current_table td
+{
+   height: 70px;
+}
+.Page_navigation
+{
+    margin-top: 10px;
+}
+.pagination a
+{
+    background-color:rgb(112, 126, 250);
+    color: white;
+}
 
 
 
