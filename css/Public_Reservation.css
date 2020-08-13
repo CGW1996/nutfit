@@ -1,4 +1,3 @@
-
 /* -------Public--------- */
 .public_div
 {
@@ -153,10 +152,6 @@ h1, p
 .smalltitle
 {
     padding: 20px 0;
-}
-.smalltitle p
-{
-    font-size: 34px;
 }
 .row
 {
