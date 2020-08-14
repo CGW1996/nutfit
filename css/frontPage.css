@@ -354,6 +354,10 @@ main {
 
 
 
+.row_width
+{
+    width: 100%;
+}
 .footer_div
 {
     /* height: 200px; */
