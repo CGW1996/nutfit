@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/mail.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>ECOMMINITY - 社區活動</title>
+        <title>ECo Daily - 訊息中心</title>
 
     <style>
 
@@ -18,7 +18,7 @@
 
 <body>
     <header class="d-flex">
-        <a class="logo col-2" href="homepage_B.html"><img class="logoimg" src="image/logo.png" alt=""> </a>
+        <a class="logo col-2" href="Announcement.html"><img class="logoimg" src="image/logo.png" alt=""> </a>
         <nav class="col-10" style="background-color: rgb(34, 45, 50);">
             <ul class="nav justify-content-end mt-1">
                 <li class="nav-item mail">
@@ -381,42 +381,50 @@
     </div>
 
 
-    <main class="container">
-        <div class="main">
-            <button type="button" class="write btn btn-outline-success" data-toggle="modal" data-target="#exampleModal"
-                data-whatever="@ecodaily.com">撰寫</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">撰寫郵件</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="">
-                                <div class="bl">
-                                    <label for="" class="lab">收件人 ：</label><br>
-                                    <input type="text" name="mailto" class="txt">
-                                </div>
-                                <div class="bl">
-                                    <label for="" class="lab">主旨 ：</label><br>
-                                    <input type="text" name="title" class="txt">
-                                </div>
-                                <div class="bl" style="padding-bottom: 0;">
-                                    <label for="" class="lab">內容 ：</label><br>
-                                    <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
-                                </div>
-                                <div class="b1" style="padding-top: 0px;">
-                                    <div class="txtEditor">
-                                        <button class="textEdit fa fa-font"></button>
-                                        <button class="textEdit fa fa-bold"></button>
-                                        <button class="textEdit fa fa-italic"></button>
-                                        <button class="textEdit fa fa-underline"></button>
-                                        <button class="textEdit fa fa-text-height"></button>
-                                        <button class="textEdit fa fa-text-width"></button>
+        <main class="container">
+            <div class="smalltitle">
+                <h2><b>｜　訊息中心　｜</b></h2>
+            </div>
+            <div class="main">
+                <button type="button" class="write btn btn-outline-success" data-toggle="modal"
+                    data-target="#exampleModal" data-whatever="@ecodaily.com">撰寫</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">撰寫郵件</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="bl">
+                                        <label for="" class="lab">收件人 ：</label><br>
+                                        <input type="text" name="mailto" class="txt">
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">主旨 ：</label><br>
+                                        <input type="text" name="title" class="txt">
+                                    </div>
+                                    <div class="bl" style="padding-bottom: 0;">
+                                        <label for="" class="lab">內容 ：</label><br>
+                                        <textarea class="des" name="description" id="" cols="50" rows="50"></textarea>
+                                    </div>
+                                    <div class="b1" style="padding-top: 0px;">
+                                        <div class="txtEditor">
+                                            <button class="textEdit fa fa-font"></button>
+                                            <button class="textEdit fa fa-bold"></button>
+                                            <button class="textEdit fa fa-italic"></button>
+                                            <button class="textEdit fa fa-underline"></button>
+                                            <button class="textEdit fa fa-text-height"></button>
+                                            <button class="textEdit fa fa-text-width"></button>
+                                        </div>
+                                    </div>
+                                    <div class="bl">
+                                        <label for="" class="lab">附加檔案 ：</label>
+                                        <input type="file">
                                     </div>
                                 </div>
                                 <div class="bl">
@@ -432,29 +440,29 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="search">
-                <div>
-                    <select name="sort" id="">
-                        <option value="new">最新</option>
-                        <option value="old">最舊</option>
-                    </select>
+                <div class="search">
+                    <div>
+                        <select name="sort" id="">
+                            <option value="new">新 → 舊</option>
+                            <option value="old">舊 → 新</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="chPage fa fa-chevron-left"></button>
+                    </div>
+                    <div>
+                        <select name="page" id="">
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>/ 頁</p>
+                    </div>
+                    <div>
+                        <button class="chPage fa fa-chevron-right"></button>
+                    </div>
                 </div>
-                <div>
-                    <button class="chPage fa fa-chevron-left"></button>
-                </div>
-                <div>
-                    <select name="page" id="">
-                        <option value="1">1</option>
-                    </select>
-                </div>
-                <div>
-                    <p>/ 頁</p>
-                </div>
-                <div>
-                    <button class="chPage fa fa-chevron-right"></button>
-                </div>
-            </div>
+            </div> 
             <div class="major">
 
                 <table>
@@ -493,8 +501,35 @@
         </div>
     </main>
     </div>
-
-
+    <footer>
+        <div class="footer_div">
+            <div class="row d-flex justify-content-center">
+           
+                <div class="footer_info " >
+                    <h6>社區相關資訊</h6>
+                    <a href="Announcement.html">社區公告</a>
+                    <a href="/event/event.html">社區活動</a>
+                    <a href="/Live_Service/Public.html">公共設施</a>
+                    <a href="/Live_Service/Reservation.html">預約服務</a>
+                    <a href="Forum.html">討論區</a>
+                    <a href="voteList.html">投票</a>
+                    <a href="financial.html">社區財務</a>
+                </div>
+                <div class="footer_info">
+                    <h6>住戶相關資訊</h6>
+                    <a href="/package/package.html" >郵務</a>
+                    <a href="mail.html">信息中心</a>
+                    <a href="managementFee_confirm.html">管理費</a>
+                    <a href="gasData.html">瓦斯抄表</a>
+                </div>
+                <div class="footer_info">
+                    <h6>管委會聯絡資訊</h6>
+                    <h6>電話：(02)2246-4564</h6>
+                    <h6>信箱：eCoDaily@cdmail.com.tw</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

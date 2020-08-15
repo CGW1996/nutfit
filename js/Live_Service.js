@@ -28,6 +28,3 @@ document.querySelectorAll(".public_buttn").forEach(
     }
 )
 
-
-// Reservation_B
-
