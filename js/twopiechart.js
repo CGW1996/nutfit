@@ -1,37 +1,4 @@
-let year = new Date().getFullYear();
-let tuneMonth = new Date().getMonth()+1;
-let month;
-for(let i = year;i>2016;i--){
-    let yearList = document.createElement("option",i);
-    yearList.innerHTML = i;
-    document.querySelector("#selectYear").append(yearList);
-}
-
-$("#selectYear").change(function(){
-    document.getElementById("selectMonth").options.length = 1;
-    var selectedY = $("#selectYear").val();
-    if(selectedY==year){
-        for(let i = 1;i<tuneMonth+1;i++){
-            month = document.createElement("option",i);
-            // month.setAttribute("id", i);
-            month.innerHTML = i;
-            document.querySelector("#selectMonth").append(month);
-        }
-    }else{
-        for(let i = 1;i<13;i++){
-            month = document.createElement("option",i);
-            // month.setAttribute("id", i);
-            month.innerHTML = i;
-            document.querySelector("#selectMonth").append(month);
-        }
-    }
-    console.log(selectedY);
-})
-
-
-
-
-var piChart = echarts.init(document.getElementById('piChart'));
+var twopiechart = echarts.init(document.getElementById('twopiechart'));
 let bgColor = 'transparent';
 let payTitle = '社區總支出';
 let incomeTitle = '社區總收入';
@@ -252,4 +219,4 @@ option = {
         },
     }]
 };
-piChart.setOption(option);
+twopiechart.setOption(option);
