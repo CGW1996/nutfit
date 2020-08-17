@@ -354,6 +354,10 @@ main {
 
 
 
+.row_width
+{
+    width: 100%;
+}
 .footer_div
 {
     /* height: 200px; */
@@ -386,9 +390,4 @@ main {
 {
     padding: 20px 0;
     text-align: center;
-}
-.smalltitle p
-{
-    font-size: 34px;
-    font-weight: 900;
 }

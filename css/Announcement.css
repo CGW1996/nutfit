@@ -45,7 +45,12 @@ main{
     border-radius: 5px;
 }
 .article a{
-    color:black;
+    color:rgb(10, 10, 10);
+    padding: 10px;
+}
+.article a:hover{
+    text-decoration: none;
+    color:rgb(116, 112, 112);
 }
 .bigbox p{
     overflow: hidden;

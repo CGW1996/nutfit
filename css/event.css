@@ -269,3 +269,15 @@ main {
     color: gray;
     margin-bottom: 6px;
 }
+
+.eventsignup {
+    width: 100px;
+    margin: auto;
+}
+
+.bkg {
+    background-color: ghostwhite;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
